@@ -1,3 +1,3 @@
-<main>
-  <app-header></app-header>
+<main *ngIf="vm$ | async as vm">
+  <app-header [options]="vm.options"></app-header>
 </main>

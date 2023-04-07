@@ -35,12 +35,12 @@ $my-app-theme: mat.define-light-theme(
 
 :root {
   /** primary **/
-  --ion-color-primary: #4052a2;
-  --ion-color-primary-rgb: 64, 82, 162;
-  --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #38488f;
-  --ion-color-primary-tint: #5363ab;
+  --app-color-primary: #4052a2;
+  --app-color-primary-rgb: 64, 82, 162;
+  --app-color-primary-contrast: #ffffff;
+  --app-color-primary-contrast-rgb: 255, 255, 255;
+  --app-color-primary-shade: #38488f;
+  --app-color-primary-tint: #5363ab;
 
   /** secondary **/
   --app-color-secondary: #f05986;
@@ -83,36 +83,36 @@ $my-app-theme: mat.define-light-theme(
   --app-color-dark-tint: #383a3e;
 
   /** dark blue**/
-  --ion-color-primary: #4052a2;
-  --ion-color-primary-rgb: 64, 82, 162;
-  --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #38488f;
-  --ion-color-primary-tint: #5363ab;
+  --app-color-primary: #4052a2;
+  --app-color-primary-rgb: 64, 82, 162;
+  --app-color-primary-contrast: #ffffff;
+  --app-color-primary-contrast-rgb: 255, 255, 255;
+  --app-color-primary-shade: #38488f;
+  --app-color-primary-tint: #5363ab;
 
   /** medium **/
-  --ion-color-medium: #8a8a8a;
-  --ion-color-medium-rgb: 138, 138, 138;
-  --ion-color-medium-contrast: #000000;
-  --ion-color-medium-contrast-rgb: 0, 0, 0;
-  --ion-color-medium-shade: #797979;
-  --ion-color-medium-tint: #969696;
+  --app-color-medium: #8a8a8a;
+  --app-color-medium-rgb: 138, 138, 138;
+  --app-color-medium-contrast: #000000;
+  --app-color-medium-contrast-rgb: 0, 0, 0;
+  --app-color-medium-shade: #797979;
+  --app-color-medium-tint: #969696;
 
   /** light **/
-  --app-color-light: #ffffff;
-  --app-color-light-rgb: 244, 244, 244;
+  --app-color-light: #fdfdfa;
+  --app-color-light-rgb: 253, 253, 250;
   --app-color-light-contrast: #000000;
   --app-color-light-contrast-rgb: 0, 0, 0;
-  --app-color-light-shade: #e0e0e0;
-  --app-color-light-tint: #ffffff;
+  --app-color-light-shade: #dfdfdc;
+  --app-color-light-tint: #fdfdfb;
 
   /** light blue**/
-  --ion-color-light-blue: #7b8edb;
-  --ion-color-light-blue-rgb: 123, 142, 219;
-  --ion-color-light-blue-contrast: #000000;
-  --ion-color-light-blue-contrast-rgb: 0, 0, 0;
-  --ion-color-light-blue-shade: #6c7dc1;
-  --ion-color-light-blue-tint: #8899df;
+  --app-color-light-blue: #7b8edb;
+  --app-color-light-blue-rgb: 123, 142, 219;
+  --app-color-light-blue-contrast: #000000;
+  --app-color-light-blue-contrast-rgb: 0, 0, 0;
+  --app-color-light-blue-shade: #6c7dc1;
+  --app-color-light-blue-tint: #8899df;
 
   --app-font-family: 'AppFont';
   // --app-backdrop-color: var(--app-color-primary) !important;
@@ -120,3 +120,8 @@ $my-app-theme: mat.define-light-theme(
   --app-background-header: linear-gradient(to right, #54579f 0%, #455bab 37%, #10054d 100%);
   // --app-background-content: linear-gradient(to right, #54579F 0%,#8B41D2 50%, #6F32A9 85% , #10054D 100%);
 }
+
+$breakpoint-sm: 600px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1920px;

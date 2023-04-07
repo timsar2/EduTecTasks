@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .app-toolbar {
   background: var(--app-background-header);
   height: 103px;
@@ -5,4 +7,62 @@
 
 .navbar-spacer {
   flex: 1 1 auto;
+}
+
+.nav-link-container {
+  width: 80%;
+  margin-top: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: var(--app-color-light);
+  line-height: 1;
+  font-family: obvia;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    color: var(--app-color-secondary);
+  }
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin-top: 11px;
+  background-color: var(--app-color-secondary);
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0;
+}
+
+.active-route {
+  opacity: 1 !important;
+  color: var(--app-color-secondary);
+}
+
+.icone-language {
+  height: 24px;
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .nav-link-container {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .nav-link-container {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .nav-link-container {
+    width: 35%;
+  }
 }

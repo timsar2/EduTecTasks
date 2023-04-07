@@ -16,6 +16,7 @@ import { LayoutModule as CdkLayoutModule } from '@angular/cdk/layout'
 import { API_URL } from '@app/shared/data-access/tokens/api-url.token'
 import { LayoutComponent } from './ui/layout/layout.component'
 import { CoreModule } from './core/core.module'
+import { AngularSvgIconModule } from 'angular-svg-icon'
 
 @NgModule({
   declarations: [],
@@ -36,6 +37,8 @@ import { CoreModule } from './core/core.module'
       maxAge: 25,
       logOnly: environment.production
     }),
+
+    AngularSvgIconModule.forRoot(),
 
     LayoutComponent
   ],

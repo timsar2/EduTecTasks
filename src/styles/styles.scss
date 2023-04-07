@@ -1,9 +1,12 @@
 @import 'variables.scss';
+@import 'base';
+@import 'component';
 
 html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: var(--app-font-family);

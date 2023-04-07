@@ -1,15 +1,16 @@
-<p>
-  <mat-toolbar class="app-toolbar">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>My App</span>
-    <span class="navbar-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
-    </button>
-  </mat-toolbar>
-</p>
+<mat-toolbar class="app-toolbar">
+  <svg-icon src="assets/images/svgs/astronut.svg"></svg-icon>
+
+  <span class="navbar-spacer"></span>
+
+  <div class="nav-link-container">
+    <ng-container *ngFor="let option of options">
+      <a [routerLink]="[option.link]">
+        <span>{{ option.name }}</span>
+        <span class="dot" routerLinkActive="active-route"></span>
+      </a>
+    </ng-container>
+
+    <svg-icon src="assets/images/svgs/icone-language.svg" class="icone-language"></svg-icon>
+  </div>
+</mat-toolbar>
