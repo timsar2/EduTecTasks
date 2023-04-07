@@ -3,16 +3,26 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
   "overrides": [
     {
-      "files": ["*.ts"],
-      "extends": ["plugin:@ngrx/recommended"],
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "plugin:@ngrx/recommended"
+      ],
       "rules": {
         "@typescript-eslint/no-empty-function": [
           "error",
           {
-            "allow": ["constructors"]
+            "allow": [
+              "constructors"
+            ]
           }
         ]
       }
@@ -23,23 +33,8 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint"],
-  "rules": {
-    // "@angular-eslint/directive-selector": [
-    //   "error",
-    //   {
-    //     "type": "attribute",
-    //     "prefix": ["app", "ar"],
-    //     "style": "camelCase"
-    //   }
-    // ],
-    // "@angular-eslint/component-selector": [
-    //   "error",
-    //   {
-    //     "type": "element",
-    //     "prefix": ["app", "ar"],
-    //     "style": "kebab-case"
-    //   }
-    // ]
-  }
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {}
 }
