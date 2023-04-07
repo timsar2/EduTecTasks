@@ -1,0 +1,122 @@
+@use '@angular/material' as mat;
+@include mat.core();
+
+@import url('https://use.typekit.net/yge5igu.css');
+
+$my-app-primary: mat.define-palette(mat.$indigo-palette);
+$my-app-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$my-app-warn: mat.define-palette(mat.$red-palette);
+
+$my-app-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $my-app-primary,
+      accent: $my-app-accent,
+      warn: $my-app-warn
+    )
+  )
+);
+
+@include mat.all-component-themes($my-app-theme);
+
+@font-face {
+  font-family: AppFont;
+  src: url('https://use.typekit.net/af/f2b266/00000000000000007735fdb4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'obvia';
+  src: url('https://use.typekit.net/af/44fcac/00000000000000007735bd18/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /** primary **/
+  --ion-color-primary: #4052a2;
+  --ion-color-primary-rgb: 64, 82, 162;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #38488f;
+  --ion-color-primary-tint: #5363ab;
+
+  /** secondary **/
+  --app-color-secondary: #f05986;
+  --app-color-secondary-rgb: 240, 89, 134;
+  --app-color-secondary-contrast: #000000;
+  --app-color-secondary-contrast-rgb: 0, 0, 0;
+  --app-color-secondary-shade: #d34e76;
+  --app-color-secondary-tint: #f26a92;
+
+  /** success **/
+  --app-color-success: #10dc60;
+  --app-color-success-rgb: 16, 220, 96;
+  --app-color-success-contrast: #ffffff;
+  --app-color-success-contrast-rgb: 255, 255, 255;
+  --app-color-success-shade: #0ec254;
+  --app-color-success-tint: #28e070;
+
+  /** warning **/
+  --app-color-warning: #ffce00;
+  --app-color-warning-rgb: 255, 206, 0;
+  --app-color-warning-contrast: #ffffff;
+  --app-color-warning-contrast-rgb: 255, 255, 255;
+  --app-color-warning-shade: #e0b500;
+  --app-color-warning-tint: #ffd31a;
+
+  /** danger **/
+  --app-color-danger: #f04141;
+  --app-color-danger-rgb: 245, 61, 61;
+  --app-color-danger-contrast: #ffffff;
+  --app-color-danger-contrast-rgb: 255, 255, 255;
+  --app-color-danger-shade: #d33939;
+  --app-color-danger-tint: #f25454;
+
+  /** dark **/
+  --app-color-dark: #222428;
+  --app-color-dark-rgb: 34, 34, 34;
+  --app-color-dark-contrast: #ffffff;
+  --app-color-dark-contrast-rgb: 255, 255, 255;
+  --app-color-dark-shade: #1e2023;
+  --app-color-dark-tint: #383a3e;
+
+  /** dark blue**/
+  --ion-color-primary: #4052a2;
+  --ion-color-primary-rgb: 64, 82, 162;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #38488f;
+  --ion-color-primary-tint: #5363ab;
+
+  /** medium **/
+  --ion-color-medium: #8a8a8a;
+  --ion-color-medium-rgb: 138, 138, 138;
+  --ion-color-medium-contrast: #000000;
+  --ion-color-medium-contrast-rgb: 0, 0, 0;
+  --ion-color-medium-shade: #797979;
+  --ion-color-medium-tint: #969696;
+
+  /** light **/
+  --app-color-light: #ffffff;
+  --app-color-light-rgb: 244, 244, 244;
+  --app-color-light-contrast: #000000;
+  --app-color-light-contrast-rgb: 0, 0, 0;
+  --app-color-light-shade: #e0e0e0;
+  --app-color-light-tint: #ffffff;
+
+  /** light blue**/
+  --ion-color-light-blue: #7b8edb;
+  --ion-color-light-blue-rgb: 123, 142, 219;
+  --ion-color-light-blue-contrast: #000000;
+  --ion-color-light-blue-contrast-rgb: 0, 0, 0;
+  --ion-color-light-blue-shade: #6c7dc1;
+  --ion-color-light-blue-tint: #8899df;
+
+  --app-font-family: 'AppFont';
+  // --app-backdrop-color: var(--app-color-primary) !important;
+
+  --app-background-header: linear-gradient(to right, #54579f 0%, #455bab 37%, #10054d 100%);
+  // --app-background-content: linear-gradient(to right, #54579F 0%,#8B41D2 50%, #6F32A9 85% , #10054D 100%);
+}
