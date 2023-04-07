@@ -6,6 +6,8 @@ import { AngularSvgIconModule } from 'angular-svg-icon'
 import { INavMenu } from '@app/shell/models/nav-menu.model'
 import { RouterModule } from '@angular/router'
 import { MatButtonModule } from '@angular/material/button'
+import { UiStore } from '@app/shared/data-access/store/ui.store'
+import { combineLatest } from 'rxjs'
 
 @Component({
   standalone: true,
@@ -18,5 +20,14 @@ import { MatButtonModule } from '@angular/material/button'
 export class HeaderComponent {
   @Input() options!: INavMenu[]
 
-  constructor() {}
+  vm$ = combineLatest({
+    isMobile: this.uiStore.isMobile$,
+    isSidebarCollapsed: this.uiStore.isSidebarCollapsed$
+  })
+
+  constructor(private uiStore: UiStore) {}
+
+  toggleSideNav() {
+    this.uiStore.toggleSidebar()
+  }
 }

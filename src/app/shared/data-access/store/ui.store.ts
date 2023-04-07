@@ -19,10 +19,12 @@ export class UiStore extends ComponentStore<UiState> {
   })
 
   constructor() {
-    super({ isSidebarCollapsed: true, isMobile: false })
+    super({ isSidebarCollapsed: false, isMobile: false })
   }
 
-  toggleSidebar = this.updater((state): UiState => ({ ...state, isSidebarCollapsed: !state.isSidebarCollapsed }))
+  readonly toggleSidebar = this.updater(
+    (state): UiState => ({ ...state, isSidebarCollapsed: !state.isSidebarCollapsed })
+  )
 
   observeIsMobile = this.effect((trigger$: Observable<BreakpointState>) => {
     return trigger$.pipe(tap(v => this.patchState({ isMobile: v.matches })))

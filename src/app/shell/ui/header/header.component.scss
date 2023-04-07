@@ -3,6 +3,9 @@
 .app-toolbar {
   background: var(--app-background-header);
   height: 103px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--app-color-light);
 }
 
 .navbar-spacer {
@@ -17,7 +20,7 @@
 }
 
 a {
-  color: var(--app-color-light);
+  color: inherit;
   line-height: 1;
   font-family: obvia;
   font-size: 20px;
@@ -64,5 +67,10 @@ a {
 @media screen and (min-width: $breakpoint-lg) {
   .nav-link-container {
     width: 35%;
+  }
+
+  .app-toolbar {
+    padding-inline-start: 63px;
+    padding-inline-end: 63px;
   }
 }
