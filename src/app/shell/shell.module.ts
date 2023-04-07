@@ -1,4 +1,4 @@
-import { APP_INITIALIZER, NgModule } from '@angular/core'
+import { APP_INITIALIZER, ErrorHandler, NgModule } from '@angular/core'
 import { CommonModule, DATE_PIPE_DEFAULT_OPTIONS } from '@angular/common'
 import { RouterModule } from '@angular/router'
 import { routes } from './shell.routes'
@@ -7,7 +7,7 @@ import { environment } from '@environments/environment'
 import { Store, StoreModule } from '@ngrx/store'
 import { EffectsModule } from '@ngrx/effects'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { HttpClientModule } from '@angular/common/http'
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http'
 import { rootReducers } from './config/root-reducers'
 import { rootEffects } from './config/root-effects'
 import { initializeAppFactory } from './config/initialize-app-factory'
@@ -17,6 +17,8 @@ import { API_URL } from '@app/shared/data-access/tokens/api-url.token'
 import { LayoutComponent } from './ui/layout/layout.component'
 import { CoreModule } from './core/core.module'
 import { AngularSvgIconModule } from 'angular-svg-icon'
+import { GlobalErrorHandler } from './core/error-handler/global-error-handler.service'
+import { HttpErrorInterceptor } from './core/http-interceptors/http-error.interceptor'
 
 @NgModule({
   declarations: [],
@@ -43,6 +45,8 @@ import { AngularSvgIconModule } from 'angular-svg-icon'
     LayoutComponent
   ],
   providers: [
+    { provide: ErrorHandler, useClass: GlobalErrorHandler },
+    { provide: HTTP_INTERCEPTORS, useClass: HttpErrorInterceptor, multi: true, deps: [GlobalErrorHandler] },
     { provide: APP_INITIALIZER, useFactory: initializeAppFactory, multi: true, deps: [AppConfigSerivce, Store] },
     { provide: DATE_PIPE_DEFAULT_OPTIONS, useValue: { timezone: '+0200' } }, // Time zone in Luxembourg (GMT+2)
     { provide: API_URL, useValue: environment.apiUrl }

@@ -9,7 +9,7 @@ export const routes: Route[] = [
     component: LayoutComponent,
     canActivate: [IsAuthenticated],
     children: [
-      { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
+      { path: '', pathMatch: 'full', redirectTo: 'home' },
       {
         path: 'home',
         title: 'landing-page',
