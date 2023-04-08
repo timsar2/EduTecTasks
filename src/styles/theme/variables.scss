@@ -98,8 +98,8 @@
   --app-color-light-rgb: 253, 253, 250;
   --app-color-light-contrast: #000000;
   --app-color-light-contrast-rgb: 0, 0, 0;
-  --app-color-light-shade: #dfdfdc;
-  --app-color-light-tint: #fdfdfb;
+  --app-color-light-shade: #f2f2f2;
+  --app-color-light-tint: #ffffff;
 
   /** light blue**/
   --app-color-light-blue: #7b8edb;
@@ -112,7 +112,7 @@
   --app-font-family: 'AppFont';
   // --app-backdrop-color: var(--app-color-primary) !important;
 
-  --app-background-header: linear-gradient(to right, #54579f 0%, #455bab 37%, #10054d 100%);
+  --app-background-primary: linear-gradient(to bottom right, #54579f 0%, #455bab 37%, #10054d 100%);
   // --app-background-content: linear-gradient(to right, #54579F 0%,#8B41D2 50%, #6F32A9 85% , #10054D 100%);
 }
 

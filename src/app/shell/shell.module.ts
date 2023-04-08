@@ -19,6 +19,7 @@ import { CoreModule } from './core/core.module'
 import { AngularSvgIconModule } from 'angular-svg-icon'
 import { GlobalErrorHandler } from './core/error-handler/global-error-handler.service'
 import { HttpErrorInterceptor } from './core/http-interceptors/http-error.interceptor'
+import { IconRegisteryService } from './config/icon-registery.service'
 
 @NgModule({
   declarations: [],
@@ -47,9 +48,13 @@ import { HttpErrorInterceptor } from './core/http-interceptors/http-error.interc
   providers: [
     { provide: ErrorHandler, useClass: GlobalErrorHandler },
     { provide: HTTP_INTERCEPTORS, useClass: HttpErrorInterceptor, multi: true, deps: [GlobalErrorHandler] },
-    { provide: APP_INITIALIZER, useFactory: initializeAppFactory, multi: true, deps: [AppConfigSerivce, Store] },
-    { provide: DATE_PIPE_DEFAULT_OPTIONS, useValue: { timezone: '+0200' } }, // Time zone in Luxembourg (GMT+2)
-    { provide: API_URL, useValue: environment.apiUrl }
+    {
+      provide: APP_INITIALIZER,
+      useFactory: initializeAppFactory,
+      multi: true,
+      deps: [AppConfigSerivce, Store, IconRegisteryService]
+    },
+    { provide: DATE_PIPE_DEFAULT_OPTIONS, useValue: { timezone: '+0200' } } // Time zone in Luxembourg (GMT+2)
   ],
   exports: [RouterModule]
 })

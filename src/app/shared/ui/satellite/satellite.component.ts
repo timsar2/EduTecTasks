@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common'
-import { Component, Input } from '@angular/core'
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core'
 import { AngularSvgIconModule } from 'angular-svg-icon'
 
 @Component({
@@ -7,7 +7,8 @@ import { AngularSvgIconModule } from 'angular-svg-icon'
   imports: [CommonModule, AngularSvgIconModule],
   selector: 'app-satellite',
   templateUrl: './satellite.component.html',
-  styleUrls: ['./satellite.component.scss']
+  styleUrls: ['./satellite.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SatelliteComponent {
   @Input() class = ''

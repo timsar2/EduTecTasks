@@ -1,0 +1,17 @@
+<mat-card class="edu-mat-card">
+  <div class="edu-mat-card-title">
+    <mat-icon [svgIcon]="iconName" *ngIf="iconName"></mat-icon>
+    <mat-card-title>{{ title }}</mat-card-title>
+  </div>
+
+  <mat-card-content>{{ content }}</mat-card-content>
+
+  <mat-card-footer class="col-xs-12 col-sm-6">
+    Read More
+    <mat-card-actions align="end">
+      <button mat-icon-button [routerLink]="link">
+        <mat-icon>arrow_forward</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card-footer>
+</mat-card>

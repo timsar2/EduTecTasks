@@ -7,6 +7,7 @@ import { AngularSvgIconModule } from 'angular-svg-icon'
 import { SatelliteComponent } from '@app/shared/ui/satellite/satellite.component'
 import { SectionTwoComponent } from '../../ui/section-two/section-two.component'
 import { SectionThreeComponent } from '../../ui/section-three/section-three.component'
+import { CardComponent } from '@app/shared/ui/card/card.component'
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { SectionThreeComponent } from '../../ui/section-three/section-three.comp
     AngularSvgIconModule,
 
     // standalone components
-    SatelliteComponent
+    SatelliteComponent,
+    CardComponent
   ],
   declarations: [LandingPageComponent, SectionOneComponent, SectionTwoComponent, SectionThreeComponent]
 })

@@ -1,0 +1,43 @@
+.edu-mat-card {
+  font-size: 18px;
+  padding: 79px 53px 75px 67px;
+  background: var(--app-background-primary);
+  color: var(--app-color-light-tint) !important;
+}
+
+.edu-mat-card-title {
+  height: 212px;
+  text-align: center;
+
+  mat-icon {
+    width: 87px;
+    height: 87px;
+    color: var(--app-color-light) !important;
+  }
+}
+
+mat-card-title {
+  font-family: AppFont;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+mat-card-content {
+  height: 137px;
+  margin-bottom: 27px;
+  font-family: AppFont;
+  padding: 0px;
+  color: var(--app-color-light-shade) !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+mat-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
