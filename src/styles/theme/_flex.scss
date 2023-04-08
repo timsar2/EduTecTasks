@@ -1,7 +1,16 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .text-center {
   text-align: center;
 }
 
 .align-items {
   align-items: center;
+}
+
+.max-width {
+  max-width: 100%;
 }
