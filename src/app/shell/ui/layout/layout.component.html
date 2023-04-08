@@ -1,9 +1,9 @@
 <main *ngIf="vm$ | async as vm">
-  <app-header [options]="vm.options"></app-header>
+  <app-header [options]="vm.options" [isMobile]="vm.isMobile" (onToggleMenu)="toggleSideNav()"></app-header>
 
   <mat-sidenav-container class="sidenav-container" (backdropClick)="toggleSideNav()">
-    <mat-sidenav mode="over" [opened]="vm.isSidebarCollapsed" *ngIf="vm.isMobile">
-      <app-sidebar></app-sidebar>
+    <mat-sidenav mode="over" [autoFocus]="false" [opened]="vm.isSidebarCollapsed" *ngIf="vm.isMobile">
+      <app-sidebar [options]="vm.options" (onToggleMenu)="toggleSideNav()"></app-sidebar>
     </mat-sidenav>
 
     <mat-sidenav-content>

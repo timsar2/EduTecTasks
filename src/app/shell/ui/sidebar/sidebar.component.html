@@ -1,1 +1,11 @@
-<div class="sidebar-container"></div>
+<div class="sidebar-container">
+  <a
+    mat-button
+    color="accent"
+    *ngFor="let option of options"
+    [routerLink]="[option.link]"
+    routerLinkActive="router-link-active"
+    (click)="toggleSideNav()"
+    >{{ option.name }}</a
+  >
+</div>

@@ -6,8 +6,6 @@ import { AngularSvgIconModule } from 'angular-svg-icon'
 import { INavMenu } from '@app/shell/models/nav-menu.model'
 import { RouterModule } from '@angular/router'
 import { MatButtonModule } from '@angular/material/button'
-import { UiStore } from '@app/shared/data-access/store/ui.store'
-import { combineLatest } from 'rxjs'
 
 @Component({
   standalone: true,
@@ -19,15 +17,10 @@ import { combineLatest } from 'rxjs'
 })
 export class HeaderComponent {
   @Input() options!: INavMenu[]
-
-  vm$ = combineLatest({
-    isMobile: this.uiStore.isMobile$,
-    isSidebarCollapsed: this.uiStore.isSidebarCollapsed$
-  })
-
-  constructor(private uiStore: UiStore) {}
+  @Input() isMobile!: boolean
+  @Output() onToggleMenu = new EventEmitter()
 
   toggleSideNav() {
-    this.uiStore.toggleSidebar()
+    this.onToggleMenu.emit()
   }
 }
