@@ -12,3 +12,38 @@ body {
   margin: 0;
   font-family: var(--app-font-family);
 }
+
+@import 'variables';
+
+.planet {
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .planet {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .planet {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .planet {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  .planet {
+    width: 450px;
+    height: 430px;
+  }
+}

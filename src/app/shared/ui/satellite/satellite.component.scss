@@ -1,0 +1,99 @@
+.satellite-container {
+  position: relative;
+}
+
+.satellite {
+  position: absolute;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  rotate: -40deg;
+  height: 8px;
+  width: 8px;
+  margin-top: 11px;
+  background-color: var(--app-color-secondary);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.leaser {
+  width: 112px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.leaser::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--app-color-secondary);
+}
+
+.leaser-side::before {
+  animation: leaser 2s linear infinite;
+}
+
+.leaser-mid::before {
+  animation: leaser-mid 1s linear infinite;
+}
+
+.left-signal {
+  transform-origin: top left;
+  rotate: -20deg;
+}
+
+.right-signal {
+  transform-origin: top left;
+  rotate: 20deg;
+}
+
+@keyframes leaser {
+  0% {
+    width: 0px;
+    left: 50%;
+  }
+
+  50%,
+  99% {
+    width: 112px;
+    left: 75%;
+  }
+
+  50%,
+  100% {
+    width: 0px;
+    left: 50%;
+  }
+}
+
+@keyframes leaser-mid {
+  0% {
+    width: 0px;
+    left: 50%;
+  }
+
+  99% {
+    width: 50px;
+    left: 99%;
+    opacity: 1;
+  }
+
+  100% {
+    left: 50%;
+    opacity: 0;
+  }
+
+  // 50%, 100% {
+  //   width: 112px;
+  //   left: 50%;
+  // }
+}

@@ -5,7 +5,9 @@
   margin-top: -5px;
   background-image: url('../../../../../assets/images/svgs/bg-dark-sky.svg');
   background-size: cover;
-  background-position-x: -18px;
+  display: flex;
+  align-items: flex-start;
+  color: var(--app-color-light);
 }
 
 .flex-container {
@@ -13,42 +15,62 @@
   flex-wrap: wrap;
 }
 
-.planet {
-  height: 150px;
+.planet-container {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.sat {
+  position: absolute;
+  right: 350px;
 }
 
 @media screen and (min-width: $breakpoint-sm) {
-  .planet {
-    height: 200px;
+  .top-section-container {
+    height: 600px;
+  }
+
+  .sat {
+    right: 425px;
   }
 }
 
 @media screen and (min-width: $breakpoint-md) {
-  .planet {
-    height: 250px;
+  .top-section-container {
+    height: 700px;
   }
 
-  .top-section-container {
-    height: 600px;
+  .sat {
+    bottom: 50px;
+    right: 500px;
   }
 }
 
 @media screen and (min-width: $breakpoint-lg) {
-  .planet {
-    height: 300px;
+  .top-section-container {
+    height: 998px;
   }
 
-  .top-section-container {
-    height: 700px;
+  .sat {
+    right: 620px;
+  }
+
+  h1 {
+    font-size: 47px !important;
+    margin-bottom: 35px !important;
+    line-height: 69px;
+  }
+
+  p {
+    font-size: 25px !important;
+    line-height: 47px !important;
   }
 }
 
 @media screen and (min-width: $breakpoint-xl) {
-  .planet {
-    height: 464px;
-  }
-
-  .top-section-container {
-    height: 998px;
+  .sat {
+    right: 900px;
   }
 }

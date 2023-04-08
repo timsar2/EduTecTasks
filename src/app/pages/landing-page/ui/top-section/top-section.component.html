@@ -1,6 +1,6 @@
 <div class="section-container top-section-container">
   <div class="flex-container">
-    <div class="col-7 col-s-12">
+    <div class="col-6 col-s-12">
       <h1>The first provider of space systems,applications and services in Luxembourg</h1>
 
       <p>
@@ -9,8 +9,16 @@
       </p>
     </div>
 
-    <div class="text-center col-5 col-s-12">
-      <svg-icon src="assets/images/svgs/planet.svg" [applyClass]="true" [class]="'planet'"></svg-icon>
+    <div class="text-center planet-container col-6 col-s-12">
+      <div><svg-icon src="assets/images/svgs/planet.svg" [applyClass]="true" [class]="'planet'"></svg-icon></div>
+      <div class="sat">
+        <app-satellite [class]="'planet'"></app-satellite>
+      </div>
     </div>
   </div>
+
+  <!--<div class="text-center col-5 col-s-12">
+    <svg-icon src="assets/images/svgs/planet.svg" [applyClass]="true" [class]="'planet'"></svg-icon>
+    <app-satellite></app-satellite>
+  </div>-->
 </div>
