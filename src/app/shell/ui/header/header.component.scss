@@ -52,12 +52,6 @@ a {
   height: 24px;
 }
 
-@media screen and (min-width: $breakpoint-sm) {
-  .nav-link-container {
-    width: 60%;
-  }
-}
-
 @media screen and (min-width: $breakpoint-md) {
   .nav-link-container {
     width: 45%;

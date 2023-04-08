@@ -1,0 +1,54 @@
+@import 'variables.scss';
+
+.top-section-container {
+  height: 500px;
+  margin-top: -5px;
+  background-image: url('../../../../../assets/images/svgs/bg-dark-sky.svg');
+  background-size: cover;
+  background-position-x: -18px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.planet {
+  height: 150px;
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .planet {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .planet {
+    height: 250px;
+  }
+
+  .top-section-container {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .planet {
+    height: 300px;
+  }
+
+  .top-section-container {
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  .planet {
+    height: 464px;
+  }
+
+  .top-section-container {
+    height: 998px;
+  }
+}

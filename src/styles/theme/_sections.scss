@@ -1,0 +1,26 @@
+.section-container {
+  padding-inline-start: 13px;
+  padding-inline-end: 13px;
+  padding-top: 74px;
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .section-container {
+    padding-inline-start: 63px;
+    padding-inline-end: 63px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .section-container {
+    padding-inline-start: 90px;
+    padding-inline-end: 90px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .section-container {
+    padding-inline-start: 180px;
+    padding-inline-end: 180px;
+  }
+}
