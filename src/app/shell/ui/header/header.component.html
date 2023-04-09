@@ -9,7 +9,7 @@
 
   <div class="nav-link-container" *ngIf="!isMobile">
     <ng-container *ngFor="let option of options">
-      <a [routerLink]="[option.link]">
+      <a [routerLink]="[option.link]" routerLinkActive="active-route">
         <span>{{ option.name }}</span>
         <span class="dot" routerLinkActive="active-route"></span>
       </a>

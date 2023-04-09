@@ -1,3 +1,32 @@
 @import 'sections';
 @import 'column';
-@import 'flex';
+@import 'atomic';
+@import 'text';
+
+.button-responsive {
+  height: auto !important;
+  border-radius: 52px !important;
+  font-family: AppFont !important;
+  padding: 7px 16px !important;
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .button-responsive {
+    font-size: 21px;
+    padding: 11px 25px !important;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .button-responsive {
+    font-size: 28px;
+    padding: 15px 32px !important;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  .button-responsive {
+    font-size: 36px;
+    padding: 20px 54px !important;
+  }
+}

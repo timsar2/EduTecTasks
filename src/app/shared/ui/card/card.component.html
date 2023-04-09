@@ -1,10 +1,12 @@
 <mat-card class="edu-mat-card">
-  <div class="edu-mat-card-title">
-    <mat-icon [svgIcon]="iconName" *ngIf="iconName"></mat-icon>
-    <mat-card-title>{{ title }}</mat-card-title>
-  </div>
+  <div>
+    <div class="edu-mat-card-title">
+      <mat-icon [svgIcon]="iconName" *ngIf="iconName"></mat-icon>
+      <mat-card-title class="three-dot">{{ title }}</mat-card-title>
+    </div>
 
-  <mat-card-content>{{ content }}</mat-card-content>
+    <mat-card-content class="three-dot">{{ content }}</mat-card-content>
+  </div>
 
   <mat-card-footer class="col-xs-12 col-sm-6">
     Read More

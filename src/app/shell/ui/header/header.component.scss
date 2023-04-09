@@ -31,6 +31,10 @@ a {
   &:hover {
     color: var(--app-color-secondary);
   }
+
+  &:focus {
+    color: inherit;
+  }
 }
 
 .dot {
@@ -45,7 +49,7 @@ a {
 
 .active-route {
   opacity: 1 !important;
-  color: var(--app-color-secondary);
+  font-weight: 700;
 }
 
 .icone-language {

@@ -8,6 +8,7 @@ import { SatelliteComponent } from '@app/shared/ui/satellite/satellite.component
 import { SectionTwoComponent } from '../../ui/section-two/section-two.component'
 import { SectionThreeComponent } from '../../ui/section-three/section-three.component'
 import { SlideShowComponent } from '@app/shared/ui/slide-show/slide-show.component'
+import { MatButtonModule } from '@angular/material/button'
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { SlideShowComponent } from '@app/shared/ui/slide-show/slide-show.compone
     RouterModule.forChild([{ path: '', component: LandingPageComponent }]),
 
     AngularSvgIconModule,
+    MatButtonModule,
 
     // standalone components
     SatelliteComponent,

@@ -10,6 +10,7 @@ import {
 import { register } from 'swiper/element/bundle'
 import { Swiper, SwiperOptions } from 'swiper/types'
 import { CardComponent } from '@app/shared/ui/card/card.component'
+import { ICard } from '@app/shared/modules/card.model'
 
 @Component({
   standalone: true,
@@ -24,7 +25,39 @@ export class SlideShowComponent implements OnInit {
   @ViewChild('swiperRef', { static: true })
   protected _swiperRef: ElementRef | undefined
   swiper?: Swiper
-  items: string[] = ['Test 1', 'Test 2', 'Test 3', 'Test 4', 'Test 5', 'Test 6', 'Test 7', 'Test 8', 'Test 9']
+  items: ICard[] = [
+    {
+      title: 'Components & Technology',
+      content: 'Communication subsystem Satellite Simulators Electronics & Software Drag Sails technologies',
+      icon: 'educhip',
+      link: 'about'
+    },
+    {
+      title: 'Microsatellites',
+      content: 'Modular and scalable Multi-Mission Launch mass: 20-100 kg Payload power: 15-100 W',
+      icon: 'eduball',
+      link: ''
+    },
+    {
+      title: 'Application & Services',
+      content:
+        'AIS (Naval Vessel Tracking) ADS-B (Aircraft Tracking) Earth Observation (Optical, SAR, Data Quality Control) Telecommunications (M2M)',
+      icon: 'edusnow',
+      link: ''
+    },
+    {
+      title: 'Components & Technology',
+      content: 'Communication subsystem Satellite Simulators Electronics & Software Drag Sails technologies',
+      icon: 'educhip',
+      link: 'about'
+    },
+    {
+      title: 'Microsatellites',
+      content: 'Modular and scalable Multi-Mission Launch mass: 20-100 kg Payload power: 15-100 W',
+      icon: 'eduball',
+      link: ''
+    }
+  ]
 
   constructor() {
     register()
@@ -34,19 +67,22 @@ export class SlideShowComponent implements OnInit {
     this._initSwiper()
   }
 
-  trackByFn = (index: number, item: any) => item
+  trackByFn = (index: number, item: ICard) => item
 
   private _initSwiper() {
     const options: SwiperOptions = {
       pagination: { clickable: true },
       centeredSlides: false,
-      slidesPerView: 'auto'
-      // breakpoints: {
-      //   400: {
-      //     slidesPerView: 'auto',
-      //     centeredSlides: false
-      //   }
-      // }
+      breakpoints: {
+        600: {
+          spaceBetween: 30,
+          slidesPerView: 2
+        },
+        1200: {
+          spaceBetween: 56,
+          slidesPerView: 3
+        }
+      }
     }
 
     const swiperEl = this._swiperRef?.nativeElement
