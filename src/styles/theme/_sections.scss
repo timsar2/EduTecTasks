@@ -2,6 +2,7 @@
   padding-inline-start: 30px;
   padding-inline-end: 27px;
   padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 @media screen and (min-width: $breakpoint-sm) {
@@ -9,6 +10,7 @@
     padding-inline-start: 63px;
     padding-inline-end: 63px;
     padding-top: 34px;
+    padding-bottom: 34px;
   }
 }
 
@@ -17,6 +19,7 @@
     padding-inline-start: 90px;
     padding-inline-end: 90px;
     padding-top: 54px;
+    padding-bottom: 54px;
   }
 }
 
@@ -25,5 +28,6 @@
     padding-inline-start: 180px;
     padding-inline-end: 180px;
     padding-top: 74px;
+    padding-bottom: 74px;
   }
 }
