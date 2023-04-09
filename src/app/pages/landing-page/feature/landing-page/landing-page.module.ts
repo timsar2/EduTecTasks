@@ -10,6 +10,7 @@ import { SectionThreeComponent } from '../../ui/section-three/section-three.comp
 import { SlideShowComponent } from '@app/shared/ui/slide-show/slide-show.component'
 import { MatButtonModule } from '@angular/material/button'
 import { ContentHolderComponent } from '@app/shared/ui/content-holder/content-holder.component'
+import { SectionDividerComponent } from '@app/shared/ui/section-divider/section-divider.component'
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { ContentHolderComponent } from '@app/shared/ui/content-holder/content-ho
     // standalone components
     SatelliteComponent,
     SlideShowComponent,
-    ContentHolderComponent
+    ContentHolderComponent,
+    SectionDividerComponent
   ],
   declarations: [LandingPageComponent, SectionOneComponent, SectionTwoComponent, SectionThreeComponent]
 })
