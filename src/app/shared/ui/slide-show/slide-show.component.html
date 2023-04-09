@@ -1,11 +1,11 @@
 <swiper-container #swiperRef init="false">
-  <swiper-slide *ngFor="let item of items; trackBy: trackByFn">
-    <div class="slide-content">
-      <div class="slide-content-slider">
-        <app-card [content]="item" class="col-xs-12 col-4"></app-card>
-        <app-card [content]="item" class="col-xs-12 col-4"></app-card>
-        <app-card [content]="item" class="col-xs-12 col-4"></app-card>
-      </div>
-    </div>
+  <swiper-slide class="col-xs-12 col-sm-4 col-3" *ngFor="let item of items; trackBy: trackByFn">
+    <!-- <div class="slide-content">
+      <div class="slide-content-slider"> -->
+    <app-card [content]="item"></app-card>
+    <!-- <app-card [content]="item" class="col-xs-12 col-4"></app-card> -->
+    <!-- <app-card [content]="item" class="col-xs-12 col-4"></app-card> -->
+    <!-- </div>
+    </div> -->
   </swiper-slide>
 </swiper-container>

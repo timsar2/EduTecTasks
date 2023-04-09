@@ -39,14 +39,14 @@ export class SlideShowComponent implements OnInit {
   private _initSwiper() {
     const options: SwiperOptions = {
       pagination: { clickable: true },
-      slidesPerView: 1,
-      breakpoints: {
-        400: {
-          slidesPerView: 'auto',
-          centeredSlides: false
-        }
-      }
-      // breakpoints: this._getBreakpoints(), // In case you wish to calculate base on the `items` length
+      centeredSlides: false,
+      slidesPerView: 'auto'
+      // breakpoints: {
+      //   400: {
+      //     slidesPerView: 'auto',
+      //     centeredSlides: false
+      //   }
+      // }
     }
 
     const swiperEl = this._swiperRef?.nativeElement

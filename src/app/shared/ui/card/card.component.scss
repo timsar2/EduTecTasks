@@ -1,4 +1,8 @@
+:host {
+  display: flex;
+}
 .edu-mat-card {
+  flex: 1;
   font-size: 18px;
   padding: 79px 53px 75px 67px;
   background: var(--app-background-primary);
