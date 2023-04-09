@@ -13,15 +13,19 @@ interface Icon {
 export class IconRegisteryService {
   private icons: Icon[] = [
     {
-      name: 'edusnow',
+      name: 'edu-astronut',
+      url: '../../../assets/images/svgs/astronut.svg'
+    },
+    {
+      name: 'edu-snow',
       url: '../../../assets/images/svgs/snow.svg'
     },
     {
-      name: 'eduball',
+      name: 'edu-ball',
       url: '../../../assets/images/svgs/eduball.svg'
     },
     {
-      name: 'educhip',
+      name: 'edu-chip',
       url: '../../../assets/images/svgs/educhip.svg'
     }
   ]

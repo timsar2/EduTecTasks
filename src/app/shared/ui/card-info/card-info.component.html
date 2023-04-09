@@ -1,3 +1,7 @@
 <div class="card-info-container">
-  <app-label-info [label]="'asad'"></app-label-info>
+  <mat-icon [svgIcon]="icon" *ngIf="icon" class="card-info-icon">{{ icon }}</mat-icon>
+
+  <p *ngIf="title" class="card-info-title">{{ title }}</p>
+
+  <app-label-info *ngFor="let info of infoList" [data]="info"></app-label-info>
 </div>

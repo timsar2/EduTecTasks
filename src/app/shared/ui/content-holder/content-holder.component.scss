@@ -1,7 +1,16 @@
+@import 'variables';
+
 .content-loader-title {
   margin-bottom: 25px;
 }
 
 h3 {
   color: var(--app-color-light-blue);
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  p {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
 }

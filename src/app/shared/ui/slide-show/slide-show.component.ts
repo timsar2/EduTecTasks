@@ -29,32 +29,32 @@ export class SlideShowComponent implements OnInit {
     {
       title: 'Components & Technology',
       content: 'Communication subsystem Satellite Simulators Electronics & Software Drag Sails technologies',
-      icon: 'educhip',
+      icon: 'edu-chip',
       link: 'about'
     },
     {
       title: 'Microsatellites',
       content: 'Modular and scalable Multi-Mission Launch mass: 20-100 kg Payload power: 15-100 W',
-      icon: 'eduball',
+      icon: 'edu-ball',
       link: ''
     },
     {
       title: 'Application & Services',
       content:
         'AIS (Naval Vessel Tracking) ADS-B (Aircraft Tracking) Earth Observation (Optical, SAR, Data Quality Control) Telecommunications (M2M)',
-      icon: 'edusnow',
+      icon: 'edu-snow',
       link: ''
     },
     {
       title: 'Components & Technology',
       content: 'Communication subsystem Satellite Simulators Electronics & Software Drag Sails technologies',
-      icon: 'educhip',
+      icon: 'edu-chip',
       link: 'about'
     },
     {
       title: 'Microsatellites',
       content: 'Modular and scalable Multi-Mission Launch mass: 20-100 kg Payload power: 15-100 W',
-      icon: 'eduball',
+      icon: 'edu-ball',
       link: ''
     }
   ]
