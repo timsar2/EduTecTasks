@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import 'variables';
 @import 'material';
 @import 'base';
 @import 'component';
@@ -13,11 +13,9 @@ body {
   font-family: var(--app-font-family);
 }
 
-@import 'variables';
-
 .planet {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (min-width: $breakpoint-sm) {
