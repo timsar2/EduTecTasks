@@ -39,6 +39,10 @@ p {
 }
 
 @media screen and (min-width: $breakpoint-md) {
+  h1 {
+    margin-bottom: 35px !important;
+  }
+
   .section-one-container {
     height: 700px;
   }
@@ -56,12 +60,6 @@ p {
 
   .sat {
     right: 620px;
-  }
-
-  h1 {
-    font-size: 47px !important;
-    margin-bottom: 35px !important;
-    line-height: 69px;
   }
 
   p {

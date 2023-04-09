@@ -9,6 +9,7 @@ import { SectionTwoComponent } from '../../ui/section-two/section-two.component'
 import { SectionThreeComponent } from '../../ui/section-three/section-three.component'
 import { SlideShowComponent } from '@app/shared/ui/slide-show/slide-show.component'
 import { MatButtonModule } from '@angular/material/button'
+import { ContentHolderComponent } from '@app/shared/ui/content-holder/content-holder.component'
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { MatButtonModule } from '@angular/material/button'
 
     // standalone components
     SatelliteComponent,
-    SlideShowComponent
+    SlideShowComponent,
+    ContentHolderComponent
   ],
   declarations: [LandingPageComponent, SectionOneComponent, SectionTwoComponent, SectionThreeComponent]
 })

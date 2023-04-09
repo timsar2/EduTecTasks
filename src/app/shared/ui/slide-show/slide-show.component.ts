@@ -10,7 +10,7 @@ import {
 import { register } from 'swiper/element/bundle'
 import { Swiper, SwiperOptions } from 'swiper/types'
 import { CardComponent } from '@app/shared/ui/card/card.component'
-import { ICard } from '@app/shared/modules/card.model'
+import { ICard } from '@app/shared/data-access/models/card.model'
 
 @Component({
   standalone: true,

@@ -1,4 +1,4 @@
-<swiper-container #swiperRef init="false">
+<swiper-container #swiperRef init="false" class="swiper-container">
   <swiper-slide *ngFor="let item of items; trackBy: trackByFn">
     <app-card [title]="item.title" [content]="item.content" [iconName]="item.icon" [link]="item.link"></app-card>
   </swiper-slide>

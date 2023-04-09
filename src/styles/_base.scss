@@ -2,9 +2,15 @@ a {
   text-decoration: none !important;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 800 !important;
+  line-height: 32px !important;
+}
+
 h1 {
   font-family: obvia-expanded !important;
-  line-height: 32px;
 }
 
 h2 {
@@ -15,7 +21,6 @@ h2 {
 
 h3 {
   font-family: obvia-expanded !important;
-  line-height: 26px;
   color: var(--app-color-light-blue);
 }
 
@@ -27,19 +32,39 @@ p {
 
 @media screen and (min-width: $breakpoint-md) {
   h1 {
-    font-size: 47px !important;
-    margin-bottom: 35px !important;
-    line-height: 47px;
+    font-size: 32px !important;
+    line-height: 48px !important;
   }
 
   h2 {
-    font-size: 45px !important;
-    margin-bottom: 24px !important;
-    line-height: 26px;
+    font-size: 28px !important;
+    line-height: 32px !important;
+  }
+
+  h3 {
+    font-size: 26px !important;
+    line-height: 28px;
   }
 
   p {
     font-size: 18px !important;
     line-height: 26px !important;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  h1 {
+    font-size: 47px !important;
+    line-height: 70px;
+  }
+
+  h2 {
+    font-size: 45px !important;
+    line-height: 70px;
+  }
+
+  h3 {
+    font-size: 38px !important;
+    line-height: 51px;
   }
 }

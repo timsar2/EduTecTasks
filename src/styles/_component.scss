@@ -1,11 +1,12 @@
 @import 'sections';
-@import 'column';
+@import 'cell-size';
 @import 'atomic';
 @import 'text';
 
 .button-responsive {
   height: auto !important;
   border-radius: 52px !important;
+  line-height: 36px !important;
   font-family: AppFont !important;
   padding: 7px 16px !important;
 }
@@ -28,5 +29,6 @@
   .button-responsive {
     font-size: 36px;
     padding: 20px 54px !important;
+    line-height: 50px;
   }
 }
