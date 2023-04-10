@@ -1,0 +1,126 @@
+@font-face {
+  font-family: AppFont;
+  src: url('https://use.typekit.net/af/f2b266/00000000000000007735fdb4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'obvia';
+  src: url('https://use.typekit.net/af/44fcac/00000000000000007735bd18/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'obvia-expanded';
+  src: url('https://use.typekit.net/af/2a0b2a/00000000000000007735bd08/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/2a0b2a/00000000000000007735bd08/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/2a0b2a/00000000000000007735bd08/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('opentype');
+
+  font-display: auto;
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+}
+
+:root {
+  /** primary **/
+  --ion-color-primary: #007aff;
+  --ion-color-primary-rgb: 0, 122, 255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #006be0;
+  --ion-color-primary-tint: #1a87ff;
+
+  /** secondary **/
+  --ion-color-secondary: #66adfc;
+  --ion-color-secondary-rgb: 102, 173, 252;
+  --ion-color-secondary-contrast: #000000;
+  --ion-color-secondary-contrast-rgb: 0, 0, 0;
+  --ion-color-secondary-shade: #5a98de;
+  --ion-color-secondary-tint: #75b5fc;
+
+  /** success **/
+  --app-color-success: #10dc60;
+  --app-color-success-rgb: 16, 220, 96;
+  --app-color-success-contrast: #ffffff;
+  --app-color-success-contrast-rgb: 255, 255, 255;
+  --app-color-success-shade: #0ec254;
+  --app-color-success-tint: #28e070;
+
+  //** steam **/
+  --ion-color-steam: #c72442;
+  --ion-color-steam-rgb: 240, 245, 250;
+  --ion-color-steam-contrast: #000000;
+  --ion-color-steam-contrast-rgb: 0, 0, 0;
+  --ion-color-steam-shade: #d3d8dc;
+  --ion-color-steam-tint: #f2f6fb;
+
+  /** warning **/
+  --app-color-warning: #ffce00;
+  --app-color-warning-rgb: 255, 206, 0;
+  --app-color-warning-contrast: #ffffff;
+  --app-color-warning-contrast-rgb: 255, 255, 255;
+  --app-color-warning-shade: #e0b500;
+  --app-color-warning-tint: #ffd31a;
+
+  /** danger **/
+  --app-color-danger: #f04141;
+  --app-color-danger-rgb: 245, 61, 61;
+  --app-color-danger-contrast: #ffffff;
+  --app-color-danger-contrast-rgb: 255, 255, 255;
+  --app-color-danger-shade: #d33939;
+  --app-color-danger-tint: #f25454;
+
+  /** dark **/
+  --app-color-dark: #222428;
+  --app-color-dark-rgb: 34, 34, 34;
+  --app-color-dark-contrast: #ffffff;
+  --app-color-dark-contrast-rgb: 255, 255, 255;
+  --app-color-dark-shade: #1e2023;
+  --app-color-dark-tint: #383a3e;
+
+  /** light blue**/
+  --app-color-light-blue: #7b8edb;
+  --app-color-light-blue-rgb: 123, 142, 219;
+  --app-color-light-blue-contrast: #000000;
+  --app-color-light-blue-contrast-rgb: 0, 0, 0;
+  --app-color-light-blue-shade: #6c7dc1;
+  --app-color-light-blue-tint: #8899df;
+
+  /** medium **/
+  --app-color-medium: #8a8a8a;
+  --app-color-medium-rgb: 138, 138, 138;
+  --app-color-medium-contrast: #000000;
+  --app-color-medium-contrast-rgb: 0, 0, 0;
+  --app-color-medium-shade: #797979;
+  --app-color-medium-tint: #969696;
+
+  /** light **/
+  --ion-color-light: #f8faff;
+  --ion-color-light-rgb: 248, 250, 255;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #dadce0;
+  --ion-color-light-tint: #f9fbff;
+
+  /** light blue**/
+  --app-color-light-blue: #7b8edb;
+  --app-color-light-blue-rgb: 123, 142, 219;
+  --app-color-light-blue-contrast: #000000;
+  --app-color-light-blue-contrast-rgb: 0, 0, 0;
+  --app-color-light-blue-shade: #6c7dc1;
+  --app-color-light-blue-tint: #8899df;
+
+  --app-font-family: 'AppFont';
+}
+
+$breakpoint-xs: 0px;
+$breakpoint-sm: 600px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1920px;
