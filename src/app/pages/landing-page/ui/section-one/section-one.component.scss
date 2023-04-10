@@ -1,18 +1,27 @@
 @import 'variables.scss';
 
 .section-one-container {
-  height: 600px;
+  height: 510px;
   background-image: url('~src/assets/images/svgs/bg-dark-sky.svg');
   background-size: cover;
   background-position-x: -18px;
   align-items: flex-start;
 }
 
+.section-one-ccontent {
+  flex: 1;
+}
+
 .section-one-action-btn {
   margin-top: 20px;
 }
 
+.flex-container {
+  justify-content: end;
+}
+
 .planet-container {
+  max-width: min-content;
   position: relative;
   display: flex;
   justify-content: end;
@@ -30,10 +39,6 @@ p {
 }
 
 @media screen and (min-width: $breakpoint-sm) {
-  .section-one-container {
-    height: 650px;
-  }
-
   .sat {
     right: 425px;
   }
@@ -53,10 +58,6 @@ p {
     line-height: 26px !important;
   }
 
-  .section-one-container {
-    height: 700px;
-  }
-
   .sat {
     bottom: 50px;
     right: 500px;
@@ -65,7 +66,7 @@ p {
 
 @media screen and (min-width: $breakpoint-lg) {
   .section-one-container {
-    height: 998px;
+    height: 933px;
   }
 
   .sat {
