@@ -6,6 +6,7 @@ import { AngularSvgIconModule } from 'angular-svg-icon'
 import { INavMenu } from '@app/shell/models/nav-menu.model'
 import { RouterModule } from '@angular/router'
 import { MatButtonModule } from '@angular/material/button'
+import { ScrollService } from '@app/shared/data-access/services/Scroll.service'
 
 @Component({
   standalone: true,
@@ -19,6 +20,12 @@ export class HeaderComponent {
   @Input() options!: INavMenu[]
   @Input() isMobile!: boolean
   @Output() onToggleMenu = new EventEmitter()
+
+  constructor(private scrollService: ScrollService) {}
+
+  scrollTo(id: string) {
+    this.scrollService.scrollToElementById(id)
+  }
 
   toggleSideNav() {
     this.onToggleMenu.emit()

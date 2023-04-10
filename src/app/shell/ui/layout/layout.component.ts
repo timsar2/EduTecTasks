@@ -20,19 +20,19 @@ export class LayoutComponent {
   private options: INavMenu[] = [
     {
       name: 'Home',
-      link: '/home'
+      link: 'home'
     },
     {
       name: 'About Us',
-      link: '/about'
+      link: 'about'
     },
     {
       name: 'Resources',
-      link: '/resources'
+      link: 'resources'
     },
     {
       name: 'Contact',
-      link: '/contact'
+      link: 'contact'
     }
   ]
 

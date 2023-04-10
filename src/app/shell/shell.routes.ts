@@ -2,6 +2,7 @@ import { Route } from '@angular/router'
 import { IsAuthenticated } from '../auth/data-access/guards/is-authenticated.guard'
 import { IsNotAuthenticated } from '../auth/data-access/guards/is-not-authenticated.guard'
 import { LayoutComponent } from './ui/layout/layout.component'
+import { HomeResolver } from '@app/pages/landing-page/data-access/resolvers/home.resolver'
 
 export const routes: Route[] = [
   {
@@ -14,6 +15,7 @@ export const routes: Route[] = [
         path: 'home',
         title: 'landing-page',
         data: { breadcrumb: 'home' },
+        resolve: { info: HomeResolver },
         loadChildren: () =>
           import('../pages/landing-page/feature/landing-page/landing-page.module').then(m => m.LandingPageModule)
       },
@@ -21,7 +23,22 @@ export const routes: Route[] = [
         path: 'about',
         title: 'about',
         data: { breadcrumb: 'about' },
-        loadChildren: () => import('../pages/about/feature/about/about.module').then(m => m.AboutModule)
+        loadChildren: () =>
+          import('../pages/landing-page/feature/landing-page/landing-page.module').then(m => m.LandingPageModule)
+      },
+      {
+        path: 'resources',
+        title: 'Resources',
+        data: { breadcrumb: 'resources' },
+        loadChildren: () =>
+          import('../pages/landing-page/feature/landing-page/landing-page.module').then(m => m.LandingPageModule)
+      },
+      {
+        path: 'contact',
+        title: 'Contact',
+        data: { breadcrumb: 'contact' },
+        loadChildren: () =>
+          import('../pages/landing-page/feature/landing-page/landing-page.module').then(m => m.LandingPageModule)
       }
     ]
   },

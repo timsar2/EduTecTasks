@@ -14,7 +14,6 @@ export class UiStore extends ComponentStore<UiState> {
   private _isSidebarCollapsed$ = this.select(state => state.isSidebarCollapsed)
 
   isSidebarCollapsed$ = this.select(this.isMobile$, this._isSidebarCollapsed$, (isMobile, isSidebarCollapsed) => {
-    // return isMobile ? false : isSidebarCollapsed;
     return isSidebarCollapsed
   })
 
