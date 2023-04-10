@@ -1,0 +1,19 @@
+.action-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 15px 9px 13px;
+}
+
+.icon-wraper {
+  display: flex;
+  margin-inline-start: 17px;
+}
+
+h2 {
+  flex: 1;
+}
+
+mat-icon {
+  font-size: 1.3rem !important;
+}

@@ -29,20 +29,20 @@
 
 :root {
   /** primary **/
-  --ion-color-primary: #007aff;
-  --ion-color-primary-rgb: 0, 122, 255;
-  --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #006be0;
-  --ion-color-primary-tint: #1a87ff;
+  --app-color-primary: #007aff;
+  --app-color-primary-rgb: 0, 122, 255;
+  --app-color-primary-contrast: #ffffff;
+  --app-color-primary-contrast-rgb: 255, 255, 255;
+  --app-color-primary-shade: #006be0;
+  --app-color-primary-tint: #1a87ff;
 
   /** secondary **/
-  --ion-color-secondary: #66adfc;
-  --ion-color-secondary-rgb: 102, 173, 252;
-  --ion-color-secondary-contrast: #000000;
-  --ion-color-secondary-contrast-rgb: 0, 0, 0;
-  --ion-color-secondary-shade: #5a98de;
-  --ion-color-secondary-tint: #75b5fc;
+  --app-color-secondary: #66adfc;
+  --app-color-secondary-rgb: 102, 173, 252;
+  --app-color-secondary-contrast: #000000;
+  --app-color-secondary-contrast-rgb: 0, 0, 0;
+  --app-color-secondary-shade: #5a98de;
+  --app-color-secondary-tint: #75b5fc;
 
   /** success **/
   --app-color-success: #10dc60;
@@ -53,12 +53,12 @@
   --app-color-success-tint: #28e070;
 
   //** steam **/
-  --ion-color-steam: #c72442;
-  --ion-color-steam-rgb: 240, 245, 250;
-  --ion-color-steam-contrast: #000000;
-  --ion-color-steam-contrast-rgb: 0, 0, 0;
-  --ion-color-steam-shade: #d3d8dc;
-  --ion-color-steam-tint: #f2f6fb;
+  --app-color-steam: #f0f5fa;
+  --app-color-steam-rgb: 240, 245, 250;
+  --app-color-steam-contrast: #000000;
+  --app-color-steam-contrast-rgb: 0, 0, 0;
+  --app-color-steam-shade: #d3d8dc;
+  --app-color-steam-tint: #f2f6fb;
 
   /** warning **/
   --app-color-warning: #ffce00;
@@ -101,12 +101,12 @@
   --app-color-medium-tint: #969696;
 
   /** light **/
-  --ion-color-light: #f8faff;
-  --ion-color-light-rgb: 248, 250, 255;
-  --ion-color-light-contrast: #000000;
-  --ion-color-light-contrast-rgb: 0, 0, 0;
-  --ion-color-light-shade: #dadce0;
-  --ion-color-light-tint: #f9fbff;
+  --app-color-light: #f8faff;
+  --app-color-light-rgb: 248, 250, 255;
+  --app-color-light-contrast: #000000;
+  --app-color-light-contrast-rgb: 0, 0, 0;
+  --app-color-light-shade: #dadce0;
+  --app-color-light-tint: #f9fbff;
 
   /** light blue**/
   --app-color-light-blue: #7b8edb;

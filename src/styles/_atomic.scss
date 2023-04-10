@@ -1,11 +1,29 @@
-.flex {
-  display: flex;
+/** app-color select by css name **/
+
+.primary {
+  color: var(--app-color-primary) !important;
 }
 
-.flex-col {
-  flex-direction: column;
+.secondary {
+  color: var(--app-color-secondary);
 }
 
-.justify-between {
-  justify-content: space-between;
+.light {
+  color: var(--app-color-light);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-grab {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  &:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+  }
 }

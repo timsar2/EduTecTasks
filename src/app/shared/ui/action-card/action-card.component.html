@@ -1,0 +1,14 @@
+<div [class.cursor-grab]="dragable" class="action-card-container card-shadow flex justify-between content-center">
+  <h2>{{ label }}</h2>
+
+  <ng-container *ngFor="let item of actions">
+    <div
+      *ngIf="item.icon"
+      (click)="emitAction(item?.action)"
+      [hoverClass]="item.iconColor"
+      class="icon-wraper cursor-pointer"
+    >
+      <mat-icon inline="true">{{ item.icon }}</mat-icon>
+    </div>
+  </ng-container>
+</div>
