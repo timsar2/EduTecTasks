@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common'
+import { ContentChild, Input, TemplateRef } from '@angular/core'
 import {
   CUSTOM_ELEMENTS_SCHEMA,
   ChangeDetectionStrategy,
@@ -22,42 +23,14 @@ import { ICard } from '@app/shared/data-access/models/card.model'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SlideShowComponent implements OnInit {
+  @ContentChild(TemplateRef) template!: TemplateRef<any>
+
   @ViewChild('swiperRef', { static: true })
   protected _swiperRef: ElementRef | undefined
-  swiper?: Swiper
-  items: ICard[] = [
-    {
-      title: 'Components & Technology',
-      content: 'Communication subsystem Satellite Simulators Electronics & Software Drag Sails technologies',
-      icon: 'edu-chip',
-      link: 'about'
-    },
-    {
-      title: 'Microsatellites',
-      content: 'Modular and scalable Multi-Mission Launch mass: 20-100 kg Payload power: 15-100 W',
-      icon: 'edu-ball',
-      link: ''
-    },
-    {
-      title: 'Application & Services',
-      content:
-        'AIS (Naval Vessel Tracking) ADS-B (Aircraft Tracking) Earth Observation (Optical, SAR, Data Quality Control) Telecommunications (M2M)',
-      icon: 'edu-snow',
-      link: ''
-    },
-    {
-      title: 'Components & Technology',
-      content: 'Communication subsystem Satellite Simulators Electronics & Software Drag Sails technologies',
-      icon: 'edu-chip',
-      link: 'about'
-    },
-    {
-      title: 'Microsatellites',
-      content: 'Modular and scalable Multi-Mission Launch mass: 20-100 kg Payload power: 15-100 W',
-      icon: 'edu-ball',
-      link: ''
-    }
-  ]
+
+  @Input() items!: ICard[]
+
+  private swiper?: Swiper
 
   constructor() {
     register()
@@ -67,7 +40,7 @@ export class SlideShowComponent implements OnInit {
     this._initSwiper()
   }
 
-  trackByFn = (index: number, item: ICard) => item
+  trackByFn = (index: number, item: unknown) => item
 
   private _initSwiper() {
     const options: SwiperOptions = {
@@ -90,14 +63,13 @@ export class SlideShowComponent implements OnInit {
 
     swiperEl.initialize()
 
-    if (this.swiper) this.swiper.currentBreakpoint = false // Breakpoint fixes
+    if (this.swiper) this.swiper.currentBreakpoint = false
     this.swiper = this._swiperRef?.nativeElement.swiper
 
-    this.swiper?.off('slideChange') // Avoid multiple subscription, in case you wish to call the `_initSwiper()` multiple time
+    this.swiper?.off('slideChange')
 
     this.swiper?.on('slideChange', () => {
-      // Any change subscription you wish
-      // this.infinitLoad?.triggerOnScroll()
+      // Any change
     })
   }
 }

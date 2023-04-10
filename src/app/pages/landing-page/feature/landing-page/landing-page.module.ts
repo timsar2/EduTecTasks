@@ -13,6 +13,7 @@ import { SectionTwoComponent } from '../../ui/section-two/section-two.component'
 import { SectionThreeComponent } from '../../ui/section-three/section-three.component'
 import { SectionFooterComponent } from '../../ui/section-footer/section-footer.component'
 import { CardInfoComponent } from '@app/shared/ui/card-info/card-info.component'
+import { CardComponent } from '@app/shared/ui/card/card.component'
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { CardInfoComponent } from '@app/shared/ui/card-info/card-info.component'
     SlideShowComponent,
     ContentHolderComponent,
     SectionDividerComponent,
-    CardInfoComponent
+    CardInfoComponent,
+    CardComponent
   ],
   declarations: [
     LandingPageComponent,
