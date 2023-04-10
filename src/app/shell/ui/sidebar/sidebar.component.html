@@ -5,7 +5,7 @@
     *ngFor="let option of options"
     [routerLink]="[option.link]"
     routerLinkActive="router-link-active"
-    (click)="toggleSideNav()"
+    (click)="scrollTo(option.link)"
     >{{ option.name }}</a
   >
 </div>
