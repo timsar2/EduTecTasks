@@ -1,9 +1,7 @@
 @import 'variables';
 
 .card-info-container {
-  height: 400px;
   color: var(--app-color-light-tint);
-  background: var(--app-background-primary);
 }
 
 .card-info-icon {
@@ -22,7 +20,7 @@ mat-icon {
 }
 
 p {
-  font-size: 24px;
+  font-size: 24px !important;
   font-weight: bold;
   line-height: 35px !important;
   color: var(--app-color-light-tint);

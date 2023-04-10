@@ -1,0 +1,21 @@
+.section-footer {
+  background: var(--app-background-primary);
+}
+
+.section-container {
+  padding-top: 99px;
+  padding-bottom: 29px;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.section-footer-item {
+  max-width: 300px;
+  display: flex;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 28px;
+  color: var(--app-color-light-tint) !important;
+}

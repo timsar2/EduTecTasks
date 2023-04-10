@@ -13,7 +13,7 @@ import { ILabelInfo } from '@app/shared/data-access/models/label-info.model'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardInfoComponent {
-  @Input() icon?: string = 'edu-astronut'
+  @Input() icon?: string
   @Input() title?: string
   @Input() infoList?: ILabelInfo[] = []
 

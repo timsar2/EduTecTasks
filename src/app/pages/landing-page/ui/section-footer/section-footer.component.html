@@ -1,1 +1,15 @@
-<app-card-info></app-card-info>
+<div class="section-footer">
+  <div class="section-container flex-container">
+    <app-card-info
+      *ngFor="let item of data"
+      [icon]="item.icon"
+      [title]="item.title"
+      [infoList]="item.infoList"
+      class="section-footer-item"
+    ></app-card-info>
+
+    <div class="text-center">
+      <p>Impressum © Copyright 2022 by edutec.lu. All rights reserved. Terms of use</p>
+    </div>
+  </div>
+</div>
