@@ -65,11 +65,5 @@ export class SlideShowComponent implements OnInit {
 
     if (this.swiper) this.swiper.currentBreakpoint = false
     this.swiper = this._swiperRef?.nativeElement.swiper
-
-    this.swiper?.off('slideChange')
-
-    this.swiper?.on('slideChange', () => {
-      // Any change
-    })
   }
 }
