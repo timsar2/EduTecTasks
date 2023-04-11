@@ -46,7 +46,7 @@ export class LayoutComponent {
 
   constructor(private uiStore: UiStore) {}
 
-  protected toggleSideNav() {
+  protected toggleSideNav(): void {
     this.uiStore.toggleSidebar()
   }
 }

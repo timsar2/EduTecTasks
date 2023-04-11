@@ -27,7 +27,7 @@ export class SidebarComponent {
     })
   }
 
-  private toggleSideNav() {
+  private toggleSideNav(): void {
     this.onToggleMenu.emit()
   }
 }

@@ -27,7 +27,7 @@ export class HeaderComponent {
     this.scrollService.scrollToElementById(id)
   }
 
-  protected toggleSideNav() {
+  protected toggleSideNav(): void {
     this.onToggleMenu.emit()
   }
 }

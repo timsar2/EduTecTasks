@@ -13,7 +13,7 @@ export class SectionOneComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute) {}
 
-  public ngOnInit() {
+  public ngOnInit(): void {
     this.activatedRoute.data.subscribe(({ advertise }) => {
       this.advertise = advertise
     })

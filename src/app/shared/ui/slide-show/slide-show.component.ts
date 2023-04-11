@@ -36,13 +36,13 @@ export class SlideShowComponent implements OnInit {
     register()
   }
 
-  public ngOnInit() {
+  public ngOnInit(): void {
     this._initSwiper()
   }
 
   protected trackByFn = (index: number, item: unknown) => item
 
-  private _initSwiper() {
+  private _initSwiper(): void {
     const options: SwiperOptions = {
       pagination: { clickable: true },
       centeredSlides: false,
