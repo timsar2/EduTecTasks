@@ -2,7 +2,7 @@ import { Route } from '@angular/router'
 import { IsAuthenticated } from '../auth/data-access/guards/is-authenticated.guard'
 import { IsNotAuthenticated } from '../auth/data-access/guards/is-not-authenticated.guard'
 import { LayoutComponent } from './ui/layout/layout.component'
-import { HomeResolver } from '@app/pages/landing-page/data-access/resolvers/home.resolver'
+import { homeResolver } from '@app/pages/landing-page/data-access/resolvers/home.resolver'
 
 export const routes: Route[] = [
   {
@@ -15,7 +15,7 @@ export const routes: Route[] = [
         path: 'home',
         title: 'landing-page',
         data: { breadcrumb: 'home' },
-        resolve: { info: HomeResolver },
+        resolve: { advertise: homeResolver },
         loadChildren: () =>
           import('../pages/landing-page/feature/landing-page/landing-page.module').then(m => m.LandingPageModule)
       },

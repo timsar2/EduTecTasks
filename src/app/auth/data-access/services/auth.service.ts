@@ -7,7 +7,7 @@ import { AuthState } from '../store/auth.reducer'
 export class AuthService {
   constructor() {}
 
-  loginUser<T = any>(): Observable<BaseResponse<AuthState>> {
+  public loginUser<T = any>(): Observable<BaseResponse<AuthState>> {
     return of({
       result: { isAuthenticated: true, isLoading: false },
       code: '200',

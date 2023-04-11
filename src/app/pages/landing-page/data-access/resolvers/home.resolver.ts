@@ -1,12 +1,8 @@
-import { Injectable } from '@angular/core'
-import { Router, Resolve, RouterStateSnapshot, ActivatedRouteSnapshot } from '@angular/router'
-import { Observable, of } from 'rxjs'
+import { inject } from '@angular/core'
+import { RouterStateSnapshot, ActivatedRouteSnapshot, ResolveFn } from '@angular/router'
+import { AdvertiseService } from '../services/advertise.service'
+import { IContentLoder } from '@app/shared/data-access/models/content-loader.model'
 
-@Injectable({
-  providedIn: 'root'
-})
-export class HomeResolver implements Resolve<boolean> {
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> {
-    return of(true)
-  }
+export const homeResolver: ResolveFn<IContentLoder> = (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+  return inject(AdvertiseService).getAdvertise()
 }
