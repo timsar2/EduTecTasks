@@ -1,7 +1,6 @@
 import { ErrorHandler, Injectable, Injector } from '@angular/core'
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http'
 import { Router } from '@angular/router'
-import { environment } from '@environments/environment'
 
 interface ErrorLog {
   deviceId: string
@@ -31,9 +30,8 @@ export class GlobalErrorHandler extends ErrorHandler {
     super()
   }
 
-  override handleError(error: Error | HttpErrorResponse) {
+  public override handleError(error: Error | HttpErrorResponse): void {
     const router = this.injector.get(Router)
-    console.log('URL: ' + router.url)
 
     if (error instanceof HttpErrorResponse) {
       //Backend returns unsuccessful response codes such as 404, 500 etc.
@@ -53,6 +51,7 @@ export class GlobalErrorHandler extends ErrorHandler {
       // TODO: uncomment on production
       // this.http.post<void>(`${environment.apiUrl}/v1/logs/send-error`, errorLog, this.httpOptions).pipe().subscribe()
     }
+
     router.navigate(['/error'])
   }
 }

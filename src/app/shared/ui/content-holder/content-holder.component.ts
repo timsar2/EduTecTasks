@@ -11,10 +11,10 @@ import { IContentLoder } from '@app/shared/data-access/models/content-loader.mod
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContentHolderComponent {
-  @Input() title?: string
-  @Input() subTitle?: string
-  @Input() content?: string
-  @Input() alignCenter?: boolean = false
+  @Input() public title?: string
+  @Input() public subTitle?: string
+  @Input() public content?: string
+  @Input() public alignCenter?: boolean = false
 
   constructor() {}
 }

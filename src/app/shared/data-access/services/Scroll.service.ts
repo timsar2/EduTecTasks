@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core'
 export class ScrollService {
   constructor() {}
 
-  scrollToElementById(id: string) {
+  public scrollToElementById(id: string): void {
     const element = document.getElementById(id)
     element?.scrollIntoView({ behavior: 'smooth' })
   }

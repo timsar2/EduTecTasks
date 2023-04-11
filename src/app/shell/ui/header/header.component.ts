@@ -17,17 +17,17 @@ import { ScrollService } from '@app/shared/data-access/services/Scroll.service'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
-  @Input() options!: INavMenu[]
-  @Input() isMobile!: boolean
-  @Output() onToggleMenu = new EventEmitter()
+  @Input() public options!: INavMenu[]
+  @Input() public isMobile!: boolean
+  @Output() private onToggleMenu = new EventEmitter()
 
   constructor(private scrollService: ScrollService) {}
 
-  scrollTo(id: string) {
+  protected scrollTo(id: string) {
     this.scrollService.scrollToElementById(id)
   }
 
-  toggleSideNav() {
+  protected toggleSideNav() {
     this.onToggleMenu.emit()
   }
 }

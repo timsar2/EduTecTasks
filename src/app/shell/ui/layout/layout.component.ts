@@ -38,7 +38,7 @@ export class LayoutComponent {
 
   private options$ = new BehaviorSubject<INavMenu[]>(this.options)
 
-  vm$ = combineLatest({
+  protected vm$ = combineLatest({
     isMobile: this.uiStore.isMobile$,
     isSidebarCollapsed: this.uiStore.isSidebarCollapsed$,
     options: this.options$
@@ -46,7 +46,7 @@ export class LayoutComponent {
 
   constructor(private uiStore: UiStore) {}
 
-  toggleSideNav() {
+  protected toggleSideNav() {
     this.uiStore.toggleSidebar()
   }
 }

@@ -10,13 +10,13 @@ export class AppConfigSerivce {
 
   constructor(private http: HttpClient) {}
 
-  get appConfig(): AppConfig {
+  public get appConfig(): AppConfig {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     return this._config.getValue()!
   }
 
   // TODO: add default value when resolved to error
-  getConfig(): void {
+  public getConfig(): void {
     of({ userLocale: 'en' }).subscribe({ next: config => this._config.next(config) })
   }
 }

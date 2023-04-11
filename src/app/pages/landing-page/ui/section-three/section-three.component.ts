@@ -9,14 +9,14 @@ import { IContentLoder } from '@app/shared/data-access/models/content-loader.mod
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SectionThreeComponent {
-  data: IContentLoder = {
+  protected data: IContentLoder = {
     title: 'RESOURCES',
     subTitle: 'Interlocked strategy',
     content:
       'Lorem ipsum dolor sit amet. Eum sapiente Quis qui sunt dignissimos rem dolores quasi qui iure beatae ex recusandae molestiae est beatae aliquid qui velit temporibus. '
   }
 
-  items: ICard[] = [
+  protected items: ICard[] = [
     {
       title: 'Components & Technology',
       content: 'Communication subsystem Satellite Simulators Electronics & Software Drag Sails technologies',

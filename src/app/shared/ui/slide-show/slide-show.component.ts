@@ -28,7 +28,7 @@ export class SlideShowComponent implements OnInit {
   @ViewChild('swiperRef', { static: true })
   protected _swiperRef: ElementRef | undefined
 
-  @Input() items!: ICard[]
+  @Input() public items!: ICard[]
 
   private swiper?: Swiper
 
@@ -36,11 +36,11 @@ export class SlideShowComponent implements OnInit {
     register()
   }
 
-  ngOnInit() {
+  public ngOnInit() {
     this._initSwiper()
   }
 
-  trackByFn = (index: number, item: unknown) => item
+  protected trackByFn = (index: number, item: unknown) => item
 
   private _initSwiper() {
     const options: SwiperOptions = {

@@ -8,7 +8,7 @@ import { ICardInfo } from '@app/shared/data-access/models/card-info.mode'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SectionFooterComponent {
-  data: ICardInfo[] = [
+  protected data: ICardInfo[] = [
     {
       icon: 'edu-astronut',
       infoList: [{ icon: 'place', label: 'LuxSpace Sàrl 9, rue Pierre Werner L-6832 Betzdorf' }]
