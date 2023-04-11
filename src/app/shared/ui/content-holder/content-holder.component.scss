@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables' as global;
 
 .content-loader-title {
   margin-bottom: 25px;
@@ -8,7 +8,7 @@ h3 {
   color: var(--app-color-light-blue);
 }
 
-@media screen and (min-width: $breakpoint-md) {
+@media screen and (min-width: global.$breakpoint-md) {
   p {
     font-size: 18px !important;
     line-height: 26px !important;

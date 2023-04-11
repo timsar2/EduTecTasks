@@ -1,3 +1,5 @@
+@use 'variables' as global;
+
 .gap-row {
   width: 100%;
   height: 30px;
@@ -8,7 +10,7 @@
   width: 100%;
 }
 
-@media only screen and (min-width: $breakpoint-xs) {
+@media only screen and (min-width: global.$breakpoint-xs) {
   /* For tablets: */
   .col-xs-1 {
     width: 8.33%;
@@ -48,7 +50,7 @@
   }
 }
 
-@media only screen and (min-width: $breakpoint-sm) {
+@media only screen and (min-width: global.$breakpoint-sm) {
   /* For tablets: */
   .col-sm-1 {
     width: 8.33%;
@@ -88,7 +90,7 @@
   }
 }
 
-@media only screen and (min-width: $breakpoint-md) {
+@media only screen and (min-width: global.$breakpoint-md) {
   /* For desktop: */
   .col-1 {
     width: 8.33%;
@@ -128,7 +130,7 @@
   }
 }
 
-@media only screen and (min-width: $breakpoint-lg) {
+@media only screen and (min-width: global.$breakpoint-lg) {
   .gap-row {
     height: 44px;
   }

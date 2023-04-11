@@ -1,3 +1,5 @@
+@use 'variables' as global;
+
 .section-container {
   padding-inline-start: 30px;
   padding-inline-end: 27px;
@@ -5,7 +7,7 @@
   padding-bottom: 24px;
 }
 
-@media screen and (min-width: $breakpoint-sm) {
+@media screen and (min-width: global.$breakpoint-sm) {
   .section-container {
     padding-inline-start: 63px;
     padding-inline-end: 63px;
@@ -14,7 +16,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-md) {
+@media screen and (min-width: global.$breakpoint-md) {
   .section-container {
     padding-inline-start: 90px;
     padding-inline-end: 90px;
@@ -23,7 +25,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-lg) {
+@media screen and (min-width: global.$breakpoint-lg) {
   .section-container {
     padding-inline-start: 180px;
     padding-inline-end: 180px;

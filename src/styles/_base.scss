@@ -1,3 +1,5 @@
+@use 'variables' as global;
+
 a {
   text-decoration: none !important;
 }
@@ -31,7 +33,7 @@ p {
   color: var(--app-color-medium);
 }
 
-@media screen and (min-width: $breakpoint-md) {
+@media screen and (min-width: global.$breakpoint-md) {
   h1 {
     font-size: 32px !important;
     line-height: 48px !important;
@@ -49,7 +51,7 @@ p {
   }
 }
 
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: global.$breakpoint-xl) {
   h1 {
     font-size: 47px !important;
     line-height: 70px;

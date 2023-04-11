@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables' as global;
 
 :host {
   display: flex;
@@ -53,7 +53,7 @@ mat-card-footer {
   white-space: nowrap;
 }
 
-@media screen and (min-width: $breakpoint-md) {
+@media screen and (min-width: global.$breakpoint-md) {
   .edu-mat-card {
     height: 571px;
     max-height: 571px;
@@ -70,7 +70,7 @@ mat-card-footer {
   }
 }
 
-@media screen and (min-width: $breakpoint-lg) {
+@media screen and (min-width: global.$breakpoint-lg) {
   .edu-mat-card {
     padding: 79px 53px 37px 67px;
   }

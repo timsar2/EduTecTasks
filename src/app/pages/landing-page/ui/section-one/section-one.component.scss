@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@use 'variables' as global;
 
 .section-one-container {
   height: 510px;
@@ -37,7 +37,7 @@ p {
   color: var(--app-color-light);
 }
 
-@media screen and (min-width: $breakpoint-sm) {
+@media screen and (min-width: global.$breakpoint-sm) {
   .sat {
     right: 425px;
   }
@@ -47,7 +47,7 @@ p {
   }
 }
 
-@media screen and (min-width: $breakpoint-md) {
+@media screen and (min-width: global.$breakpoint-md) {
   h1 {
     margin-bottom: 35px !important;
   }
@@ -63,7 +63,7 @@ p {
   }
 }
 
-@media screen and (min-width: $breakpoint-lg) {
+@media screen and (min-width: global.$breakpoint-lg) {
   .section-one-container {
     height: 933px;
   }
@@ -78,7 +78,7 @@ p {
   }
 }
 
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: global.$breakpoint-xl) {
   .sat {
     right: 900px;
   }

@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables' as global;
 
 .satellite-container {
   position: relative;
@@ -95,7 +95,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-sm) {
+@media screen and (min-width: global.$breakpoint-sm) {
   .leaser-side::before {
     animation: leaser 2s linear infinite;
   }
@@ -114,7 +114,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-md) {
+@media screen and (min-width: global.$breakpoint-md) {
   .leaser {
     width: 112px;
   }

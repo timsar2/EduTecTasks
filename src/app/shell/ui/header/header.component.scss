@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@use 'variables' as global;
 
 .app-toolbar {
   background: var(--app-background-primary);
@@ -56,13 +56,13 @@ a {
   height: 24px;
 }
 
-@media screen and (min-width: $breakpoint-md) {
+@media screen and (min-width: global.$breakpoint-md) {
   .nav-link-container {
     width: 45%;
   }
 }
 
-@media screen and (min-width: $breakpoint-lg) {
+@media screen and (min-width: global.$breakpoint-lg) {
   .nav-link-container {
     width: 35%;
   }

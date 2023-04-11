@@ -1,7 +1,9 @@
-@import 'sections';
-@import 'cell-size';
-@import 'atomic';
-@import 'text';
+@use 'variables' as global;
+
+@forward 'sections';
+@forward 'cell-size';
+@forward 'atomic';
+@forward 'text';
 
 .button-responsive {
   height: auto !important;
@@ -11,21 +13,21 @@
   padding: 7px 16px !important;
 }
 
-@media screen and (min-width: $breakpoint-sm) {
+@media screen and (min-width: global.$breakpoint-sm) {
   .button-responsive {
     font-size: 21px;
     padding: 11px 25px !important;
   }
 }
 
-@media screen and (min-width: $breakpoint-md) {
+@media screen and (min-width: global.$breakpoint-md) {
   .button-responsive {
     font-size: 28px;
     padding: 15px 32px !important;
   }
 }
 
-@media screen and (min-width: $breakpoint-xl) {
+@media screen and (min-width: global.$breakpoint-xl) {
   .button-responsive {
     font-size: 36px;
     padding: 20px 54px !important;
