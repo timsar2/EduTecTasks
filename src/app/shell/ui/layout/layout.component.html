@@ -1,7 +1,5 @@
-<app-action-card
-  [label]="'test'"
-  [actions]="[
-    { icon: 'edit', iconColor: 'primary', action: 'send' },
-    { icon: 'edit', iconColor: 'primary', action: 'send' }
-  ]"
-></app-action-card>
+<app-edu-list [items]="actionList">
+  <ng-template let-item>
+    <app-action-card [item]="item"></app-action-card>
+  </ng-template>
+</app-edu-list>
