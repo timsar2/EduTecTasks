@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { RouterModule } from '@angular/router'
 import { AngularSvgIconModule } from 'angular-svg-icon'
-import { SatelliteComponent } from '@app/shared/ui/satellite/satellite.component'
 import { SlideShowComponent } from '@app/shared/ui/slide-show/slide-show.component'
 import { MatButtonModule } from '@angular/material/button'
 import { ContentHolderComponent } from '@app/shared/ui/content-holder/content-holder.component'
@@ -14,6 +13,7 @@ import { SectionThreeComponent } from '../../ui/section-three/section-three.comp
 import { SectionFooterComponent } from '../../ui/section-footer/section-footer.component'
 import { CardInfoComponent } from '@app/shared/ui/card-info/card-info.component'
 import { CardComponent } from '@app/shared/ui/card/card.component'
+import { SpaceSystemComponent } from '@app/shared/ui/space-system/space-system.component'
 
 @NgModule({
   imports: [
@@ -24,12 +24,12 @@ import { CardComponent } from '@app/shared/ui/card/card.component'
     MatButtonModule,
 
     // standalone components
-    SatelliteComponent,
     SlideShowComponent,
     ContentHolderComponent,
     SectionDividerComponent,
     CardInfoComponent,
-    CardComponent
+    CardComponent,
+    SpaceSystemComponent
   ],
   declarations: [
     LandingPageComponent,

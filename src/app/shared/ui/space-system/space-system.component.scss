@@ -1,0 +1,12 @@
+.planet-container {
+  max-width: min-content;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.sat {
+  display: flex;
+}

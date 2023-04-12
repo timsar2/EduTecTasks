@@ -6,11 +6,13 @@
 @forward 'text';
 
 .button-responsive {
+  font-family: var(--app-font-family) !important;
   height: auto !important;
-  border-radius: 52px !important;
-  line-height: 36px !important;
-  font-family: AppFont !important;
-  padding: 7px 16px !important;
+  border-radius: 3rem !important;
+  font-size: 2.25rem !important;
+  line-height: 3rem !important;
+  letter-spacing: 0rem;
+  padding: 1.25rem 3.37rem !important;
 }
 
 .planet {
@@ -20,22 +22,45 @@
 
 @media screen and (min-width: global.$breakpoint-sm) {
   .button-responsive {
-    font-size: 21px;
-    padding: 11px 25px !important;
+    // font-size: 21px;
+    // padding: 11px 25px !important;
+  }
+
+  .planet {
+    width: 150px;
+    height: 150px;
   }
 }
 
 @media screen and (min-width: global.$breakpoint-md) {
   .button-responsive {
-    font-size: 28px;
-    padding: 15px 32px !important;
+    // font-size: 28px;
+    // padding: 15px 32px !important;
+  }
+
+  .planet {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: global.$breakpoint-lg) {
+  .planet {
+    width: 250px;
+    height: 250px;
   }
 }
 
 @media screen and (min-width: global.$breakpoint-xl) {
-  .button-responsive {
-    font-size: 36px;
-    padding: 20px 54px !important;
-    line-height: 50px;
+  .planet {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: global.$breakpoint-xxl) {
+  .planet {
+    width: 350px;
+    height: 350px;
   }
 }

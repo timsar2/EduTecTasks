@@ -1,14 +1,13 @@
 @use 'variables' as global;
 
 .section-one-container {
-  height: 510px;
   background-image: url('~src/assets/images/bg-dark-sky.jpg');
-  background-size: cover;
-  align-items: flex-start;
+  background-size: 102% 100%;
+  background-repeat: no-repeat;
 }
 
-.section-one-ccontent {
-  flex: 1;
+.section-one-content {
+  z-index: 1;
 }
 
 .section-one-action-btn {
@@ -16,70 +15,19 @@
 }
 
 .flex-container {
-  justify-content: end;
-}
-
-.planet-container {
-  max-width: min-content;
   position: relative;
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
 }
 
-.sat {
+.space-system {
   position: absolute;
-  right: 220px;
+  right: 0;
 }
 
-// h1,
-// p {
-//   color: var(--app-color-light);
-// }
-
-@media screen and (min-width: global.$breakpoint-sm) {
-  .sat {
-    right: 425px;
-  }
-
-  .section-one-action-btn {
-    margin-top: 30px;
-  }
+h1,
+p {
+  color: var(--app-color-light);
 }
 
-@media screen and (min-width: global.$breakpoint-md) {
-  // h1 {
-  //   margin-bottom: 35px !important;
-  // }
-
-  // p {
-  //   font-size: 18px !important;
-  //   line-height: 26px !important;
-  // }
-
-  .sat {
-    bottom: 50px;
-    right: 500px;
-  }
-}
-
-@media screen and (min-width: global.$breakpoint-lg) {
-  .section-one-container {
-    height: 933px;
-  }
-
-  .sat {
-    right: 620px;
-  }
-
-  // p {
-  //   font-size: 25px !important;
-  //   line-height: 47px !important;
-  // }
-}
-
-@media screen and (min-width: global.$breakpoint-xl) {
-  .sat {
-    right: 900px;
-  }
+p {
+  line-height: 2.6rem;
 }

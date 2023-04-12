@@ -2,33 +2,45 @@
 
 .section-container {
   padding-inline-start: 30px;
-  padding-inline-end: 27px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-inline-end: 25px;
+  padding-top: 44px;
+  padding-bottom: 44px;
 }
 
 @media screen and (min-width: global.$breakpoint-sm) {
   .section-container {
-    padding-inline-start: 63px;
-    padding-inline-end: 63px;
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding-inline-start: 60px;
+    padding-inline-end: 50px;
   }
 }
 
 @media screen and (min-width: global.$breakpoint-md) {
   .section-container {
     padding-inline-start: 90px;
-    padding-inline-end: 90px;
-    padding-top: 54px;
-    padding-bottom: 54px;
+    padding-inline-end: 75px;
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
 }
 
 @media screen and (min-width: global.$breakpoint-lg) {
   .section-container {
+    padding-inline-start: 120px;
+    padding-inline-end: 100px;
+  }
+}
+
+@media screen and (min-width: global.$breakpoint-xl) {
+  .section-container {
+    padding-inline-start: 150px;
+    padding-inline-end: 125px;
+  }
+}
+
+@media screen and (min-width: global.$breakpoint-xxl) {
+  .section-container {
     padding-inline-start: 180px;
-    padding-inline-end: 180px;
+    padding-inline-end: 150px;
     padding-top: 74px;
     padding-bottom: 74px;
   }

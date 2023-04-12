@@ -2,31 +2,3 @@
 @use 'base' as *;
 @use 'component' as *;
 @import 'material';
-
-@media screen and (min-width: global.$breakpoint-sm) {
-  .planet {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-@media screen and (min-width: global.$breakpoint-md) {
-  .planet {
-    width: 250px;
-    height: 250px;
-  }
-}
-
-@media screen and (min-width: global.$breakpoint-lg) {
-  .planet {
-    width: 300px;
-    height: 300px;
-  }
-}
-
-@media screen and (min-width: global.$breakpoint-xl) {
-  .planet {
-    width: 450px;
-    height: 430px;
-  }
-}

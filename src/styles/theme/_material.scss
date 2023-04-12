@@ -6,13 +6,13 @@ $edu-custom-level: mat.define-typography-level(
   $font-weight: 400,
   $font-size: 1.6rem,
   $line-height: 1.63rem,
-  $letter-spacing: normal
+  $letter-spacing: 0rem
 );
 
 $typography-config: mat.define-typography-config(
-  $headline-1: mat.define-typography-level(3rem, 4.4rem, 800, $letter-spacing: -0.05em),
-  $headline-2: mat.define-typography-level(2.8rem, 2.8rem, 800, $letter-spacing: -0.02em),
-  $headline-3: mat.define-typography-level(2rem, 2rem, 800, $letter-spacing: -0.005em),
+  $headline-1: mat.define-typography-level(3rem, 4.4rem, 800),
+  $headline-2: mat.define-typography-level(2.8rem, 2.8rem, 800),
+  $headline-3: mat.define-typography-level(2rem, 2rem, 800),
   $headline-4: mat.define-typography-level(1.5rem, 1.5rem, 800),
   $headline-5: mat.define-typography-level(1rem, 1rem, 800)
 );
