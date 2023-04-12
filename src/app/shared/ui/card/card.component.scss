@@ -38,8 +38,7 @@ mat-card-title {
 }
 
 mat-card-content {
-  font-family: AppFont;
-  font-size: 16px;
+  line-height: 1.63rem;
   padding: 0px !important;
   color: var(--app-color-light-shade) !important;
   -webkit-line-clamp: 5 !important;

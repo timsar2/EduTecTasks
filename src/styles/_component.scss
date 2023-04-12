@@ -13,6 +13,11 @@
   padding: 7px 16px !important;
 }
 
+.planet {
+  width: 100px;
+  height: 100px;
+}
+
 @media screen and (min-width: global.$breakpoint-sm) {
   .button-responsive {
     font-size: 21px;

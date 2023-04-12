@@ -1,6 +1,22 @@
 @use '@angular/material' as mat;
 @include mat.core();
 
+$edu-custom-level: mat.define-typography-level(
+  $font-family: AppFont,
+  $font-weight: 400,
+  $font-size: 1.6rem,
+  $line-height: 1.63rem,
+  $letter-spacing: normal
+);
+
+$typography-config: mat.define-typography-config(
+  $headline-1: mat.define-typography-level(3rem, 4.4rem, 800, $letter-spacing: -0.05em),
+  $headline-2: mat.define-typography-level(2.8rem, 2.8rem, 800, $letter-spacing: -0.02em),
+  $headline-3: mat.define-typography-level(2rem, 2rem, 800, $letter-spacing: -0.005em),
+  $headline-4: mat.define-typography-level(1.5rem, 1.5rem, 800),
+  $headline-5: mat.define-typography-level(1rem, 1rem, 800)
+);
+
 // Light Theme Text
 $dark-text: #000000;
 $dark-primary-text: rgba($dark-text, 0.87);
@@ -49,14 +65,16 @@ $theme-primary: mat.define-palette($mat-primary, main, lighter, darker);
 $theme-accent: mat.define-palette($mat-accent, main, lighter, darker);
 $theme-warn: mat.define-palette(mat.$red-palette);
 
-$my-app-theme: mat.define-light-theme(
+$edu-app-theme: mat.define-light-theme(
   (
     color: (
       primary: $theme-primary,
       accent: $theme-accent,
       warn: $theme-warn
-    )
+    ),
+    typography: $typography-config,
+    button-typography: $typography-config
   )
 );
 
-@include mat.all-component-themes($my-app-theme);
+@include mat.all-component-themes($edu-app-theme);

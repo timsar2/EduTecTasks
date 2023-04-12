@@ -1,69 +1,73 @@
 @use 'variables' as global;
 
-a {
-  text-decoration: none !important;
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: var(--app-font-family) !important;
 }
 
 h1,
 h2,
 h3 {
+  margin: 0px;
   font-weight: 800 !important;
-  line-height: 32px !important;
+  font-family: obvia-expanded !important;
 }
 
 h1 {
-  font-family: obvia-expanded !important;
+  font-size: 3rem !important;
+  line-height: 4.4rem;
 }
 
 h2 {
-  font-family: obvia-expanded !important;
-  margin-bottom: 0px !important;
-  line-height: 26px;
+  font-size: 2.8rem;
   color: var(--app-color-primary);
 }
 
 h3 {
-  font-family: obvia-expanded !important;
+  font-size: 2rem;
   color: var(--app-color-light-blue);
 }
 
 p {
-  font-size: 16px !important;
-  line-height: 16px !important;
+  font-size: 1.6rem;
+  line-height: 1.63rem;
   color: var(--app-color-medium);
 }
 
+a {
+  text-decoration: none !important;
+}
+
+@media screen and (min-width: global.$breakpoint-xs) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media screen and (min-width: global.$breakpoint-sm) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
 @media screen and (min-width: global.$breakpoint-md) {
-  h1 {
-    font-size: 32px !important;
-    line-height: 48px !important;
-  }
-
-  h2 {
-    font-size: 28px !important;
-    line-height: 32px !important;
-    margin-bottom: 16px !important;
-  }
-
-  h3 {
-    font-size: 26px !important;
-    line-height: 28px;
+  html {
+    font-size: 75%;
   }
 }
 
 @media screen and (min-width: global.$breakpoint-xl) {
-  h1 {
-    font-size: 47px !important;
-    line-height: 70px;
-  }
-
-  h2 {
-    font-size: 45px !important;
-    line-height: 70px;
-  }
-
-  h3 {
-    font-size: 38px !important;
-    line-height: 51px;
+  html {
+    font-size: 100%;
   }
 }

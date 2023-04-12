@@ -3,21 +3,6 @@
 @use 'component' as *;
 @import 'material';
 
-html,
-body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: var(--app-font-family);
-}
-
-.planet {
-  width: 100px;
-  height: 100px;
-}
-
 @media screen and (min-width: global.$breakpoint-sm) {
   .planet {
     width: 200px;
