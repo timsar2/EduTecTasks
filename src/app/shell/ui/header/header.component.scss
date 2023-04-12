@@ -2,7 +2,8 @@
 
 .app-toolbar {
   background: var(--app-background-primary);
-  height: 103px;
+  min-height: 103px;
+  height: 6.44rem;
   display: flex;
   justify-content: space-between;
   color: var(--app-color-light);
@@ -38,8 +39,8 @@ a {
 }
 
 .dot {
-  height: 8px;
-  width: 8px;
+  height: 0.5rem;
+  width: 0.5rem;
   margin-top: 11px;
   background-color: var(--app-color-secondary);
   border-radius: 50%;
@@ -50,10 +51,6 @@ a {
 .active-route {
   opacity: 1 !important;
   font-weight: 700;
-}
-
-.icone-language {
-  height: 24px;
 }
 
 @media screen and (min-width: global.$breakpoint-md) {
