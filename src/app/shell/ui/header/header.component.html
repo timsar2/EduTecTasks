@@ -7,7 +7,7 @@
 
   <svg-icon src="assets/images/svgs/astronut.svg"></svg-icon>
 
-  <div class="nav-link-container" *ngIf="!isMobile">
+  <div class="nav-link-container col-sm-8 col-md-7 col-6 col-xl-5" *ngIf="!isMobile">
     <ng-container *ngFor="let option of options">
       <a [routerLink]="[option.link]" routerLinkActive="active-route" (click)="scrollTo(option.link)">
         <span>{{ option.name }}</span>

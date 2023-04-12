@@ -7,10 +7,19 @@ import { INavMenu } from '@app/shell/models/nav-menu.model'
 import { RouterModule } from '@angular/router'
 import { MatButtonModule } from '@angular/material/button'
 import { ScrollService } from '@app/shared/data-access/services/Scroll.service'
+import { ScrollDirective } from '@app/shared/directives/scroll.directive'
 
 @Component({
   standalone: true,
-  imports: [CommonModule, MatToolbarModule, MatIconModule, AngularSvgIconModule, RouterModule, MatButtonModule],
+  imports: [
+    CommonModule,
+    MatToolbarModule,
+    MatIconModule,
+    AngularSvgIconModule,
+    RouterModule,
+    MatButtonModule,
+    ScrollDirective
+  ],
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],

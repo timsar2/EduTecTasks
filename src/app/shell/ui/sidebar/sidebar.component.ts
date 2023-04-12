@@ -5,10 +5,11 @@ import { INavMenu } from '@app/shell/models/nav-menu.model'
 import { MatButtonModule } from '@angular/material/button'
 import { RouterModule } from '@angular/router'
 import { ScrollService } from '@app/shared/data-access/services/Scroll.service'
+import { ScrollDirective } from '@app/shared/directives/scroll.directive'
 
 @Component({
   standalone: true,
-  imports: [CommonModule, MatSidenavModule, MatButtonModule, RouterModule],
+  imports: [CommonModule, MatSidenavModule, MatButtonModule, RouterModule, ScrollDirective],
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss'],

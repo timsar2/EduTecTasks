@@ -7,9 +7,8 @@ import { IContentLoder } from '@app/shared/data-access/models/content-loader.mod
 export class AdvertiseService {
   public getAdvertise(): IContentLoder {
     return {
-      title: 'The first provider of space systems,applications and services in Luxembourg',
-      content: `Since 2006 as part of the large network of OHB companies, LuxSpace is offering innovative and affordable
-      infrastructure products and solutions for space, as well as space-augmented applications and services.`
+      title: '85% OFF',
+      content: `Find Dress Offer stock images in HD and millions of other royalty-free stock photos, illustrations and vectors in the Shutterstock collection.`
     } satisfies IContentLoder
   }
 }

@@ -9,7 +9,13 @@ import { IContentLoder } from '@app/shared/data-access/models/content-loader.mod
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SectionOneComponent implements OnInit {
-  advertise?: IContentLoder
+  data?: IContentLoder = {
+    title: 'The first provider of space systems,applications and services in Luxembourg',
+    content: `Since 2006 as part of the large network of OHB companies, LuxSpace is offering innovative and affordable
+    infrastructure products and solutions for space, as well as space-augmented applications and services.`
+  } satisfies IContentLoder
+
+  protected advertise?: IContentLoder
 
   constructor(private activatedRoute: ActivatedRoute) {}
 
