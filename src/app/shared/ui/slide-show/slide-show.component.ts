@@ -28,6 +28,7 @@ export class SlideShowComponent implements OnInit {
   @ViewChild('swiperRef', { static: true })
   protected _swiperRef: ElementRef | undefined
 
+  @Input() public options?: SwiperOptions
   @Input() public items!: ICard[]
 
   private swiper?: Swiper
@@ -43,7 +44,7 @@ export class SlideShowComponent implements OnInit {
   protected trackByFn = (index: number, item: unknown) => item
 
   private _initSwiper(): void {
-    const options: SwiperOptions = {
+    let options: SwiperOptions = {
       pagination: { clickable: true },
       centeredSlides: false,
       breakpoints: {
@@ -51,12 +52,14 @@ export class SlideShowComponent implements OnInit {
           spaceBetween: 30,
           slidesPerView: 2
         },
-        1200: {
+        1400: {
           spaceBetween: 56,
           slidesPerView: 3
         }
       }
     }
+
+    options = { ...options, ...this.options }
 
     const swiperEl = this._swiperRef?.nativeElement
     Object.assign(swiperEl, options)

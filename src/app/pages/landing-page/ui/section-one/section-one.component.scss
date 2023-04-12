@@ -32,10 +32,10 @@
   right: 220px;
 }
 
-h1,
-p {
-  color: var(--app-color-light);
-}
+// h1,
+// p {
+//   color: var(--app-color-light);
+// }
 
 @media screen and (min-width: global.$breakpoint-sm) {
   .sat {
@@ -48,14 +48,14 @@ p {
 }
 
 @media screen and (min-width: global.$breakpoint-md) {
-  h1 {
-    margin-bottom: 35px !important;
-  }
+  // h1 {
+  //   margin-bottom: 35px !important;
+  // }
 
-  p {
-    font-size: 18px !important;
-    line-height: 26px !important;
-  }
+  // p {
+  //   font-size: 18px !important;
+  //   line-height: 26px !important;
+  // }
 
   .sat {
     bottom: 50px;
@@ -72,10 +72,10 @@ p {
     right: 620px;
   }
 
-  p {
-    font-size: 25px !important;
-    line-height: 47px !important;
-  }
+  // p {
+  //   font-size: 25px !important;
+  //   line-height: 47px !important;
+  // }
 }
 
 @media screen and (min-width: global.$breakpoint-xl) {

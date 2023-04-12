@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core'
 import { ICard } from '@app/shared/data-access/models/card.model'
 import { IContentLoder } from '@app/shared/data-access/models/content-loader.model'
+import { SwiperOptions } from 'swiper/types/swiper-options'
 
 @Component({
   selector: 'app-section-three',
@@ -49,6 +50,19 @@ export class SectionThreeComponent {
       link: ''
     }
   ]
+
+  protected options: SwiperOptions = {
+    breakpoints: {
+      680: {
+        spaceBetween: 30,
+        slidesPerView: 2
+      },
+      1400: {
+        spaceBetween: 56,
+        slidesPerView: 3
+      }
+    }
+  }
 
   constructor() {}
 }

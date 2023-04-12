@@ -10,7 +10,7 @@
 
   <div class="gap-row"></div>
 
-  <app-slide-show [items]="items">
+  <app-slide-show [items]="items" [options]="options">
     <ng-template let-item>
       <app-card [title]="item.title" [content]="item.content" [iconName]="item.icon" [link]="item.link"></app-card>
     </ng-template>
