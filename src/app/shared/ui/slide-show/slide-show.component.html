@@ -1,5 +1,5 @@
 <swiper-container #swiperRef init="false" class="swiper-container">
-  <swiper-slide *ngFor="let item of items; trackBy: trackByFn">
+  <swiper-slide class="swiper-slide" *ngFor="let item of items; trackBy: trackByFn">
     <ng-template [ngTemplateOutlet]="template" [ngTemplateOutletContext]="{ $implicit: item }"> </ng-template>
   </swiper-slide>
 </swiper-container>

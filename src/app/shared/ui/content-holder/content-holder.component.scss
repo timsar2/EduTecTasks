@@ -7,10 +7,3 @@
 h3 {
   color: var(--app-color-light-blue);
 }
-
-@media screen and (min-width: global.$breakpoint-md) {
-  p {
-    font-size: 18px !important;
-    line-height: 26px !important;
-  }
-}

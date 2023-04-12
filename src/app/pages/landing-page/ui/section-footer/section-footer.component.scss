@@ -5,17 +5,16 @@
 .section-container {
   padding-top: 99px;
   padding-bottom: 29px;
-  gap: 50px;
   justify-content: space-between;
 }
 
 .section-footer-item {
-  max-width: 300px;
   display: flex;
 }
 
 p {
-  font-size: 14px;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
   margin-top: 28px;
   color: var(--app-color-light-tint) !important;
 }
