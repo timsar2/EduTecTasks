@@ -10,7 +10,5 @@ import { CommonModule } from '@angular/common'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardWrapperComponent {
-  @Input() public dragable?: boolean = false
-  @Input() public flexGrow?: number | string = 'full'
   @Input() public actionBoxClass?: string = ''
 }

@@ -5,11 +5,12 @@ import { IActionItem } from '@app/shared/ui/action-card/data-access/models/actio
 import { HoverOverDirective } from '@app/shared/directives/hover-over.directive'
 import { ICardAction } from './data-access/models/card-action.model'
 import { CardWrapperComponent } from '@app/shared/ui/card-wrapper/card-wrapper.component'
+import { DragableDirective } from '@app/shared/directives/dragable.directive'
 
 @Component({
   selector: 'app-action-card',
   standalone: true,
-  imports: [CommonModule, MatIconModule, HoverOverDirective, CardWrapperComponent],
+  imports: [CommonModule, MatIconModule, HoverOverDirective, CardWrapperComponent, DragableDirective],
   templateUrl: './action-card.component.html',
   styleUrls: ['./action-card.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -20,7 +21,6 @@ export class ActionCardComponent {
     if (value) {
       this.label = value.label ?? this.label
       this.actions = value.actions ?? this.actions
-      this.dragable = value.dragable ?? this.dragable
       this.slotEndClass = value.slotEndClass ?? this.slotEndClass
     }
   }

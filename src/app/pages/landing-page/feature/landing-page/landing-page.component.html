@@ -1,1 +1,12 @@
-<p>landing-page works!</p>
+<app-edu-list [items]="actionList">
+  <ng-template let-item let-i="index" let-isOdd="isOdd">
+    <app-action-card
+      [class.list-item-motion]="true"
+      [item]="item"
+      [dragable]="true"
+      [slotStartClass]="'col-xs-8 col-10'"
+      [slotEndClass]="'bg-warning col-xs-12 col-sm-4 col-ms-4 col-2'"
+      (onActionClicked)="log($event, i)"
+    ></app-action-card>
+  </ng-template>
+</app-edu-list>

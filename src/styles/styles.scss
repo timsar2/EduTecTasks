@@ -1,11 +1,3 @@
 @use 'variables' as global;
 @use 'base' as *;
 @use 'component' as *;
-.i-wrapper:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-}
-
-.i-wrapper {
-  // box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-}
