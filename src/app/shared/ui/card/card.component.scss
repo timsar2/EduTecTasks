@@ -16,7 +16,6 @@
 }
 
 .edu-mat-card-title {
-  height: 212px;
   text-align: center;
   overflow: hidden;
 
@@ -40,7 +39,7 @@ mat-card-content {
   line-height: 1.63rem;
   padding: 0px !important;
   color: var(--app-color-light-shade) !important;
-  -webkit-line-clamp: 5 !important;
+  -webkit-line-clamp: 4 !important;
 }
 
 mat-card-footer {
