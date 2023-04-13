@@ -1,0 +1,14 @@
+<div class="card-container card-shadow flex">
+  <ng-container>
+    <ng-content select="[slot=start]"></ng-content>
+  </ng-container>
+
+  <ng-container [ngClass]="actionBoxClass" class="card-wrapper-slot-end">
+    <ng-content select="[slot=end]"></ng-content>
+  </ng-container>
+</div>
+<!-- [class.cursor-grab]="dragable"
+    class="card-wrapper-slot-start "
+    <div class="flex flex-1 cursor-default">
+      <ng-content select="[slot=end]"></ng-content>
+    </div> -->

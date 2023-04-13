@@ -1,17 +1,53 @@
 .action-card-container {
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.action-card-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 9px 15px 9px 13px;
 }
 
-.icon-wraper {
+.action-card-text {
+  white-space: nowrap;
+  padding: 9px 13px;
+}
+
+.action-card-btn-wrapper {
   display: flex;
-  margin-inline-start: 17px;
+  justify-content: end;
 }
 
-h2 {
-  flex: 1;
+.action-card-holder {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 6px 0px;
+  gap: 0.1rem;
+}
+
+.btn-wrapper {
+  height: 100%;
+  width: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.testi {
+  font-size: 100px;
+}
+
+.icon-wrapper {
+  display: flex;
+}
+
+.vertical-divider {
+  width: 0.1rem;
+  border-radius: 1px;
+  height: 100%;
+  background-color: var(--app-color-medium);
+  opacity: 0.5;
 }
 
 mat-icon {

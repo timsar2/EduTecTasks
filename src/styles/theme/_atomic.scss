@@ -1,15 +1,8 @@
-/** app-color select by css name **/
+@forward './atomics/colors';
+@forward './atomics/layout';
 
-.primary {
-  color: var(--app-color-primary) !important;
-}
-
-.secondary {
-  color: var(--app-color-secondary);
-}
-
-.light {
-  color: var(--app-color-light);
+.cursor-default {
+  cursor: cursor-default;
 }
 
 .cursor-pointer {

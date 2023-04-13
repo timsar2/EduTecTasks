@@ -1,13 +1,11 @@
-@import 'variables';
-@import 'base';
-@import 'component';
-@import 'atomic';
-
-html,
-body {
-  height: 100%;
+@use 'variables' as global;
+@use 'base' as *;
+@use 'component' as *;
+.i-wrapper:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
 }
-body {
-  margin: 0;
-  font-family: var(--app-font-family);
+
+.i-wrapper {
+  // box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
 }

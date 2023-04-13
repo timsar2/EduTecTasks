@@ -12,5 +12,5 @@ import { CommonModule } from '@angular/common'
 export class EduListComponent<T> {
   @ContentChild(TemplateRef) template!: TemplateRef<any>
 
-  @Input() items!: T[]
+  @Input() items?: T[]
 }

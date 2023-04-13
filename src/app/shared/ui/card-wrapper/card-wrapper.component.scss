@@ -1,0 +1,15 @@
+.card-container {
+  overflow: hidden;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.card-wrapper-slot-start {
+}
+
+.card-wrapper-slot-end {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+}

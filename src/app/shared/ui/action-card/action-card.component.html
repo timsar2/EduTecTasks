@@ -1,13 +1,24 @@
-<div [class.cursor-grab]="dragable" class="action-card-container card-shadow flex justify-between content-center">
-  <h2>{{ label }}</h2>
-  <ng-container *ngFor="let item of actions">
-    <div
-      *ngIf="item.icon"
-      (click)="emitAction(item?.action)"
-      [hoverClass]="item.iconColor"
-      class="icon-wraper cursor-pointer"
-    >
-      <mat-icon inline="true">{{ item.icon }}</mat-icon>
+<app-card-wrapper [dragable]="dragable">
+  <div slot="start" [ngClass]="slotStartClass" class="action-card-item">
+    <h2 class="text-noselect action-card-text">{{ label }}</h2>
+  </div>
+
+  <div slot="end" [ngClass]="slotEndClass" class="action-card-btn-wrapper">
+    <div class="action-card-holder cursor-default">
+      <ng-container *ngFor="let item of actions; first as isFirst">
+        <div *ngIf="!isFirst" class="vertical-divider"></div>
+
+        <div
+          *ngIf="item.icon"
+          (click)="emitAction(item?.action)"
+          [hoverClass]="item.iconColor"
+          class="btn-wrapper cursor-pointer"
+        >
+          <div class="icon-wrapper">
+            <mat-icon inline="true">{{ item.icon }}</mat-icon>
+          </div>
+        </div>
+      </ng-container>
     </div>
-  </ng-container>
-</div>
+  </div>
+</app-card-wrapper>

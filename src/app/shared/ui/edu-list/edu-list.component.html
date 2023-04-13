@@ -1,5 +1,11 @@
-<div>
-  <ng-container *ngFor="let item of items">
-    <ng-template [ngTemplateOutlet]="template" [ngTemplateOutletContext]="{ $implicit: item }"> </ng-template>
+<div class="edu-list-item">
+  <ng-container
+    *ngFor="let item of items; let i = index; first as isFirst; last as isLast; odd as isOdd; even as isEven"
+  >
+    <ng-template
+      [ngTemplateOutlet]="template"
+      [ngTemplateOutletContext]="{ $implicit: item, index: i, isFirst, isLast, isOdd, isEven }"
+    >
+    </ng-template>
   </ng-container>
 </div>
