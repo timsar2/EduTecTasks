@@ -52,17 +52,7 @@ a {
   font-weight: 700;
 }
 
-@media screen and (min-width: global.$breakpoint-md) {
-  // .nav-link-container {
-  //   width: 45%;
-  // }
-}
-
 @media screen and (min-width: global.$breakpoint-lg) {
-  // .nav-link-container {
-  //   width: 35%;
-  // }
-
   .app-toolbar {
     padding-inline-start: 63px;
     padding-inline-end: 63px;
