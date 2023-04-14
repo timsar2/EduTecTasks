@@ -1,4 +1,6 @@
 import { Component } from '@angular/core'
+import { IHouseFactors } from '@app/shared/models/house-factors.model'
+import { IActionItem } from '@app/shared/ui/action-card/data-access/models/action-item.model'
 import { ICardAction } from '@app/shared/ui/action-card/data-access/models/card-action.model'
 
 @Component({
@@ -7,6 +9,17 @@ import { ICardAction } from '@app/shared/ui/action-card/data-access/models/card-
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent {
+  public houseFactors: IHouseFactors[] = [
+    {
+      factor: 'Bathroom',
+      labels: ['Itelian shower', 'French shower']
+    },
+    {
+      factor: 'Kitchen',
+      labels: ['One Wall Kitchen', 'Gallery Kitchen']
+    }
+  ]
+
   public actionList: ICardAction[] = [
     {
       label: 'Itelian shower',
@@ -35,6 +48,12 @@ export class LandingPageComponent {
         { icon: 'visibility_off', iconColor: 'danger', action: 'visibilityOff' }
       ]
     }
+  ]
+
+  cardActions: IActionItem[] = [
+    { icon: 'delete', iconColor: 'danger', action: 'delete' },
+    { icon: 'edit', iconColor: 'primary', action: 'edit' },
+    { icon: 'visibility_off', iconColor: 'danger', action: 'visibilityOff' }
   ]
   constructor() {}
 

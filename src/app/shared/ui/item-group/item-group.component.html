@@ -1,0 +1,8 @@
+<ng-template
+  *ngFor="let item of items; let i = index; first as isFirst; last as isLast; odd as isOdd; even as isEven"
+  [ngTemplateOutlet]="outlet"
+  [ngTemplateOutletContext]="{ $implicit: item, index: i, isFirst, isLast, isOdd, isEven }"
+>
+</ng-template>
+
+<ng-content></ng-content>

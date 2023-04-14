@@ -1,16 +1,16 @@
 import { ChangeDetectionStrategy, Component, ContentChild, Input, TemplateRef } from '@angular/core'
 import { CommonModule } from '@angular/common'
+import { EduListComponent } from '../edu-list/edu-list.component'
 
 @Component({
-  selector: 'app-edu-list',
+  selector: 'app-item-group',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './edu-list.component.html',
-  styleUrls: ['./edu-list.component.scss'],
+  imports: [CommonModule, EduListComponent],
+  templateUrl: './item-group.component.html',
+  styleUrls: ['./item-group.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class EduListComponent<T> {
+export class ItemGroupComponent<T> {
   @ContentChild(TemplateRef) outlet!: TemplateRef<any>
-
   @Input() public items?: T[]
 }

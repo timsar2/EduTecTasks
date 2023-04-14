@@ -21,4 +21,5 @@
 .list-item-motion:hover {
   transform: translateY(-2px) !important;
   box-shadow: 0 3px 17px var(--app-color-medium);
+  border-radius: 5px;
 }
