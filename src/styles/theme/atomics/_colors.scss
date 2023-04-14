@@ -34,6 +34,10 @@
   background-color: var(--app-color-light);
 }
 
+.bg-light-shade {
+  background-color: var(--app-color-light-shade);
+}
+
 .bg-danger {
   background-color: var(--app-color-danger);
 }
@@ -42,8 +46,8 @@
   background-color: var(--app-color-warning);
 }
 
-.bg-warning {
-  background-color: var(--app-color-warning);
+.bg-medium {
+  background-color: var(--app-color-medium);
 }
 
 .bg-success {

@@ -1,0 +1,7 @@
+<div [ngClass]="labelInfoClass" class="label-info items-center">
+  <mat-icon *ngIf="iconStart" inline="true">{{ iconStart }}</mat-icon>
+
+  <ng-content></ng-content>
+
+  <mat-icon *ngIf="iconEnd" inline="true">{{ iconEnd }}</mat-icon>
+</div>

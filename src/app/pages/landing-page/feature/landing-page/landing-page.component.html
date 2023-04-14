@@ -1,6 +1,8 @@
 <app-item-group [items]="houseFactors">
   <ng-template let-item let-i="index">
-    <p>{{ item.factor }}</p>
+    <app-label-info [labelInfoClass]="'bg-light-shade'" [iconStart]="'edit'" [iconEnd]="'done'"
+      ><p>{{ item.factor }}</p></app-label-info
+    >
 
     <app-edu-list [items]="item.labels">
       <ng-template let-item let-i="index" let-isOdd="isOdd">

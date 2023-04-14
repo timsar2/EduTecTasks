@@ -5,6 +5,7 @@ import { ActionCardComponent } from '@app/shared/ui/action-card/action-card.comp
 import { EduListComponent } from '@app/shared/ui/edu-list/edu-list.component'
 import { RouterModule } from '@angular/router'
 import { ItemGroupComponent } from '@app/shared/ui/item-group/item-group.component'
+import { LabelInfoComponent } from '@app/shared/ui/label-info/label-info.component'
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { ItemGroupComponent } from '@app/shared/ui/item-group/item-group.compone
     RouterModule.forChild([{ path: '', component: LandingPageComponent }]),
     ActionCardComponent,
     EduListComponent,
-    ItemGroupComponent
+    ItemGroupComponent,
+    LabelInfoComponent
   ],
   declarations: [LandingPageComponent]
 })
