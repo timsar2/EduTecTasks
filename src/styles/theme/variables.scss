@@ -58,7 +58,7 @@
   --app-color-steam-contrast: #000000;
   --app-color-steam-contrast-rgb: 0, 0, 0;
   --app-color-steam-shade: #d3d8dc;
-  --app-color-steam-tint: #f2f6fb;
+  --app-color-steam-tint: #f3f7fb;
 
   /** warning **/
   --app-color-warning: #ffce00;
@@ -106,7 +106,7 @@
   --app-color-light-contrast: #000000;
   --app-color-light-contrast-rgb: 0, 0, 0;
   --app-color-light-shade: #dadce061;
-  --app-color-light-tint: #f9fbff;
+  --app-color-light-tint: #ffffff;
 
   /** light blue**/
   --app-color-light-blue: #7b8edb;
@@ -126,3 +126,5 @@ $breakpoint-md: 48em;
 $breakpoint-lg: 62em;
 $breakpoint-xl: 75em;
 $breakpoint-xxl: 87.5em;
+
+$listItemGap: 0.4rem;

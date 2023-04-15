@@ -10,6 +10,10 @@
   flex-direction: column;
 }
 
+.grow-full {
+  flex-grow: 100;
+}
+
 .justify-start {
   justify-content: flex-start;
 }

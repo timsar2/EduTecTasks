@@ -13,4 +13,5 @@ export class EduListComponent<T> {
   @ContentChild(TemplateRef) outlet!: TemplateRef<any>
 
   @Input() public items?: T[]
+  @Input() public className?: string = ''
 }

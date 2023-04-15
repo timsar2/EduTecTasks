@@ -1,6 +1,8 @@
+@use 'variables' as global;
+
 .edu-list-item {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: global.$listItemGap;
   margin: 6px 0px;
 }

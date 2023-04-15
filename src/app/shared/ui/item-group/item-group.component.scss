@@ -1,0 +1,8 @@
+@use 'variables' as global;
+
+.item-group {
+  display: flex;
+  flex-direction: column;
+  gap: global.$listItemGap;
+  margin: 6px 0px;
+}

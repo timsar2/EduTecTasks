@@ -6,6 +6,7 @@ import { EduListComponent } from '@app/shared/ui/edu-list/edu-list.component'
 import { RouterModule } from '@angular/router'
 import { ItemGroupComponent } from '@app/shared/ui/item-group/item-group.component'
 import { LabelInfoComponent } from '@app/shared/ui/label-info/label-info.component'
+import { EduItemDividerComponent } from '@app/shared/ui/edu-item-divider/edu-item-divider.component'
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { LabelInfoComponent } from '@app/shared/ui/label-info/label-info.compone
     ActionCardComponent,
     EduListComponent,
     ItemGroupComponent,
-    LabelInfoComponent
+    LabelInfoComponent,
+    EduItemDividerComponent
   ],
   declarations: [LandingPageComponent]
 })

@@ -1,8 +1,10 @@
-<app-item-group [items]="houseFactors">
+<app-item-group [items]="houseFactors" [className]="">
   <ng-template let-item let-i="index">
-    <app-label-info [labelInfoClass]="'bg-light-shade'" [iconStart]="'edit'" [iconEnd]="'done'"
-      ><p>{{ item.factor }}</p></app-label-info
-    >
+    <app-edu-item-divider>
+      <app-label-info [className]="" [iconStart]="'edit'" [iconEnd]="'done'"
+        ><p>{{ item.factor }}</p></app-label-info
+      >
+    </app-edu-item-divider>
 
     <app-edu-list [items]="item.labels">
       <ng-template let-item let-i="index" let-isOdd="isOdd">
@@ -11,8 +13,8 @@
           [actions]="cardActions"
           [dragable]="true"
           [class.list-item-motion]="true"
-          [slotStartClass]="'col-xs-8 col-10'"
-          [slotEndClass]="'bg-warning col-xs-12 col-sm-4 col-ms-4 col-2'"
+          [slotStartClass]="'grow-full col-xs-12 col-sm-8'"
+          [slotEndClass]="'bg-warning flex-1'"
           (onActionClicked)="log($event, i)"
         ></app-action-card>
       </ng-template>
