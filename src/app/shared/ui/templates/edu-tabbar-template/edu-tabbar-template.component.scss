@@ -1,0 +1,29 @@
+.tabbar-container {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  background-color: var(--app-color-foggy);
+}
+
+.tabbar-header {
+  min-height: 5rem;
+  padding: 6px 10px;
+  box-shadow: 3px 3px 12px var(--app-color-medium-tint);
+  background-color: var(--app-color-steam-tint);
+}
+
+.tabbar-main {
+  flex: 1;
+  padding-inline-start: 16px;
+  padding-inline-end: 17px;
+}
+
+.tabbar-footer {
+  min-height: 6.3rem;
+  padding: 6px 10px;
+  box-shadow: 3px 3px 12px var(--app-color-medium-tint);
+  background-color: var(--app-color-steam);
+}

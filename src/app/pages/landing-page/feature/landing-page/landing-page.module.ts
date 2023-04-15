@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router'
 import { ItemGroupComponent } from '@app/shared/ui/item-group/item-group.component'
 import { LabelInfoComponent } from '@app/shared/ui/label-info/label-info.component'
 import { EduItemDividerComponent } from '@app/shared/ui/edu-item-divider/edu-item-divider.component'
+import { EduTabbarTemplateComponent } from '@app/shared/ui/templates/edu-tabbar-template/edu-tabbar-template.component'
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { EduItemDividerComponent } from '@app/shared/ui/edu-item-divider/edu-ite
     EduListComponent,
     ItemGroupComponent,
     LabelInfoComponent,
-    EduItemDividerComponent
+    EduItemDividerComponent,
+    EduTabbarTemplateComponent
   ],
   declarations: [LandingPageComponent]
 })

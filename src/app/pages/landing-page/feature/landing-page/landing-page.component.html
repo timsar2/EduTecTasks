@@ -1,23 +1,29 @@
-<app-item-group [items]="houseFactors" [className]="">
-  <ng-template let-item let-i="index">
-    <app-edu-item-divider>
-      <app-label-info [className]="" [iconStart]="'edit'" [iconEnd]="'done'"
-        ><p>{{ item.factor }}</p></app-label-info
-      >
-    </app-edu-item-divider>
+<app-edu-tabbar-template>
+  <div slot="header"></div>
 
-    <app-edu-list [items]="item.labels">
-      <ng-template let-item let-i="index" let-isOdd="isOdd">
-        <app-action-card
-          [label]="item"
-          [actions]="cardActions"
-          [dragable]="true"
-          [class.list-item-motion]="true"
-          [slotStartClass]="'grow-full col-xs-12 col-sm-8'"
-          [slotEndClass]="'bg-warning flex-1'"
-          (onActionClicked)="log($event, i)"
-        ></app-action-card>
-      </ng-template>
-    </app-edu-list>
-  </ng-template>
-</app-item-group>
+  <app-item-group [items]="houseFactors" [className]="">
+    <ng-template let-item let-i="index">
+      <app-edu-item-divider>
+        <app-label-info [className]="" [iconStart]="'edit'" [iconEnd]="'done'"
+          ><p>{{ item.factor }}</p></app-label-info
+        >
+      </app-edu-item-divider>
+
+      <app-edu-list [items]="item.labels">
+        <ng-template let-item let-i="index" let-isOdd="isOdd">
+          <app-action-card
+            [label]="item"
+            [actions]="cardActions"
+            [dragable]="true"
+            [class.list-item-motion]="true"
+            [slotStartClass]="'grow-full col-xs-12 col-sm-8'"
+            [slotEndClass]="'bg-warning flex-1'"
+            (onActionClicked)="log($event, i)"
+          ></app-action-card>
+        </ng-template>
+      </app-edu-list>
+    </ng-template>
+  </app-item-group>
+
+  <div slot="footer"></div>
+</app-edu-tabbar-template>

@@ -27,7 +27,7 @@
 }
 
 .btn-wrapper {
-  height: 100%;
+  min-height: 100%;
   width: 2.5rem;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@
 .vertical-divider {
   width: 0.1rem;
   border-radius: 1px;
-  height: 100%;
+  min-height: 100%;
   background-color: var(--app-color-medium);
   opacity: 0.5;
 }

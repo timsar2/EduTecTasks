@@ -1,0 +1,18 @@
+:host {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.app-layout {
+  display: flex;
+  justify-content: center;
+  background-color: var(--app-color-medium-tint);
+}
+
+.layout-container {
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}

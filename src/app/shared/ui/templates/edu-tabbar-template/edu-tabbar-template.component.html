@@ -1,0 +1,15 @@
+<div class="tabbar-container">
+  <div #header [ngClass]="headerClass" class="tabbar-header"><ng-content select="[slot=header]"></ng-content></div>
+  <ng-container *ngIf="!header.hasChildNodes()">
+    <!-- Default Content -->
+  </ng-container>
+
+  <div [ngClass]="className" class="tabbar-main">
+    <ng-content></ng-content>
+  </div>
+
+  <div #footer [ngClass]="footerClass" class="tabbar-footer"><ng-content select="[slot=footer]"></ng-content></div>
+  <ng-container *ngIf="!footer.hasChildNodes">
+    <!-- Default Content -->
+  </ng-container>
+</div>

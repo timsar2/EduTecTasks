@@ -9,48 +9,38 @@ import { ICardAction } from '@app/shared/ui/action-card/data-access/models/card-
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent {
-  public houseFactors: IHouseFactors[] = [
+  protected houseFactors: IHouseFactors[] = [
     {
       factor: 'Bathroom',
-      labels: ['Itelian shower', 'French shower']
+      labels: [
+        'Itelian shower',
+        'French shower',
+        'Bbathub',
+        'Greek shower',
+        'Bidet',
+        'Waterfall shower',
+        'Prefabricated shower',
+        'Custom shower',
+        'Thermostatic mixer shower'
+      ]
     },
     {
       factor: 'Kitchen',
-      labels: ['One Wall Kitchen', 'Gallery Kitchen']
-    }
-  ]
-
-  public actionList: ICardAction[] = [
-    {
-      label: 'Itelian shower',
-      actions: [
-        { icon: 'delete', iconColor: 'danger', action: 'delete' },
-        { icon: 'edit', iconColor: 'primary', action: 'edit' }
-      ]
-    },
-    {
-      label: 'French shower',
-      actions: [
-        { icon: 'check_circle', iconColor: 'primary', action: 'sendFax' },
-        { icon: 'done', iconColor: 'success', action: 'done' },
-        { icon: 'visibility_off', iconColor: 'danger', action: 'visibilityOff' }
-      ]
-    },
-    {
-      label: 'French shower',
-      actions: [{ icon: 'check_circle', iconColor: 'primary', action: 'sendFax' }]
-    },
-    {
-      label: 'French shower',
-      actions: [
-        { icon: 'check_circle', iconColor: 'primary', action: 'sendFax' },
-        { icon: 'done', iconColor: 'success', action: 'done' },
-        { icon: 'visibility_off', iconColor: 'danger', action: 'visibilityOff' }
+      labels: [
+        'One Wall Kitchen',
+        'Gallery Kitchen',
+        'L-Shaped Kitchen',
+        'Greek shower',
+        'Bidee',
+        'Waterfall shower',
+        'Prefabricated shower',
+        'Custom shower',
+        'Thermostatic mixer shower'
       ]
     }
   ]
 
-  cardActions: IActionItem[] = [
+  protected cardActions: IActionItem[] = [
     { icon: 'delete', iconColor: 'danger', action: 'delete' },
     { icon: 'edit', iconColor: 'primary', action: 'edit' },
     { icon: 'visibility_off', iconColor: 'danger', action: 'visibilityOff' }
