@@ -6,8 +6,20 @@
   flex: 1;
 }
 
+.grow-1 {
+  flex-grow: 1;
+}
+
+.gap-column-2 {
+  column-gap: 2rem;
+}
+
 .flex-col {
-  flex-direction: column;
+  flex-direction: column !important;
+}
+
+.flex-row {
+  flex-direction: row !important;
 }
 
 .grow-full {

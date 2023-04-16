@@ -2,7 +2,9 @@
 
 .edu-list-item {
   display: flex;
-  flex-direction: column;
-  gap: global.$listItemGap;
-  margin: 6px 0px;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  row-gap: global.$listItemRowGap;
 }

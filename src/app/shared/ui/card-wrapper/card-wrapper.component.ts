@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core'
 import { CommonModule } from '@angular/common'
 
 @Component({
-  selector: 'app-card-wrapper',
+  selector: 'edu-card-wrapper',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './card-wrapper.component.html',

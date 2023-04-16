@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router'
 @Component({
   standalone: true,
   imports: [CommonModule, RouterModule],
-  selector: 'app-layout',
+  selector: 'edu-layout',
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss']
 })

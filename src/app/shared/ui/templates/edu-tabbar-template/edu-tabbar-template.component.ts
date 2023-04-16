@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core'
 import { CommonModule } from '@angular/common'
 
 @Component({
-  selector: 'app-edu-tabbar-template',
+  selector: 'edu-tabbar-template',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './edu-tabbar-template.component.html',

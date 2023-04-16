@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common'
 import { EduListComponent } from '../edu-list/edu-list.component'
 
 @Component({
-  selector: 'app-item-group',
+  selector: 'edu-item-group',
   standalone: true,
   imports: [CommonModule, EduListComponent],
   templateUrl: './item-group.component.html',

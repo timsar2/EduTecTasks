@@ -3,6 +3,6 @@
 .item-group {
   display: flex;
   flex-direction: column;
-  gap: global.$listItemGap;
+  row-gap: global.$listItemRowGap;
   margin: 6px 0px;
 }

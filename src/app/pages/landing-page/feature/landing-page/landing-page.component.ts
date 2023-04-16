@@ -4,9 +4,9 @@ import { IActionItem } from '@app/shared/ui/action-card/data-access/models/actio
 import { ICardAction } from '@app/shared/ui/action-card/data-access/models/card-action.model'
 
 @Component({
-  selector: 'app-landing-page',
+  selector: 'edu-landing-page',
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.css']
+  styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
   protected houseFactors: IHouseFactors[] = [
@@ -37,6 +37,20 @@ export class LandingPageComponent {
         'Custom shower',
         'Thermostatic mixer shower'
       ]
+    },
+    {
+      factor: 'Bathroom',
+      labels: [
+        'Itelian shower',
+        'French shower',
+        'Bbathub',
+        'Greek shower',
+        'Bidet',
+        'Waterfall shower',
+        'Prefabricated shower',
+        'Custom shower',
+        'Thermostatic mixer shower'
+      ]
     }
   ]
 
@@ -45,6 +59,7 @@ export class LandingPageComponent {
     { icon: 'edit', iconColor: 'primary', action: 'edit' },
     { icon: 'visibility_off', iconColor: 'danger', action: 'visibilityOff' }
   ]
+
   constructor() {}
 
   public log(action: string, index: number): void {

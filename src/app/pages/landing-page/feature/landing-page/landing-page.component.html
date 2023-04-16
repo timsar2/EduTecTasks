@@ -1,29 +1,33 @@
-<app-edu-tabbar-template>
+<edu-tabbar-template>
   <div slot="header"></div>
 
-  <app-item-group [items]="houseFactors" [className]="">
+  <edu-item-group [items]="houseFactors">
     <ng-template let-item let-i="index">
-      <app-edu-item-divider>
-        <app-label-info [className]="" [iconStart]="'edit'" [iconEnd]="'done'"
-          ><p>{{ item.factor }}</p></app-label-info
+      <edu-item-divider>
+        <edu-label-info [iconStart]="'edit'" [iconEnd]="'done'"
+          ><p>{{ item.factor }}</p></edu-label-info
         >
-      </app-edu-item-divider>
+      </edu-item-divider>
 
-      <app-edu-list [items]="item.labels">
+      <edu-list [items]="item.labels" [className]="'flex-row gap-column-2'">
         <ng-template let-item let-i="index" let-isOdd="isOdd">
-          <app-action-card
-            [label]="item"
-            [actions]="cardActions"
-            [dragable]="true"
-            [class.list-item-motion]="true"
-            [slotStartClass]="'grow-full col-xs-12 col-sm-8'"
-            [slotEndClass]="'bg-warning flex-1'"
-            (onActionClicked)="log($event, i)"
-          ></app-action-card>
+          <div class="grow-1 col-xl-5 col-12">
+            <edu-action-card
+              [label]="item"
+              [actions]="cardActions"
+              [dragable]="true"
+              [class.list-item-motion]="true"
+              [slotStartClass]="'grow-full col-xs-12 col-sm-8'"
+              [slotEndClass]="'bg-warning flex-1'"
+              (onActionClicked)="log($event, i)"
+            ></edu-action-card>
+          </div>
         </ng-template>
-      </app-edu-list>
+
+        <div class="grow-1 col-xl-5"></div>
+      </edu-list>
     </ng-template>
-  </app-item-group>
+  </edu-item-group>
 
   <div slot="footer"></div>
-</app-edu-tabbar-template>
+</edu-tabbar-template>

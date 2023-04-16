@@ -8,7 +8,7 @@ import { CardWrapperComponent } from '@app/shared/ui/card-wrapper/card-wrapper.c
 import { DragableDirective } from '@app/shared/directives/dragable.directive'
 
 @Component({
-  selector: 'app-action-card',
+  selector: 'edu-action-card',
   standalone: true,
   imports: [CommonModule, MatIconModule, HoverOverDirective, CardWrapperComponent, DragableDirective],
   templateUrl: './action-card.component.html',

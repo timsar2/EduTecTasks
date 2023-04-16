@@ -7,7 +7,7 @@
   left: 0;
 }
 
-.app-layout {
+.edu-layout {
   height: 100vh;
   max-height: -webkit-fill-available;
   overflow: hidden;
@@ -19,6 +19,5 @@
 }
 
 .layout-container {
-  padding-top: 4rem;
-  padding-bottom: 6rem;
+  overflow: hidden;
 }

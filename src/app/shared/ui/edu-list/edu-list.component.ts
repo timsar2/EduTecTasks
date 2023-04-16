@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, ContentChild, Input, TemplateRef } 
 import { CommonModule } from '@angular/common'
 
 @Component({
-  selector: 'app-edu-list',
+  selector: 'edu-list',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './edu-list.component.html',

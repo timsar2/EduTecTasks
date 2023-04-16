@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common'
 import { MatIconModule } from '@angular/material/icon'
 
 @Component({
-  selector: 'app-label-info',
+  selector: 'edu-label-info',
   standalone: true,
   imports: [CommonModule, MatIconModule],
   templateUrl: './label-info.component.html',
