@@ -9,7 +9,7 @@
 }
 
 .tabbar-header {
-  min-height: 5rem;
+  min-height: 3rem;
   padding: 6px 10px;
   box-shadow: 3px 3px 12px var(--app-color-medium-tint);
   background-color: var(--app-color-steam-tint);
@@ -23,8 +23,8 @@
 }
 
 .tabbar-footer {
-  min-height: 6.3rem;
+  min-height: 3.9rem;
   padding: 6px 10px;
-  box-shadow: 3px 3px 12px var(--app-color-medium-tint);
+  box-shadow: -3px -3px 12px var(--app-color-medium-tint);
   background-color: var(--app-color-steam);
 }

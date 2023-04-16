@@ -1,5 +1,10 @@
 <edu-tabbar-template>
-  <div slot="header"></div>
+  <div slot="header" class="flex justify-between">
+    <div class="col-4"></div>
+    <div class="justify-center col-4"></div>
+
+    <edu-search-box class="col-4"></edu-search-box>
+  </div>
 
   <edu-item-group [items]="houseFactors">
     <ng-template let-item let-i="index" let-isItemGroupOdd="isOdd">
