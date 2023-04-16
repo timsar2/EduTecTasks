@@ -12,6 +12,14 @@
   color: var(--app-color-light);
 }
 
+.steam {
+  color: var(--app-color-steam);
+}
+
+.steam-shade {
+  color: var(--app-color-steam-shade);
+}
+
 .foggy {
   color: var(--app-color-foggy);
 }
@@ -44,6 +52,14 @@
 
 .bg-danger {
   background-color: var(--app-color-danger);
+}
+
+.bg-steam {
+  background-color: var(--app-color-steam);
+}
+
+.bg-steam-shade {
+  background-color: var(--app-color-steam-shade);
 }
 
 .bg-foggy {

@@ -57,7 +57,7 @@ export class LandingPageComponent {
   protected cardActions: IActionItem[] = [
     { icon: 'delete', iconColor: 'danger', action: 'delete' },
     { icon: 'edit', iconColor: 'primary', action: 'edit' },
-    { icon: 'visibility_off', iconColor: 'danger', action: 'visibilityOff' }
+    { icon: 'visibility_off', iconColor: 'success', action: 'visibilityOff' }
   ]
 
   constructor() {}

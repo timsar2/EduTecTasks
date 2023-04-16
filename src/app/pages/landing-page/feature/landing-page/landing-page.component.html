@@ -2,7 +2,7 @@
   <div slot="header"></div>
 
   <edu-item-group [items]="houseFactors">
-    <ng-template let-item let-i="index">
+    <ng-template let-item let-i="index" let-isItemGroupOdd="isOdd">
       <edu-item-divider>
         <edu-label-info [iconStart]="'edit'" [iconEnd]="'done'"
           ><p>{{ item.factor }}</p></edu-label-info
@@ -18,7 +18,7 @@
               [dragable]="true"
               [class.list-item-motion]="true"
               [slotStartClass]="'grow-full col-xs-12 col-sm-8'"
-              [slotEndClass]="'bg-warning flex-1'"
+              [slotEndClass]="isItemGroupOdd ? 'bg-warning' : 'bg-steam-shade'"
               (onActionClicked)="log($event, i)"
             ></edu-action-card>
           </div>
