@@ -1,7 +1,10 @@
+import { FormControl } from '@angular/forms'
 import { Component } from '@angular/core'
 import { IHouseFactors } from '@app/shared/models/house-factors.model'
 import { IActionItem } from '@app/shared/ui/action-card/data-access/models/action-item.model'
 import { ICardAction } from '@app/shared/ui/action-card/data-access/models/card-action.model'
+import { HouseService } from '../../data-access/services/house.service'
+import { combineLatest, map, startWith } from 'rxjs'
 
 @Component({
   selector: 'edu-landing-page',
@@ -9,50 +12,29 @@ import { ICardAction } from '@app/shared/ui/action-card/data-access/models/card-
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
-  protected houseFactors: IHouseFactors[] = [
-    {
-      factor: 'Bathroom',
-      labels: [
-        'Itelian shower',
-        'French shower',
-        'Bbathub',
-        'Greek shower',
-        'Bidet',
-        'Waterfall shower',
-        'Prefabricated shower',
-        'Custom shower',
-        'Thermostatic mixer shower'
-      ]
-    },
-    {
-      factor: 'Kitchen',
-      labels: [
-        'One Wall Kitchen',
-        'Gallery Kitchen',
-        'L-Shaped Kitchen',
-        'Greek shower',
-        'Bidee',
-        'Waterfall shower',
-        'Prefabricated shower',
-        'Custom shower',
-        'Thermostatic mixer shower'
-      ]
-    },
-    {
-      factor: 'Bathroom',
-      labels: [
-        'Itelian shower',
-        'French shower',
-        'Bbathub',
-        'Greek shower',
-        'Bidet',
-        'Waterfall shower',
-        'Prefabricated shower',
-        'Custom shower',
-        'Thermostatic mixer shower'
-      ]
-    }
-  ]
+  protected searchField = new FormControl<string>('', { nonNullable: true })
+
+  private searchTerm$ = this.searchField.valueChanges.pipe(startWith(this.searchField.value))
+
+  protected filteredFactors$ = combineLatest([this.houseService.houseFactors$, this.searchTerm$]).pipe(
+    map(([factors, searchTerm]) =>
+      factors
+        ?.filter(
+          factor =>
+            (factor.labels = factor.labels.filter(
+              x =>
+                searchTerm === undefined ||
+                searchTerm === '' ||
+                x.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
+            ))
+        )
+        .filter(x => x.labels.length > 0)
+    )
+  )
+
+  protected vm$ = combineLatest({
+    filteredFactors: this.filteredFactors$
+  })
 
   protected cardActions: IActionItem[] = [
     { icon: 'delete', iconColor: 'danger', action: 'delete' },
@@ -60,5 +42,7 @@ export class LandingPageComponent {
     { icon: 'visibility_off', iconColor: 'success', action: 'visibilityOff' }
   ]
 
-  constructor() {}
+  constructor(private houseService: HouseService) {
+    houseService.getHouseFactors()
+  }
 }

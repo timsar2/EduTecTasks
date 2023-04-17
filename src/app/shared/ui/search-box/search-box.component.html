@@ -1,8 +1,14 @@
-<div class="search-box-container">
+<form class="search-box-container">
   <div class="content-holder">
     <label for="searchBtn">
       <mat-icon class="icon-search">search</mat-icon>
     </label>
-    <input type="search" [value]="value" placeholder="{{ placeholder }}" class="search-input-box" id="searchBtn" />
+    <input
+      id="searchBtn"
+      (input)="onSearchQueryInput($event)"
+      placeholder="{{ placeholder }}"
+      type="search"
+      class="search-input-box"
+    />
   </div>
-</div>
+</form>

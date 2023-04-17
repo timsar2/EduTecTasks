@@ -9,7 +9,7 @@ import { IActionItem } from '@app/shared/ui/action-card/data-access/models/actio
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GroupListComponent {
-  @Input() public houseFactors!: IHouseFactors[]
+  @Input() public houseFactors?: IHouseFactors[]
   @Input() public cardActions?: IActionItem[]
 
   protected log(action: string, index: number): void {
