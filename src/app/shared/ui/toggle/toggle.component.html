@@ -1,0 +1,14 @@
+<a class="toggle-container" (click)="toggleClick()">
+  <div [ngClass]="toggleOn ? 'toggle-bg toggle-on' : 'toggle-bg'" class="flex-1">
+    <div class="toggle-text text-noselect">
+      <p>{{ checkedText }}</p>
+      <p>{{ disabledText }}</p>
+    </div>
+
+    <div [@toggleTrigger]="toggleOn ? 'on' : 'off'" class="toggle edu-button-shadow">
+      <div class="toggle-button-content">
+        <p>{{ selected }}</p>
+      </div>
+    </div>
+  </div>
+</a>

@@ -12,6 +12,8 @@
 .tabbar-header {
   min-height: 3rem;
   padding: 6px 10px;
+  display: flex;
+  align-items: center;
   box-shadow: 3px 3px 12px var(--app-color-medium-tint);
   background-color: var(--app-color-steam-tint);
 }
@@ -26,6 +28,9 @@
 .tabbar-footer {
   min-height: 3.9rem;
   padding: 6px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: -3px -3px 12px var(--app-color-medium-tint);
   background-color: var(--app-color-steam);
 }

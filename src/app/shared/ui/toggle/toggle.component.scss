@@ -1,0 +1,54 @@
+.toggle-container {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-bg {
+  display: inline-block;
+  background-color: var(--app-color-foggy-shade);
+  border-radius: 3px;
+  position: relative;
+  border-radius: 60px;
+  min-height: 1.8rem;
+  box-shadow: inset 1px 1px 2px #00000029;
+}
+
+.toggle-on {
+  // background-color: var(--app-color-steam);
+}
+
+.toggle {
+  width: 50%;
+  display: inline-block;
+  background-color: var(--app-color-steam);
+  position: absolute;
+  left: 0.01rem;
+  top: 0;
+  bottom: 0;
+  border-radius: 60px;
+}
+
+.toggle-button-content {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -3px -3px 6px var(--app-color-light-tint);
+  border-radius: 60px;
+}
+
+.toggle-text {
+  color: var(--app-color-primary);
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  margin-top: 3px;
+}

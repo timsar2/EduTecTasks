@@ -1,16 +1,13 @@
 <ng-container *ngIf="vm$ | async as vm">
-  <edu-tabbar-template>
-    <div slot="header" class="flex justify-between">
-      <div class="col-4"></div>
-      <div class="justify-center col-4"></div>
-
-      <edu-search-box [control]="searchField" class="col-4"></edu-search-box>
-    </div>
+  <edu-tabbar-template *ngIf="vm$ | async as vm">
+    <edu-landing-header
+      slot="header"
+      (searchTerm)="onSearch($event)"
+      (toggledTo)="onEditorToggle($event)"
+    ></edu-landing-header>
 
     <edu-group-list [houseFactors]="vm.filteredFactors" [cardActions]="vm.cardActions"></edu-group-list>
 
-    <div slot="footer" class="flex justify-center">
-      <button class="edu-button">New Template</button>
-    </div>
+    <edu-landing-footer slot="footer"></edu-landing-footer>
   </edu-tabbar-template>
 </ng-container>

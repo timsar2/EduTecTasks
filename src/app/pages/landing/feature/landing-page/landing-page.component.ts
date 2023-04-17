@@ -4,7 +4,7 @@ import { IHouseFactors } from '@app/shared/models/house-factors.model'
 import { IActionItem } from '@app/shared/ui/action-card/data-access/models/action-item.model'
 import { ICardAction } from '@app/shared/ui/action-card/data-access/models/card-action.model'
 import { HouseService } from '../../data-access/services/house.service'
-import { combineLatest, map, of, startWith } from 'rxjs'
+import { BehaviorSubject, combineLatest, map, of, startWith } from 'rxjs'
 
 @Component({
   selector: 'edu-landing-page',
@@ -12,9 +12,7 @@ import { combineLatest, map, of, startWith } from 'rxjs'
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
-  protected searchField = new FormControl<string>('', { nonNullable: true })
-
-  private searchTerm$ = this.searchField.valueChanges.pipe(startWith(this.searchField.value))
+  private searchTerm$ = new BehaviorSubject<string>('')
 
   private cardActions: IActionItem[] = [
     { icon: 'delete', iconColor: 'danger', action: 'delete' },
@@ -39,6 +37,14 @@ export class LandingPageComponent {
     filteredFactors: this.filteredFactors$,
     cardActions: of(this.cardActions)
   })
+
+  protected onSearch($event: string): void {
+    this.searchTerm$.next($event)
+  }
+
+  protected onEditorToggle(value: any): void {
+    console.log(value)
+  }
 
   constructor(private houseService: HouseService) {
     houseService.getHouseFactors()

@@ -11,6 +11,9 @@ import { EduTabbarTemplateComponent } from '@app/shared/ui/templates/edu-tabbar-
 import { SearchBoxComponent } from '@app/shared/ui/search-box/search-box.component'
 import { GroupListComponent } from '../../ui/group-list/group-list.component'
 import { TaskListComponent } from '../../ui/task-list/task-list.component'
+import { ToggleComponent } from '@app/shared/ui/toggle/toggle.component'
+import { LandingHeaderComponent } from '../../ui/landing-header/landing-header.component'
+import { LandingFooterComponent } from '../../ui/landing-footer/landing-footer.component'
 
 @NgModule({
   imports: [
@@ -22,8 +25,15 @@ import { TaskListComponent } from '../../ui/task-list/task-list.component'
     LabelInfoComponent,
     EduItemDividerComponent,
     EduTabbarTemplateComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    ToggleComponent
   ],
-  declarations: [LandingPageComponent, GroupListComponent, TaskListComponent]
+  declarations: [
+    LandingPageComponent,
+    GroupListComponent,
+    TaskListComponent,
+    LandingHeaderComponent,
+    LandingFooterComponent
+  ]
 })
 export class LandingPageModule {}

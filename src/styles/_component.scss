@@ -23,9 +23,12 @@
   font: normal normal normal 19px/25px Quasimoda;
   letter-spacing: 0px;
   color: var(--app-color-primary);
-  box-shadow: 5px 5px 10px #00000029;
 }
 
 .edu-button:active {
   box-shadow: 0 3px 17px var(--app-color-medium);
+}
+
+.edu-button-shadow {
+  box-shadow: 5px 5px 10px #00000029;
 }
