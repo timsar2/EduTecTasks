@@ -8,12 +8,11 @@
 
     <edu-list [items]="item.labels" [className]="'flex-row gap-column-2'">
       <ng-template let-item let-i="index" let-isOdd="isOdd">
-        <div class="grow-1 col-xl-5 col-12">
+        <div class="list-item-motion grow-1 col-xl-5 col-12">
           <edu-action-card
             [label]="item"
             [actions]="cardActions"
             [dragable]="true"
-            [class.list-item-motion]="true"
             [slotStartClass]="'grow-full col-xs-12 col-sm-8'"
             [slotEndClass]="isItemGroupOdd ? 'bg-warning' : 'bg-steam-shade'"
             (onActionClicked)="log($event, i)"
