@@ -61,8 +61,4 @@ export class LandingPageComponent {
   ]
 
   constructor() {}
-
-  public log(action: string, index: number): void {
-    console.table({ itemIndex: index, actionName: action })
-  }
 }

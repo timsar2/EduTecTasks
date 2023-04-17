@@ -9,6 +9,8 @@ import { LabelInfoComponent } from '@app/shared/ui/label-info/label-info.compone
 import { EduItemDividerComponent } from '@app/shared/ui/edu-item-divider/edu-item-divider.component'
 import { EduTabbarTemplateComponent } from '@app/shared/ui/templates/edu-tabbar-template/edu-tabbar-template.component'
 import { SearchBoxComponent } from '@app/shared/ui/search-box/search-box.component'
+import { GroupListComponent } from '../../ui/group-list/group-list.component'
+import { TaskListComponent } from '../../ui/task-list/task-list.component'
 
 @NgModule({
   imports: [
@@ -22,6 +24,6 @@ import { SearchBoxComponent } from '@app/shared/ui/search-box/search-box.compone
     EduTabbarTemplateComponent,
     SearchBoxComponent
   ],
-  declarations: [LandingPageComponent]
+  declarations: [LandingPageComponent, GroupListComponent, TaskListComponent]
 })
 export class LandingPageModule {}

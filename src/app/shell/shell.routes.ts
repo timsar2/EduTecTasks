@@ -12,7 +12,7 @@ export const routes: Route[] = [
         title: 'landing-page',
         data: { breadcrumb: 'home' },
         loadChildren: () =>
-          import('../pages/landing-page/feature/landing-page/landing-page.module').then(m => m.LandingPageModule)
+          import('../pages/landing/feature/landing-page/landing-page.module').then(m => m.LandingPageModule)
       }
     ]
   },
