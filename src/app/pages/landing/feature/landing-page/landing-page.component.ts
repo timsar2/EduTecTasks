@@ -38,15 +38,17 @@ export class LandingPageComponent {
     cardActions: of(this.cardActions)
   })
 
+  protected toggleStatus!: boolean
+
+  constructor(private houseService: HouseService) {
+    houseService.getHouseFactors()
+  }
+
   protected onSearch($event: string): void {
     this.searchTerm$.next($event)
   }
 
   protected onEditorToggle(value: any): void {
-    console.log(value)
-  }
-
-  constructor(private houseService: HouseService) {
-    houseService.getHouseFactors()
+    this.toggleStatus = value
   }
 }

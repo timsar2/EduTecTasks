@@ -1,13 +1,24 @@
 <ng-container *ngIf="vm$ | async as vm">
   <edu-tabbar-template *ngIf="vm$ | async as vm">
+    <!-- Header -->
     <edu-landing-header
       slot="header"
       (searchTerm)="onSearch($event)"
       (toggledTo)="onEditorToggle($event)"
     ></edu-landing-header>
 
-    <edu-group-list [houseFactors]="vm.filteredFactors" [cardActions]="vm.cardActions"></edu-group-list>
+    <!-- Main Content -->
+    <ng-container *ngIf="!toggleStatus; then groupList; else taskList"></ng-container>
 
+    <ng-template #groupList>
+      <edu-group-list [houseFactors]="vm.filteredFactors" [cardActions]="vm.cardActions"></edu-group-list>
+    </ng-template>
+
+    <ng-template #taskList>
+      <edu-task-list></edu-task-list>
+    </ng-template>
+
+    <!-- Footer -->
     <edu-landing-footer slot="footer"></edu-landing-footer>
   </edu-tabbar-template>
 </ng-container>

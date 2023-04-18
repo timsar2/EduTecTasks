@@ -20,33 +20,14 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 export class ToggleComponent {
   @Input() public toggleOn = false
   @Input() public disabledText?: string = ''
-  @Input()
-  public set checkedText(value: string | undefined) {
-    this._checkedText = value
-    this.selected = value
-  }
+  @Input() public checkedText?: string = ''
 
-  @Output() private toggledTo = new EventEmitter<string>()
-
-  public selected?: string = ''
-
-  private _checkedText?: string | undefined = ''
+  @Output() private toggledTo = new EventEmitter<boolean>()
 
   constructor() {}
 
-  public get checkedText(): string | undefined {
-    return this._checkedText
-  }
-
   public toggleClick(): void {
-    if (this.toggleOn) {
-      this.selected = this.checkedText
-      this.toggledTo.emit('off')
-    } else {
-      this.selected = this.disabledText
-      this.toggledTo.emit('on')
-    }
-
     this.toggleOn = !this.toggleOn
+    this.toggledTo.emit(this.toggleOn)
   }
 }
