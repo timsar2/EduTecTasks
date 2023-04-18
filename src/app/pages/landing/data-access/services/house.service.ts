@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { IHouseFactors } from '@app/shared/models/house-factors.model'
+import { IHouseFactors } from '@app/pages/landing/data-access/models/house-factors.model'
 import { BehaviorSubject, Observable } from 'rxjs'
 
 @Injectable({

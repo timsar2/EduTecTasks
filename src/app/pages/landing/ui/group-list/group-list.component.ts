@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core'
-import { IHouseFactors } from '@app/shared/models/house-factors.model'
+import { IHouseFactors } from '@app/pages/landing/data-access/models/house-factors.model'
 import { IActionItem } from '@app/shared/ui/action-card/data-access/models/action-item.model'
 
 @Component({

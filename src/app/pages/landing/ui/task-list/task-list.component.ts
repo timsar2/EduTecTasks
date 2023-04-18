@@ -1,4 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core'
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core'
+import { ITaskGroup } from '../../data-access/models/task.model'
+import { IActionItem } from '@app/shared/ui/action-card/data-access/models/action-item.model'
 
 @Component({
   selector: 'edu-task-list',
@@ -6,4 +8,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core'
   styleUrls: ['./task-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TaskListComponent {}
+export class TaskListComponent {
+  @Input() public tasks?: ITaskGroup[]
+  @Input() public cardActions?: IActionItem[]
+
+  protected log(action: string, index: number): void {
+    console.table({ itemIndex: index, actionName: action })
+  }
+}
