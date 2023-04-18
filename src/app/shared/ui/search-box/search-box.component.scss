@@ -25,11 +25,17 @@
   margin: 0;
   border: 0;
   background-color: transparent;
-  opacity: 0;
+  opacity: 1;
 }
 
 #searchBtn:focus {
   width: 100%;
+  opacity: 1;
+  padding-right: 6px;
+}
+
+#searchBtn:valid {
+  width: 100% !important;
   opacity: 1;
   padding-right: 6px;
 }
