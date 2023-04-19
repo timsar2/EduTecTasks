@@ -11,18 +11,38 @@
         <div class="list-item-motion grow-1 col-12 col-xl-5">
           <edu-advanced-card
             [label]="item.name"
+            [subject]="item.subject"
+            [description]="item.description"
             [actions]="cardActions"
             [slotStartClass]="'col-xs-12 col-sm-9 col-xl-12 col-xxl-8 cursor-pointer'"
             [slotEndClass]="isItemGroupOdd ? 'bg-success' : 'bg-steam-shade'"
             (onActionClicked)="log($event, i)"
           >
+            <!-- right box-->
             <edu-label-info
+              slot="rightBox"
               [className]="'col-2 col-xl-1 flex-col min-h-3 align-end justify-between text-xs'"
               [classIconStart]="'flex-1' + (item?.toDo !== '' ? ' primary' : '')"
               [iconStart]="item?.icon"
             >
               <h4 class="three-dot">{{ item.responsible }}</h4>
             </edu-label-info>
+
+            <!-- expanded box -->
+            <div slot="expanded" class="flex justify-between">
+              <div class="col-4">
+                <h3>Start</h3>
+                <h4>{{ item.start }}</h4>
+              </div>
+              <div class="col-4">
+                <h3>ToDo</h3>
+                <h4>{{ item.toDo }}</h4>
+              </div>
+              <div class="col-4 flex flex-col align-end">
+                <h3>Responsible</h3>
+                <h4>{{ item.responsible }}</h4>
+              </div>
+            </div>
           </edu-advanced-card>
         </div>
       </ng-template>

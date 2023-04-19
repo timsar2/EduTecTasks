@@ -34,6 +34,8 @@ export class AdvancedCardComponent {
   }
 
   @Input() public label!: string
+  @Input() public subject?: string = ''
+  @Input() public description?: string = ''
   @Input() public actions?: IActionItem[]
   @Input() public dragable?: boolean = false
   @Input() public slotStartClass?: string = ''
