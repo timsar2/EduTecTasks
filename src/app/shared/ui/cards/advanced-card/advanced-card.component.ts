@@ -41,9 +41,15 @@ export class AdvancedCardComponent {
 
   @Output() onActionClicked = new EventEmitter<string>()
 
+  public isCardExpanded = false
+
   constructor() {}
 
   protected emitAction(action?: string): void {
     action !== undefined ? this.onActionClicked.emit(action) : undefined
+  }
+
+  public expandCard() {
+    this.isCardExpanded = !this.isCardExpanded
   }
 }

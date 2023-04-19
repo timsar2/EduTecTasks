@@ -32,7 +32,7 @@ h1 {
 
 h2 {
   font-size: 1.25rem;
-  color: var(--app-color-primary);
+  color: var(--app-color-dark-tint);
 }
 
 h3 {
@@ -42,18 +42,19 @@ h3 {
 }
 
 h4 {
-  font-size: 0.7rem;
-  line-height: 1rem;
-}
-
-h5 {
   font-size: 0.8rem;
   line-height: 1rem;
 }
 
+h5 {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: var(--app-color-medium);
+}
+
 p {
   line-height: 1.5rem;
-  color: var(--app-color-medium);
+  color: var(--app-color-dark);
 }
 
 a {

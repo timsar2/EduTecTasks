@@ -23,6 +23,10 @@
   padding-bottom: 0.3rem;
 }
 
+.ad-card-expand {
+  padding: 0.7rem;
+}
+
 .btn-wrapper {
   min-height: 100%;
   width: 2.5rem;
@@ -37,4 +41,12 @@
 
 mat-icon {
   font-size: 1.3rem !important;
+}
+
+h4 {
+  line-height: 1.6rem;
+}
+
+h5 {
+  line-height: 1.2rem;
 }

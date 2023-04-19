@@ -1,8 +1,29 @@
-<edu-card-wrapper>
-  <div slot="start" [ngClass]="slotStartClass" eduDragable class="ad-card-item">
+<edu-card-wrapper *ngIf="!isCardExpanded">
+  <div slot="start" [ngClass]="slotStartClass" [class.w-full]="isCardExpanded" class="ad-card-item">
     <edu-check-button></edu-check-button>
 
-    <h2 class="three-dot text-noselect ad-card-text">{{ label }}</h2>
+    <div (click)="expandCard()" class="w-full">
+      <h2 class="three-dot text-noselect ad-card-text">{{ label }}</h2>
+    </div>
+  </div>
+
+  <div slot="end" [ngClass]="slotEndClass" class="ad-card-btn-wrapper">
+    <div class="ad-card-holder cursor-default">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</edu-card-wrapper>
+
+<edu-card-wrapper select="slot=[expanded]" *ngIf="isCardExpanded">
+  <div slot="start" class="flex">
+    <edu-check-button></edu-check-button>
+
+    <div (click)="expandCard()" class="ad-card-expand cursor-pointer">
+      <h4 class="text-noselect">Tree Removal & Fill up hole</h4>
+      <h5 class="text-noselect">
+        Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.
+      </h5>
+    </div>
   </div>
 
   <div slot="end" [ngClass]="slotEndClass" class="ad-card-btn-wrapper">
