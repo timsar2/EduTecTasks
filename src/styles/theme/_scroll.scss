@@ -15,3 +15,8 @@
   box-shadow: inset -1px -1px 1px var(--app-color-medium-shade), 1px 1px 2px #00000029;
   border-radius: 4px;
 }
+
+/* Handle on active */
+::-webkit-scrollbar-thumb:active {
+  box-shadow: inset 1px -2px 4px var(--app-color-medium-shade), 1px 2px 3px #00000029;
+}
