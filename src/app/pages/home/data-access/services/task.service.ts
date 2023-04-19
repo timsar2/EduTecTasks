@@ -18,44 +18,44 @@ export class TaskService {
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '04.11.2020',
             toDo: '04.11.2020',
-            icon: 'account_tree'
+            icon: 'file_download_done'
           },
           {
             name: 'RDV Mesurage',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'TVA 3%',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Permissionsde voirie',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Dixi',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: [''],
+            responsible: '',
             start: '',
             toDo: ''
           },
@@ -64,55 +64,55 @@ export class TaskService {
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bestdesign'],
+            responsible: 'Bestdesign',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Command Mirage',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '',
             toDo: '',
-            icon: 'account_tree'
+            icon: 'import_export'
           },
           {
             name: 'Confirmation Mirage',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: [''],
+            responsible: '',
             start: '',
             toDo: '',
-            icon: 'account_tree'
+            icon: 'import_export'
           },
           {
             name: 'Transport Mirage',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: '04.11.2020',
-            icon: 'account_tree'
+            toDo: '',
+            icon: 'import_export'
           },
           {
             name: 'Chantier Transport du depot',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Deliverd',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: [''],
+            responsible: '',
             start: '',
             toDo: ''
           },
@@ -121,45 +121,45 @@ export class TaskService {
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Autorisation Internet',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Autorisation commune',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Autorisation Sécurité',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Autorisation Eau',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           }
         ]
       },
@@ -171,44 +171,44 @@ export class TaskService {
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '04.11.2020',
             toDo: '04.11.2020',
-            icon: 'account_tree'
+            icon: 'file_download_done'
           },
           {
             name: 'RDV Mesurage',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'TVA 3%',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Permissionsde voirie',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Dixi',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: [''],
+            responsible: '',
             start: '',
             toDo: ''
           },
@@ -217,55 +217,55 @@ export class TaskService {
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bestdesign'],
+            responsible: 'Bestdesign',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Command Mirage',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '',
             toDo: '',
-            icon: 'account_tree'
+            icon: 'import_export'
           },
           {
             name: 'Confirmation Mirage',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: [''],
+            responsible: '',
             start: '',
             toDo: '',
-            icon: 'account_tree'
+            icon: 'import_export'
           },
           {
             name: 'Transport Mirage',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: '04.11.2020',
-            icon: 'account_tree'
+            toDo: '',
+            icon: 'import_export'
           },
           {
             name: 'Chantier Transport du depot',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Deliverd',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: [''],
+            responsible: '',
             start: '',
             toDo: ''
           },
@@ -274,45 +274,45 @@ export class TaskService {
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Autorisation Internet',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Autorisation commune',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Autorisation Sécurité',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Autorisation Eau',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           }
         ]
       },
@@ -324,44 +324,44 @@ export class TaskService {
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '04.11.2020',
             toDo: '04.11.2020',
-            icon: 'account_tree'
+            icon: 'file_download_done'
           },
           {
             name: 'RDV Mesurage',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'TVA 3%',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Permissionsde voirie',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Dixi',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: [''],
+            responsible: '',
             start: '',
             toDo: ''
           },
@@ -370,55 +370,55 @@ export class TaskService {
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bestdesign'],
+            responsible: 'Bestdesign',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Command Mirage',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '',
             toDo: '',
-            icon: 'account_tree'
+            icon: 'import_export'
           },
           {
             name: 'Confirmation Mirage',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: [''],
+            responsible: '',
             start: '',
             toDo: '',
-            icon: 'account_tree'
+            icon: 'import_export'
           },
           {
             name: 'Transport Mirage',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: '04.11.2020',
-            icon: 'account_tree'
+            toDo: '',
+            icon: 'import_export'
           },
           {
             name: 'Chantier Transport du depot',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Edutec'],
+            responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Deliverd',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: [''],
+            responsible: '',
             start: '',
             toDo: ''
           },
@@ -427,45 +427,45 @@ export class TaskService {
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Autorisation Internet',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Autorisation commune',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Autorisation Sécurité',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           },
           {
             name: 'Autorisation Eau',
             subject: 'Tree Removal & Fill up hole',
             description:
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
-            responsible: ['Bettendorf'],
+            responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: '04.11.2020'
+            toDo: ''
           }
         ]
       }

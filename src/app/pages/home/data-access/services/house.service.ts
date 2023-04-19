@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { IHouseFactors } from '@app/pages/landing/data-access/models/house-factors.model'
+import { IHouseFactors } from '@app/pages/home/data-access/models/house-factors.model'
 import { BehaviorSubject, Observable } from 'rxjs'
 
 @Injectable({
@@ -12,6 +12,7 @@ export class HouseService {
     this.houseFactors$.next([
       {
         factor: 'Bathroom',
+        icon: 'shower',
         labels: [
           'Itelian shower',
           'French shower',
@@ -26,6 +27,7 @@ export class HouseService {
       },
       {
         factor: 'Kitchen',
+        icon: 'local_dining',
         labels: [
           'One Wall Kitchen',
           'Gallery Kitchen',
@@ -40,6 +42,7 @@ export class HouseService {
       },
       {
         factor: 'Bathroom',
+        icon: 'shower',
         labels: [
           'Itelian shower',
           'French shower',

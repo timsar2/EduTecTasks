@@ -1,0 +1,10 @@
+<div
+  (click)="changeState()"
+  [ngClass]="className"
+  [class.bg-foggy-tint]="state === 0"
+  [class.bg-danger]="state === 1"
+  [class.bg-primary]="state === 2"
+  [class.bg-success]="state === 3"
+  [class.bg-warning]="state === 4"
+  class="check-button-container"
+></div>

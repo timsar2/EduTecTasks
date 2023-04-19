@@ -1,0 +1,34 @@
+<edu-item-group [items]="tasks">
+  <ng-template let-item let-i="index" let-isItemGroupOdd="isOdd">
+    <edu-item-divider>
+      <edu-label-info>
+        <p>{{ item.label }}</p>
+      </edu-label-info>
+    </edu-item-divider>
+
+    <edu-list [items]="item.tasks" [className]="'flex-row gap-column-2'">
+      <ng-template let-item let-i="index" let-isOdd="isOdd">
+        <div class="list-item-motion grow-1 col-12 col-xl-5">
+          <edu-advanced-card
+            [label]="item.name"
+            [actions]="cardActions"
+            [dragable]="true"
+            [slotStartClass]="'col-xs-12 col-sm-9 col-xl-12 col-xxl-8'"
+            [slotEndClass]="isItemGroupOdd ? 'bg-success' : 'bg-steam-shade'"
+            (onActionClicked)="log($event, i)"
+          >
+            <edu-label-info
+              [className]="'col-2 col-xl-1 flex-col min-h-3 align-end justify-between text-xs'"
+              [classIconStart]="'flex-1' + (item?.toDo !== '' ? ' primary' : '')"
+              [iconStart]="item?.icon"
+            >
+              <h5 class="three-dot">{{ item.responsible }}</h5>
+            </edu-label-info>
+          </edu-advanced-card>
+        </div>
+      </ng-template>
+
+      <div class="grow-1 col-xl-5"></div>
+    </edu-list>
+  </ng-template>
+</edu-item-group>

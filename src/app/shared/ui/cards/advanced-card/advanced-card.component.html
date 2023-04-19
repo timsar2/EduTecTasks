@@ -1,0 +1,13 @@
+<edu-card-wrapper>
+  <div slot="start" [ngClass]="slotStartClass" eduDragable class="ad-card-item">
+    <edu-check-button></edu-check-button>
+
+    <h2 class="three-dot text-noselect ad-card-text">{{ label }}</h2>
+  </div>
+
+  <div slot="end" [ngClass]="slotEndClass" class="ad-card-btn-wrapper">
+    <div class="ad-card-holder cursor-default">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</edu-card-wrapper>

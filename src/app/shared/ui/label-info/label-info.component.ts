@@ -15,4 +15,6 @@ export class LabelInfoComponent {
   @Input() public iconStart?: string
   @Input() public iconEnd?: string
   @Input() public className?: string = ''
+  @Input() public classIconStart?: string = ''
+  @Input() public classIconEnd?: string = ''
 }

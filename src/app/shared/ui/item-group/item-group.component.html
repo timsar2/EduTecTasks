@@ -1,6 +1,14 @@
 <div [ngClass]="className" class="item-group">
   <ng-template
-    *ngFor="let item of items; let i = index; first as isFirst; last as isLast; odd as isOdd; even as isEven"
+    *ngFor="
+      let item of items;
+      let i = index;
+      first as isFirst;
+      last as isLast;
+      odd as isOdd;
+      even as isEven;
+      trackBy: identify
+    "
     [ngTemplateOutlet]="outlet"
     [ngTemplateOutletContext]="{ $implicit: item, index: i, isFirst, isLast, isOdd, isEven }"
   >

@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { MatIconModule } from '@angular/material/icon'
-import { IActionItem } from '@app/shared/ui/action-card/data-access/models/action-item.model'
+import { IActionItem } from '@app/shared/ui/cards/action-card/data-access/models/action-item.model'
 import { HoverOverDirective } from '@app/shared/directives/hover-over.directive'
 import { ICardAction } from './data-access/models/card-action.model'
-import { CardWrapperComponent } from '@app/shared/ui/card-wrapper/card-wrapper.component'
+import { CardWrapperComponent } from '@app/shared/ui/cards/card-wrapper/card-wrapper.component'
 import { DragableDirective } from '@app/shared/directives/dragable.directive'
 
 @Component({

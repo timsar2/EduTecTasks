@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core'
-import { ITaskGroup } from '../../data-access/models/task.model'
-import { IActionItem } from '@app/shared/ui/action-card/data-access/models/action-item.model'
+import { ITaskGroup } from '@app/pages/home/data-access/models/task.model'
+import { IActionItem } from '@app/shared/ui/cards/action-card/data-access/models/action-item.model'
 
 @Component({
   selector: 'edu-task-list',

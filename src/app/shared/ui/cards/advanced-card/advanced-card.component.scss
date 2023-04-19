@@ -1,0 +1,40 @@
+.ad-card-item {
+  display: flex;
+  align-items: center;
+  min-height: 5rem;
+}
+
+.ad-card-text {
+  white-space: nowrap;
+  padding: 9px 13px;
+}
+
+.ad-card-btn-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+}
+
+.ad-card-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.btn-wrapper {
+  min-height: 100%;
+  width: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.icon-wrapper {
+  display: flex;
+}
+
+mat-icon {
+  font-size: 1.3rem !important;
+}

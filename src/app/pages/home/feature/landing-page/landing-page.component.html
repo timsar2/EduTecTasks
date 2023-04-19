@@ -3,12 +3,13 @@
     <!-- Header -->
     <edu-landing-header
       slot="header"
+      [toggleOn]="toggleOn"
       (searchTerm)="onSearch($event)"
       (toggledTo)="onEditorToggle($event)"
     ></edu-landing-header>
 
     <!-- Main Content -->
-    <ng-container *ngIf="!toggleStatus; then groupList; else taskList"></ng-container>
+    <ng-container *ngIf="!toggleOn; then groupList; else taskList"></ng-container>
 
     <ng-template #groupList>
       <edu-group-list [houseFactors]="vm.filteredFactors" [cardActions]="vm.cardActions"></edu-group-list>

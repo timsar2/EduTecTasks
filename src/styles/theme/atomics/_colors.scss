@@ -24,6 +24,10 @@
   color: var(--app-color-foggy);
 }
 
+.foggy-tint {
+  color: var(--app-color-foggy-tint);
+}
+
 .danger {
   color: var(--app-color-danger);
 }
@@ -64,6 +68,10 @@
 
 .bg-foggy {
   color: var(--app-color-foggy);
+}
+
+.bg-foggy-tint {
+  background-color: var(--app-color-foggy-tint);
 }
 
 .bg-warning {

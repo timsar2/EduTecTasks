@@ -9,10 +9,10 @@ export const routes: Route[] = [
       { path: '', pathMatch: 'full', redirectTo: 'home' },
       {
         path: 'home',
-        title: 'landing-page',
+        title: 'EduTec-dashboard',
         data: { breadcrumb: 'home' },
         loadChildren: () =>
-          import('../pages/landing/feature/landing-page/landing-page.module').then(m => m.LandingPageModule)
+          import('../pages/home/feature/landing-page/landing-page.module').then(m => m.LandingPageModule)
       }
     ]
   },

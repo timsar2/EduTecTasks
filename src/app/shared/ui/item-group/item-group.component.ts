@@ -14,4 +14,8 @@ export class ItemGroupComponent<T> {
   @ContentChild(TemplateRef) outlet!: TemplateRef<any>
   @Input() public items?: T[]
   @Input() public className?: string = ''
+
+  protected identify(index: number, item: any) {
+    return item
+  }
 }

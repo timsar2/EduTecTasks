@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { IActionItem } from '@app/shared/ui/action-card/data-access/models/action-item.model'
+import { IActionItem } from '@app/shared/ui/cards/action-card/data-access/models/action-item.model'
 import { HouseService } from '../../data-access/services/house.service'
 import { BehaviorSubject, combineLatest, map, of, startWith } from 'rxjs'
 import { TaskService } from '../../data-access/services/task.service'
@@ -18,7 +18,7 @@ export class LandingPageComponent {
     { icon: 'visibility_off', iconColor: 'success', action: 'visibilityOff' }
   ]
 
-  protected toggleStatus!: boolean
+  protected toggleOn: boolean = true
 
   protected filteredFactors$ = combineLatest([this.houseService.houseFactors$, this.searchTerm$]).pipe(
     map(([factors, searchTerm]) =>
@@ -73,6 +73,6 @@ export class LandingPageComponent {
   }
 
   protected onEditorToggle(value: any): void {
-    this.toggleStatus = value
+    this.toggleOn = value
   }
 }

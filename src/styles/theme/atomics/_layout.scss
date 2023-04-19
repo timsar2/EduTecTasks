@@ -35,11 +35,15 @@
 }
 
 .justify-center {
-  justify-content: center;
+  justify-content: center !important;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.align-end {
+  align-items: flex-end !important;
 }
 
 .items-center {

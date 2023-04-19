@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core'
-import { IHouseFactors } from '@app/pages/landing/data-access/models/house-factors.model'
-import { IActionItem } from '@app/shared/ui/action-card/data-access/models/action-item.model'
+import { IHouseFactors } from '@app/pages/home/data-access/models/house-factors.model'
+import { IActionItem } from '@app/shared/ui/cards/action-card/data-access/models/action-item.model'
 
 @Component({
   selector: 'edu-group-list',

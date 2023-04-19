@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, OnDestroy, Output } from '@angular/core'
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnDestroy, Output } from '@angular/core'
 import { FormControl } from '@angular/forms'
 import { Subject, takeUntil } from 'rxjs'
 
@@ -9,6 +9,7 @@ import { Subject, takeUntil } from 'rxjs'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LandingHeaderComponent implements OnDestroy {
+  @Input() toggleOn?: boolean
   @Output() private searchTerm = new EventEmitter<string>()
   @Output() private toggledTo = new EventEmitter<boolean>()
 
