@@ -1,0 +1,17 @@
+@use 'variables' as global;
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset -1px -1px 1px var(--app-color-light-tint);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: global.$app-linear-background-primary;
+  box-shadow: inset -1px -1px 1px var(--app-color-medium-shade), 1px 1px 2px #00000029;
+  border-radius: 4px;
+}

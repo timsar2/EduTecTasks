@@ -123,6 +123,8 @@
   --edu-font-family: 'AppFont';
 }
 
+$app-linear-background-primary: transparent linear-gradient(0deg, #007aff 0%, #66adfc 100%) 0% 0% no-repeat padding-box;
+
 $breakpoint-xs: 0px;
 $breakpoint-sm: 20em;
 $breakpoint-ms: 36em;
