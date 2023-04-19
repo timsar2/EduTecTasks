@@ -3,7 +3,7 @@
 }
 
 .row-divider {
-  height: 0.4rem;
+  min-height: 0.4rem;
   margin-top: 11px;
   margin-bottom: 10px;
   background: var(--app-color-foggy) 0% 0% no-repeat padding-box;

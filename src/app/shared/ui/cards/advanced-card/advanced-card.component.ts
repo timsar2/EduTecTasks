@@ -51,7 +51,7 @@ export class AdvancedCardComponent {
     action !== undefined ? this.onActionClicked.emit(action) : undefined
   }
 
-  public expandCard() {
+  public expandCard(): void {
     this.isCardExpanded = !this.isCardExpanded
   }
 }

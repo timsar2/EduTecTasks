@@ -13,7 +13,7 @@ export class CheckButtonComponent {
   @Input() public className?: string = ''
   protected state = 0
 
-  public changeState() {
+  public changeState(): void {
     this.state < 4 ? this.state++ : (this.state = 0)
   }
 }

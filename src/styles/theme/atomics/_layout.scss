@@ -42,10 +42,22 @@
   justify-content: space-between;
 }
 
+.align-center {
+  align-items: center !important;
+}
+
 .align-end {
   align-items: flex-end !important;
 }
 
 .items-center {
   align-items: center;
+}
+
+.w-full {
+  min-width: 100%;
+}
+
+.h-full {
+  height: 100%;
 }

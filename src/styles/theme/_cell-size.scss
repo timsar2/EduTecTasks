@@ -1,9 +1,5 @@
 @use 'variables' as global;
 
-.w-full {
-  min-width: 100% !important;
-}
-
 /* For mobile phones: */
 [class*='col-'] {
   width: 100%;
