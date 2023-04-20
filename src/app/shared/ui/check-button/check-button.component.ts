@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core'
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core'
 import { CommonModule } from '@angular/common'
 
 @Component({
@@ -13,11 +13,15 @@ export class CheckButtonComponent {
   @Input() public className?: string = ''
   @Input() public state?: number = 0
 
+  @Output() private onStateChange = new EventEmitter<number>()
+
   public changeState(): void {
     if (!this.state) {
       this.state = 0
     }
 
     this.state < 4 ? this.state++ : (this.state = 0)
+
+    this.onStateChange.emit(this.state)
   }
 }

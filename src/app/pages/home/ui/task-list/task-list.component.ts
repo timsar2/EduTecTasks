@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core'
-import { ITaskGroup } from '@app/pages/home/data-access/models/task.model'
+import { ITask, ITaskGroup } from '@app/pages/home/data-access/models/task.model'
 import { IActionItem } from '@app/shared/ui/cards/action-card/data-access/models/action-item.model'
 
 @Component({
@@ -14,5 +14,13 @@ export class TaskListComponent {
 
   protected log(action: string, index: number): void {
     console.table({ itemIndex: index, actionName: action })
+  }
+
+  protected changeState(event: number, item: ITask) {
+    if (!this.tasks) {
+      return
+    }
+
+    item.state = event
   }
 }

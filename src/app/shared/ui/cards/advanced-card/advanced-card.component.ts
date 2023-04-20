@@ -43,6 +43,7 @@ export class AdvancedCardComponent {
   @Input() public slotEndClass?: string = ''
 
   @Output() onActionClicked = new EventEmitter<string>()
+  @Output() onStateChange = new EventEmitter<number>()
 
   public isCardExpanded = false
 
@@ -54,5 +55,9 @@ export class AdvancedCardComponent {
 
   public expandCard(): void {
     this.isCardExpanded = !this.isCardExpanded
+  }
+
+  public changeState($event: number) {
+    this.onStateChange.emit($event)
   }
 }
