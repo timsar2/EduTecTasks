@@ -18,7 +18,7 @@ export class LandingPageComponent {
     { icon: 'visibility_off', iconColor: 'success', action: 'visibilityOff' }
   ]
 
-  protected toggleOn: boolean = true
+  protected toggleOn: boolean = false
 
   protected filteredFactors$ = combineLatest([this.houseService.houseFactors$, this.searchTerm$]).pipe(
     map(([factors, searchTerm]) =>
