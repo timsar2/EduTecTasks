@@ -11,9 +11,13 @@ import { CommonModule } from '@angular/common'
 })
 export class CheckButtonComponent {
   @Input() public className?: string = ''
-  protected state = 0
+  @Input() public state?: number = 0
 
   public changeState(): void {
+    if (!this.state) {
+      this.state = 0
+    }
+
     this.state < 4 ? this.state++ : (this.state = 0)
   }
 }

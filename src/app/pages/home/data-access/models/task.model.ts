@@ -6,6 +6,7 @@ export interface ITask {
   start?: string
   toDo?: string
   icon?: string
+  state?: number
 }
 
 export interface ITaskGroup {

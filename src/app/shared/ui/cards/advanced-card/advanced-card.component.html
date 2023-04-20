@@ -1,6 +1,6 @@
 <edu-card-wrapper *ngIf="!isCardExpanded">
   <div slot="start" [ngClass]="slotStartClass" class="ad-card-item">
-    <edu-check-button></edu-check-button>
+    <edu-check-button [state]="state"></edu-check-button>
 
     <div (click)="expandCard()" class="flex flex-1 align-center h-full overflow-hidden">
       <h2 class="three-dot text-noselect ad-card-text">{{ label }}</h2>
@@ -16,7 +16,7 @@
 
 <edu-card-wrapper *ngIf="isCardExpanded">
   <div slot="start" class="flex">
-    <edu-check-button></edu-check-button>
+    <edu-check-button [state]="state"></edu-check-button>
 
     <div (click)="expandCard()" class="ad-card-expand cursor-pointer">
       <h4 class="text-noselect">{{ subject }}</h4>

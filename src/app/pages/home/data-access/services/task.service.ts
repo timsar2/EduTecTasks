@@ -21,6 +21,7 @@ export class TaskService {
             responsible: 'Edutec',
             start: '04.11.2020',
             toDo: '04.11.2020',
+            state: 2,
             icon: 'file_download_done'
           },
           {
@@ -30,7 +31,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'TVA 3%',
@@ -39,7 +41,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Permissionsde voirie',
@@ -48,7 +51,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Dixi',
@@ -57,7 +61,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: '',
             start: '',
-            toDo: ''
+            toDo: '',
+            state: 1
           },
           {
             name: 'Certificate pour construction',
@@ -66,7 +71,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bestdesign',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Command Mirage',
@@ -76,6 +82,7 @@ export class TaskService {
             responsible: 'Edutec',
             start: '',
             toDo: '',
+            state: 0,
             icon: 'import_export'
           },
           {
@@ -86,6 +93,7 @@ export class TaskService {
             responsible: '',
             start: '',
             toDo: '',
+            state: 1,
             icon: 'import_export'
           },
           {
@@ -96,6 +104,7 @@ export class TaskService {
             responsible: 'Edutec',
             start: '04.11.2020',
             toDo: '',
+            state: 0,
             icon: 'import_export'
           },
           {
@@ -105,7 +114,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Deliverd',
@@ -114,7 +124,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: '',
             start: '',
-            toDo: ''
+            toDo: '',
+            state: 1
           },
           {
             name: 'Autorisation',
@@ -123,7 +134,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Autorisation Internet',
@@ -132,7 +144,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Autorisation commune',
@@ -141,7 +154,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Autorisation Sécurité',
@@ -150,7 +164,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Autorisation Eau',
@@ -159,7 +174,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           }
         ]
       },
@@ -174,6 +190,7 @@ export class TaskService {
             responsible: 'Edutec',
             start: '04.11.2020',
             toDo: '04.11.2020',
+            state: 2,
             icon: 'file_download_done'
           },
           {
@@ -183,7 +200,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'TVA 3%',
@@ -192,7 +210,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Permissionsde voirie',
@@ -201,7 +220,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Dixi',
@@ -210,7 +230,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: '',
             start: '',
-            toDo: ''
+            toDo: '',
+            state: 1
           },
           {
             name: 'Certificate pour construction',
@@ -219,7 +240,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bestdesign',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Command Mirage',
@@ -229,6 +251,7 @@ export class TaskService {
             responsible: 'Edutec',
             start: '',
             toDo: '',
+            state: 0,
             icon: 'import_export'
           },
           {
@@ -239,6 +262,7 @@ export class TaskService {
             responsible: '',
             start: '',
             toDo: '',
+            state: 1,
             icon: 'import_export'
           },
           {
@@ -249,6 +273,7 @@ export class TaskService {
             responsible: 'Edutec',
             start: '04.11.2020',
             toDo: '',
+            state: 0,
             icon: 'import_export'
           },
           {
@@ -258,7 +283,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Deliverd',
@@ -267,7 +293,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: '',
             start: '',
-            toDo: ''
+            toDo: '',
+            state: 1
           },
           {
             name: 'Autorisation',
@@ -276,7 +303,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Autorisation Internet',
@@ -285,7 +313,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Autorisation commune',
@@ -294,7 +323,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Autorisation Sécurité',
@@ -303,7 +333,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Autorisation Eau',
@@ -312,7 +343,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           }
         ]
       },
@@ -327,6 +359,7 @@ export class TaskService {
             responsible: 'Edutec',
             start: '04.11.2020',
             toDo: '04.11.2020',
+            state: 2,
             icon: 'file_download_done'
           },
           {
@@ -336,7 +369,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'TVA 3%',
@@ -345,7 +379,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Permissionsde voirie',
@@ -354,7 +389,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Dixi',
@@ -363,7 +399,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: '',
             start: '',
-            toDo: ''
+            toDo: '',
+            state: 1
           },
           {
             name: 'Certificate pour construction',
@@ -372,7 +409,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bestdesign',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Command Mirage',
@@ -382,6 +420,7 @@ export class TaskService {
             responsible: 'Edutec',
             start: '',
             toDo: '',
+            state: 0,
             icon: 'import_export'
           },
           {
@@ -392,6 +431,7 @@ export class TaskService {
             responsible: '',
             start: '',
             toDo: '',
+            state: 1,
             icon: 'import_export'
           },
           {
@@ -402,6 +442,7 @@ export class TaskService {
             responsible: 'Edutec',
             start: '04.11.2020',
             toDo: '',
+            state: 0,
             icon: 'import_export'
           },
           {
@@ -411,7 +452,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Edutec',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Deliverd',
@@ -420,7 +462,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: '',
             start: '',
-            toDo: ''
+            toDo: '',
+            state: 1
           },
           {
             name: 'Autorisation',
@@ -429,7 +472,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Autorisation Internet',
@@ -438,7 +482,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Autorisation commune',
@@ -447,7 +492,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Autorisation Sécurité',
@@ -456,7 +502,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           },
           {
             name: 'Autorisation Eau',
@@ -465,7 +512,8 @@ export class TaskService {
               'Oak Tree facing the Kitchen window needs to be removed. The hole left will be filled with sand.',
             responsible: 'Bettendorf',
             start: '04.11.2020',
-            toDo: ''
+            toDo: '',
+            state: 0
           }
         ]
       }
