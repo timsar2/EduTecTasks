@@ -18,9 +18,9 @@ export class LandingPageComponent {
     { icon: 'visibility_off', iconColor: 'success', action: 'visibilityOff' }
   ]
 
-  protected toggleOn: boolean = false
+  public toggleOn: boolean = false
 
-  protected filteredFactors$ = combineLatest([this.houseService.houseFactors$, this.searchTerm$]).pipe(
+  public filteredFactors$ = combineLatest([this.houseService.houseFactors$, this.searchTerm$]).pipe(
     map(([factors, searchTerm]) =>
       factors
         .map(element => {
@@ -38,7 +38,7 @@ export class LandingPageComponent {
     )
   )
 
-  protected filteredTasks$ = combineLatest([this.taskService.tasks$, this.searchTerm$]).pipe(
+  public filteredTasks$ = combineLatest([this.taskService.tasks$, this.searchTerm$]).pipe(
     map(([factors, searchTerm]) =>
       factors
         .map(element => {
@@ -57,7 +57,7 @@ export class LandingPageComponent {
     )
   )
 
-  protected vm$ = combineLatest({
+  public vm$ = combineLatest({
     filteredFactors: this.filteredFactors$,
     tasks: this.filteredTasks$,
     cardActions: of(this.cardActions)
@@ -68,11 +68,11 @@ export class LandingPageComponent {
     taskService.getTasks()
   }
 
-  protected onSearch($event: string): void {
+  public onSearch($event: string): void {
     this.searchTerm$.next($event)
   }
 
-  protected onEditorToggle(value: any): void {
+  public onEditorToggle(value: any): void {
     this.toggleOn = value
   }
 }

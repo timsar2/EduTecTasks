@@ -15,7 +15,7 @@ export class EduListComponent<T> {
   @Input() public items?: T[]
   @Input() public className?: string = ''
 
-  protected identify(index: number, item: any) {
+  public identify(index: number, item: any) {
     return item
   }
 }

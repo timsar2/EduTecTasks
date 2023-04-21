@@ -12,7 +12,7 @@ export class GroupListComponent {
   @Input() public houseFactors?: IHouseFactors[]
   @Input() public cardActions?: IActionItem[]
 
-  protected log(action: string, index: number): void {
+  public log(action: string, index: number): void {
     console.table({ itemIndex: index, actionName: action })
   }
 }

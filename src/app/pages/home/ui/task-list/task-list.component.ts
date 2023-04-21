@@ -12,11 +12,11 @@ export class TaskListComponent {
   @Input() public tasks?: ITaskGroup[]
   @Input() public cardActions?: IActionItem[]
 
-  protected log(action: string, index: number): void {
+  public log(action: string, index: number): void {
     console.table({ itemIndex: index, actionName: action })
   }
 
-  protected changeState(event: number, item: ITask) {
+  public changeState(event: number, item: ITask) {
     if (!this.tasks) {
       return
     }

@@ -17,7 +17,7 @@ export class SearchBoxComponent {
 
   @Output() public searchQuery = new EventEmitter<string | undefined>()
 
-  protected onSearchQueryInput(event: Event): void {
+  public onSearchQueryInput(event: Event): void {
     const searchQuery = (event.target as HTMLInputElement).value?.trim()
     this.searchQuery.next(searchQuery)
 

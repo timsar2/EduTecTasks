@@ -35,7 +35,7 @@ export class ActionCardComponent {
 
   constructor() {}
 
-  protected emitAction(action?: string): void {
+  public emitAction(action?: string): void {
     action !== undefined ? this.onActionClicked.emit(action) : undefined
   }
 }
