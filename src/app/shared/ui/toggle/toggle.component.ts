@@ -22,7 +22,7 @@ export class ToggleComponent {
   @Input() disabledText?: string = ''
   @Input() checkedText?: string = ''
 
-  @Output() private toggledTo = new EventEmitter<boolean>()
+  @Output() toggledTo = new EventEmitter<boolean>()
 
   constructor() {}
 

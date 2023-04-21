@@ -10,8 +10,8 @@ import { Subject, takeUntil } from 'rxjs'
 })
 export class LandingHeaderComponent implements OnDestroy {
   @Input() toggleOn?: boolean
-  @Output() private searchTerm = new EventEmitter<string>()
-  @Output() private toggledTo = new EventEmitter<boolean>()
+  @Output() searchTerm = new EventEmitter<string>()
+  @Output() toggledTo = new EventEmitter<boolean>()
 
   searchField = new FormControl()
   private _destroy$ = new Subject()

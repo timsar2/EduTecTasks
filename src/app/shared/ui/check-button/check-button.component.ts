@@ -13,7 +13,7 @@ export class CheckButtonComponent {
   @Input() className?: string = ''
   @Input() state?: number = 0
 
-  @Output() private onStateChange = new EventEmitter<number>()
+  @Output() onStateChange = new EventEmitter<number>()
 
   changeState(): void {
     if (!this.state) {
