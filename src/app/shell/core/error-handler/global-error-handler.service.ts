@@ -30,7 +30,7 @@ export class GlobalErrorHandler extends ErrorHandler {
     super()
   }
 
-  public override handleError(error: Error | HttpErrorResponse): void {
+  override handleError(error: Error | HttpErrorResponse): void {
     const router = this.injector.get(Router)
 
     if (error instanceof HttpErrorResponse) {

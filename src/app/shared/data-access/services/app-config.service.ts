@@ -6,17 +6,17 @@ import { AppConfig } from '../models/app-config'
 @Injectable({ providedIn: 'root' })
 export class AppConfigSerivce {
   private _config = new BehaviorSubject<AppConfig | null>(null)
-  public appConfig$ = this._config.asObservable().pipe(filter(config => !!config)) as Observable<AppConfig>
+  appConfig$ = this._config.asObservable().pipe(filter(config => !!config)) as Observable<AppConfig>
 
   constructor(private http: HttpClient) {}
 
-  public get appConfig(): AppConfig {
+  get appConfig(): AppConfig {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     return this._config.getValue()!
   }
 
   // TODO: add default value when resolved to error
-  public getConfig(): void {
+  getConfig(): void {
     of({ userLocale: 'en' }).subscribe({ next: config => this._config.next(config) })
   }
 }

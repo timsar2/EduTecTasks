@@ -10,26 +10,22 @@ interface UiState {
 
 @Injectable({ providedIn: 'root' })
 export class UiStore extends ComponentStore<UiState> {
-  public isMobile$ = this.select(state => state.isMobile)
+  isMobile$ = this.select(state => state.isMobile)
 
   private _isSidebarCollapsed$ = this.select(state => state.isSidebarCollapsed)
-  public isSidebarCollapsed$ = this.select(
-    this.isMobile$,
-    this._isSidebarCollapsed$,
-    (isMobile, isSidebarCollapsed) => {
-      return isSidebarCollapsed
-    }
-  )
+  isSidebarCollapsed$ = this.select(this.isMobile$, this._isSidebarCollapsed$, (isMobile, isSidebarCollapsed) => {
+    return isSidebarCollapsed
+  })
 
   constructor() {
     super({ isSidebarCollapsed: false, isMobile: false })
   }
 
-  public readonly toggleSidebar = this.updater(
+  readonly toggleSidebar = this.updater(
     (state): UiState => ({ ...state, isSidebarCollapsed: !state.isSidebarCollapsed })
   )
 
-  public readonly observeIsMobile = this.effect((trigger$: Observable<BreakpointState>) => {
+  readonly observeIsMobile = this.effect((trigger$: Observable<BreakpointState>) => {
     return trigger$.pipe(tap(v => this.patchState({ isMobile: v.matches })))
   })
 }

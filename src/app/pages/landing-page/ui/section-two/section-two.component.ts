@@ -8,7 +8,7 @@ import { IContentLoder } from '@app/shared/data-access/models/content-loader.mod
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SectionTwoComponent {
-  protected data: IContentLoder = {
+  data: IContentLoder = {
     title: 'Lorem ipsum on lihtsalt',
     content: `We smartly combine engineering processes and knowledge gained over several decades by the space sector with
     innovative NewSpace approaches to offer our customers affordable, quick-to-market and reliable solutions. Our

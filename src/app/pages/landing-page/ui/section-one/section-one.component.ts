@@ -15,11 +15,11 @@ export class SectionOneComponent implements OnInit {
     infrastructure products and solutions for space, as well as space-augmented applications and services.`
   } satisfies IContentLoder
 
-  protected advertise?: IContentLoder
+  advertise?: IContentLoder
 
   constructor(private activatedRoute: ActivatedRoute) {}
 
-  public ngOnInit(): void {
+  ngOnInit(): void {
     this.activatedRoute.data.subscribe(({ advertise }) => {
       this.advertise = advertise
     })

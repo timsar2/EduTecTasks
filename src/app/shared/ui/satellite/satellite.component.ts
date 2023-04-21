@@ -11,7 +11,7 @@ import { AngularSvgIconModule } from 'angular-svg-icon'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SatelliteComponent {
-  @Input() public class = ''
+  @Input() class = ''
 
   constructor() {}
 }

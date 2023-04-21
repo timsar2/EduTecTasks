@@ -12,9 +12,9 @@ import { ILabelInfo } from '@app/shared/data-access/models/label-info.model'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LabelInfoComponent {
-  @Input() public data?: ILabelInfo
-  @Input() public icon?: string
-  @Input() public label?: string
+  @Input() data?: ILabelInfo
+  @Input() icon?: string
+  @Input() label?: string
 
   constructor() {}
 }

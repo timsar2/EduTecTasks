@@ -26,17 +26,17 @@ import { ScrollDirective } from '@app/shared/directives/scroll.directive'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
-  @Input() public options!: INavMenu[]
-  @Input() public isMobile!: boolean
+  @Input() options!: INavMenu[]
+  @Input() isMobile!: boolean
   @Output() private onToggleMenu = new EventEmitter()
 
   constructor(private scrollService: ScrollService) {}
 
-  protected scrollTo(id: string) {
+  scrollTo(id: string) {
     this.scrollService.scrollToElementById(id)
   }
 
-  protected toggleSideNav(): void {
+  toggleSideNav(): void {
     this.onToggleMenu.emit()
   }
 }

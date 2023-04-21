@@ -7,7 +7,7 @@ import { Subject, fromEvent, takeUntil } from 'rxjs'
   selector: '[eduScroll]'
 })
 export class ScrollDirective implements OnDestroy {
-  @Input() public eduScroll!: string
+  @Input() eduScroll!: string
 
   private _destroy = new Subject()
 

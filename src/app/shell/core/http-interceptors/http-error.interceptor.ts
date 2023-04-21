@@ -10,7 +10,7 @@ import { GlobalErrorHandler } from '../error-handler/global-error-handler.servic
 export class HttpErrorInterceptor implements HttpInterceptor {
   constructor(private injector: Injector, private globalErrorHandler: GlobalErrorHandler) {}
 
-  public intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+  intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     return next.handle(request).pipe(
       tap({
         error: (err: any) => {

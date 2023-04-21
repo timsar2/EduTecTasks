@@ -5,7 +5,7 @@ import { IContentLoder } from '@app/shared/data-access/models/content-loader.mod
   providedIn: 'root'
 })
 export class AdvertiseService {
-  public getAdvertise(): IContentLoder {
+  getAdvertise(): IContentLoder {
     return {
       title: '85% OFF',
       content: `Find Dress Offer stock images in HD and millions of other royalty-free stock photos, illustrations and vectors in the Shutterstock collection.`

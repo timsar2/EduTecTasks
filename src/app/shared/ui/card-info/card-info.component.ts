@@ -13,9 +13,9 @@ import { ILabelInfo } from '@app/shared/data-access/models/label-info.model'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardInfoComponent {
-  @Input() public icon?: string
-  @Input() public title?: string
-  @Input() public infoList?: ILabelInfo[] = []
+  @Input() icon?: string
+  @Input() title?: string
+  @Input() infoList?: ILabelInfo[] = []
 
   constructor() {}
 }

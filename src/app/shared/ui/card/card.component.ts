@@ -14,10 +14,10 @@ import { RouterModule } from '@angular/router'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardComponent {
-  @Input() public iconName?: string
-  @Input() public title?: string
-  @Input() public content?: string
-  @Input() public link?: string
+  @Input() iconName?: string
+  @Input() title?: string
+  @Input() content?: string
+  @Input() link?: string
 
   constructor() {}
 }

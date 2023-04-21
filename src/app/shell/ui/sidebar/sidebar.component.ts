@@ -21,7 +21,7 @@ export class SidebarComponent {
 
   constructor(private scrollService: ScrollService) {}
 
-  protected scrollTo(id: string) {
+  scrollTo(id: string) {
     this.toggleSideNav()
     setTimeout(() => {
       this.scrollService.scrollToElementById(id)

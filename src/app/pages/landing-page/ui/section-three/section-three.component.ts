@@ -10,14 +10,14 @@ import { SwiperOptions } from 'swiper/types/swiper-options'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SectionThreeComponent {
-  protected data: IContentLoder = {
+  data: IContentLoder = {
     title: 'RESOURCES',
     subTitle: 'Interlocked strategy',
     content:
       'Lorem ipsum dolor sit amet. Eum sapiente Quis qui sunt dignissimos rem dolores quasi qui iure beatae ex recusandae molestiae est beatae aliquid qui velit temporibus. '
   }
 
-  protected items: ICard[] = [
+  items: ICard[] = [
     {
       title: 'Components & Technology',
       content: 'Communication subsystem Satellite Simulators Electronics & Software Drag Sails technologies',
@@ -51,7 +51,7 @@ export class SectionThreeComponent {
     }
   ]
 
-  protected options: SwiperOptions = {
+  options: SwiperOptions = {
     breakpoints: {
       680: {
         spaceBetween: 30,

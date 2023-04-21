@@ -9,7 +9,7 @@ import { BreakpointObserver } from '@angular/cdk/layout'
 export class AppComponent implements OnInit {
   constructor(public uiStore: UiStore, private breakpointObserver: BreakpointObserver) {}
 
-  public ngOnInit(): void {
+  ngOnInit(): void {
     this.uiStore.observeIsMobile(this.breakpointObserver.observe('(max-width: 640px)'))
   }
 }
