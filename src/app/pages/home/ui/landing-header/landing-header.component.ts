@@ -13,7 +13,7 @@ export class LandingHeaderComponent implements OnDestroy {
   @Output() private searchTerm = new EventEmitter<string>()
   @Output() private toggledTo = new EventEmitter<boolean>()
 
-  public searchField = new FormControl()
+  searchField = new FormControl()
   private _destroy$ = new Subject()
 
   constructor() {
@@ -22,7 +22,7 @@ export class LandingHeaderComponent implements OnDestroy {
     })
   }
 
-  public onEditorToggle(value: boolean): void {
+  onEditorToggle(value: boolean): void {
     this.toggledTo.emit(value)
   }
 

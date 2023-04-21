@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EduTabbarTemplateComponent {
-  @Input() public headerClass?: string = ''
-  @Input() public className?: string = ''
-  @Input() public footerClass?: string = ''
+  @Input() headerClass?: string = ''
+  @Input() className?: string = ''
+  @Input() footerClass?: string = ''
 }

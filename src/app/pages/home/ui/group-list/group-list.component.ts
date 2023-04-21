@@ -9,10 +9,10 @@ import { IActionItem } from '@app/shared/ui/cards/action-card/data-access/models
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GroupListComponent {
-  @Input() public houseFactors?: IHouseFactors[]
-  @Input() public cardActions?: IActionItem[]
+  @Input() houseFactors?: IHouseFactors[]
+  @Input() cardActions?: IActionItem[]
 
-  public log(action: string, index: number): void {
+  log(action: string, index: number): void {
     console.table({ itemIndex: index, actionName: action })
   }
 }

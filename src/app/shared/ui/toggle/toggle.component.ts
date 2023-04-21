@@ -18,15 +18,15 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ToggleComponent {
-  @Input() public toggleOn?: boolean = false
-  @Input() public disabledText?: string = ''
-  @Input() public checkedText?: string = ''
+  @Input() toggleOn?: boolean = false
+  @Input() disabledText?: string = ''
+  @Input() checkedText?: string = ''
 
   @Output() private toggledTo = new EventEmitter<boolean>()
 
   constructor() {}
 
-  public toggleClick(): void {
+  toggleClick(): void {
     this.toggleOn = !this.toggleOn
     this.toggledTo.emit(this.toggleOn)
   }

@@ -10,5 +10,5 @@ import { CommonModule } from '@angular/common'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EduItemDividerComponent {
-  @Input() public className?: string = ''
+  @Input() className?: string = ''
 }

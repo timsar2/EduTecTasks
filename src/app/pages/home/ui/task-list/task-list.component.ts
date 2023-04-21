@@ -9,14 +9,14 @@ import { IActionItem } from '@app/shared/ui/cards/action-card/data-access/models
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TaskListComponent {
-  @Input() public tasks?: ITaskGroup[]
-  @Input() public cardActions?: IActionItem[]
+  @Input() tasks?: ITaskGroup[]
+  @Input() cardActions?: IActionItem[]
 
-  public log(action: string, index: number): void {
+  log(action: string, index: number): void {
     console.table({ itemIndex: index, actionName: action })
   }
 
-  public changeState(event: number, item: ITask) {
+  changeState(event: number, item: ITask) {
     if (!this.tasks) {
       return
     }

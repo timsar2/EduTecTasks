@@ -10,12 +10,12 @@ import { CommonModule } from '@angular/common'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CheckButtonComponent {
-  @Input() public className?: string = ''
-  @Input() public state?: number = 0
+  @Input() className?: string = ''
+  @Input() state?: number = 0
 
   @Output() private onStateChange = new EventEmitter<number>()
 
-  public changeState(): void {
+  changeState(): void {
     if (!this.state) {
       this.state = 0
     }

@@ -12,10 +12,10 @@ import { CommonModule } from '@angular/common'
 export class EduListComponent<T> {
   @ContentChild(TemplateRef) outlet!: TemplateRef<any>
 
-  @Input() public items?: T[]
-  @Input() public className?: string = ''
+  @Input() items?: T[]
+  @Input() className?: string = ''
 
-  public identify(index: number, item: any) {
+  identify(index: number, item: any) {
     return item
   }
 }

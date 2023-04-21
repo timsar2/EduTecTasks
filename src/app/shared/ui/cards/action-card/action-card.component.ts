@@ -17,7 +17,7 @@ import { DragableDirective } from '@app/shared/directives/dragable.directive'
 })
 export class ActionCardComponent {
   @Input()
-  public set item(value: ICardAction | undefined) {
+  set item(value: ICardAction | undefined) {
     if (value) {
       this.label = value.label ?? this.label
       this.actions = value.actions ?? this.actions
@@ -25,17 +25,17 @@ export class ActionCardComponent {
     }
   }
 
-  @Input() public label!: string
-  @Input() public actions?: IActionItem[]
-  @Input() public dragable?: boolean = false
-  @Input() public slotStartClass?: string = ''
-  @Input() public slotEndClass?: string = ''
+  @Input() label!: string
+  @Input() actions?: IActionItem[]
+  @Input() dragable?: boolean = false
+  @Input() slotStartClass?: string = ''
+  @Input() slotEndClass?: string = ''
 
   @Output() onActionClicked = new EventEmitter<string>()
 
   constructor() {}
 
-  public emitAction(action?: string): void {
+  emitAction(action?: string): void {
     action !== undefined ? this.onActionClicked.emit(action) : undefined
   }
 }

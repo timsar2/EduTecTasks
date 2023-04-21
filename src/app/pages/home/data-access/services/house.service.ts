@@ -6,9 +6,9 @@ import { BehaviorSubject, Observable } from 'rxjs'
   providedIn: 'root'
 })
 export class HouseService {
-  public houseFactors$ = new BehaviorSubject<IHouseFactors[]>([])
+  houseFactors$ = new BehaviorSubject<IHouseFactors[]>([])
 
-  public getHouseFactors(): void {
+  getHouseFactors(): void {
     this.houseFactors$.next([
       {
         factor: 'Bathroom',

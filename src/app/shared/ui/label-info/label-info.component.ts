@@ -11,10 +11,10 @@ import { MatIconModule } from '@angular/material/icon'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LabelInfoComponent {
-  @Input() public label?: string
-  @Input() public iconStart?: string
-  @Input() public iconEnd?: string
-  @Input() public className?: string = ''
-  @Input() public classIconStart?: string = ''
-  @Input() public classIconEnd?: string = ''
+  @Input() label?: string
+  @Input() iconStart?: string
+  @Input() iconEnd?: string
+  @Input() className?: string = ''
+  @Input() classIconStart?: string = ''
+  @Input() classIconEnd?: string = ''
 }

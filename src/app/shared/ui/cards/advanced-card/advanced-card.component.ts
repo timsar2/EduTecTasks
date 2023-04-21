@@ -25,7 +25,7 @@ import { CheckButtonComponent } from '../../check-button/check-button.component'
 })
 export class AdvancedCardComponent {
   @Input()
-  public set item(value: ICardAction | undefined) {
+  set item(value: ICardAction | undefined) {
     if (value) {
       this.label = value.label ?? this.label
       this.actions = value.actions ?? this.actions
@@ -33,31 +33,31 @@ export class AdvancedCardComponent {
     }
   }
 
-  @Input() public label!: string
-  @Input() public subject?: string = ''
-  @Input() public description?: string = ''
-  @Input() public actions?: IActionItem[]
-  @Input() public state?: number
-  @Input() public dragable?: boolean = false
-  @Input() public slotStartClass?: string = ''
-  @Input() public slotEndClass?: string = ''
+  @Input() label!: string
+  @Input() subject?: string = ''
+  @Input() description?: string = ''
+  @Input() actions?: IActionItem[]
+  @Input() state?: number
+  @Input() dragable?: boolean = false
+  @Input() slotStartClass?: string = ''
+  @Input() slotEndClass?: string = ''
 
   @Output() onActionClicked = new EventEmitter<string>()
   @Output() onStateChange = new EventEmitter<number>()
 
-  public isCardExpanded = false
+  isCardExpanded = false
 
   constructor() {}
 
-  public emitAction(action?: string): void {
+  emitAction(action?: string): void {
     action !== undefined ? this.onActionClicked.emit(action) : undefined
   }
 
-  public expandCard(): void {
+  expandCard(): void {
     this.isCardExpanded = !this.isCardExpanded
   }
 
-  public changeState($event: number) {
+  changeState($event: number) {
     this.onStateChange.emit($event)
   }
 }

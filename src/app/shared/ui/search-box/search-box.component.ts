@@ -12,12 +12,12 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SearchBoxComponent {
-  @Input() public placeholder?: string = ''
+  @Input() placeholder?: string = ''
   @Input() control?: FormControl
 
-  @Output() public searchQuery = new EventEmitter<string | undefined>()
+  @Output() searchQuery = new EventEmitter<string | undefined>()
 
-  public onSearchQueryInput(event: Event): void {
+  onSearchQueryInput(event: Event): void {
     const searchQuery = (event.target as HTMLInputElement).value?.trim()
     this.searchQuery.next(searchQuery)
 

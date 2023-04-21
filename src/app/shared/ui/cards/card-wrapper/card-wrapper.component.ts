@@ -10,5 +10,5 @@ import { CommonModule } from '@angular/common'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardWrapperComponent {
-  @Input() public actionBoxClass?: string = ''
+  @Input() actionBoxClass?: string = ''
 }

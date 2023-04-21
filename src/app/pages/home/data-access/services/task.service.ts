@@ -6,9 +6,9 @@ import { ITaskGroup } from '../models/task.model'
   providedIn: 'root'
 })
 export class TaskService {
-  public tasks$ = new BehaviorSubject<ITaskGroup[]>([])
+  tasks$ = new BehaviorSubject<ITaskGroup[]>([])
 
-  public getTasks(): void {
+  getTasks(): void {
     this.tasks$.next([
       {
         label: 'Administratif',
